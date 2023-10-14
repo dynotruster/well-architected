@@ -8,6 +8,8 @@ import logging
 from matplotlib import category
 import colorlog
 import spacy
+from collections import OrderedDict
+
 order_counter = 0  # Global order counter
 root_folder = './well-architected' 
 today = datetime.date.today().strftime('%Y-%m-%d')
@@ -202,27 +204,28 @@ def merge_similar_items(items):
             "title": current_item["title"],
             "description": current_item["description"],
             "order": order_counter,
-            "categories": set([current_item["category"]]),
-            "applies_to": set([current_item["applies_to"]]),
-            "file_paths": set([current_item["file_path"]]),
-            "pillars": set([current_item["pillar"]])
+            "categories": OrderedDict.fromkeys([current_item["category"]]),
+            "applies_to": OrderedDict.fromkeys([current_item["applies_to"]]),
+            "file_paths": OrderedDict.fromkeys([current_item["file_path"]]),
+            "pillars": OrderedDict.fromkeys([current_item["pillar"]])
         }
         i = 0
         while i < len(items):
             item = items[i]
             if current_item["title"] == item["title"] and current_item["description"] == item["description"]:
-                merged_item["categories"].update([item["category"]])
-                merged_item["applies_to"].update([item["applies_to"]])
-                merged_item["file_paths"].update([item["file_path"]])
-                merged_item["pillars"].update([item["pillar"]])
+                merged_item["categories"].update(OrderedDict.fromkeys([item["category"]]))
+                merged_item["applies_to"].update(OrderedDict.fromkeys([item["applies_to"]]))
+                merged_item["file_paths"].update(OrderedDict.fromkeys([item["file_path"]]))
+                merged_item["pillars"].update(OrderedDict.fromkeys([item["pillar"]]))
                 items.pop(i)
             else:
                 i += 1
-        # Convert sets back to lists
-        merged_item["categories"] = list(merged_item["categories"])
-        merged_item["applies_to"] = list(merged_item["applies_to"])
-        merged_item["file_paths"] = list(merged_item["file_paths"])
-        merged_item["pillars"] = list(merged_item["pillars"])
+        # Convert OrderedDict keys back to lists
+        merged_item["categories"] = list(merged_item["categories"].keys())
+        merged_item["applies_to"] = list(merged_item["applies_to"].keys())
+        merged_item["file_paths"] = list(merged_item["file_paths"].keys())
+        merged_item["pillars"] = list(merged_item["pillars"].keys())
+        
         processed_items.append(merged_item)
         order_counter += 1
     

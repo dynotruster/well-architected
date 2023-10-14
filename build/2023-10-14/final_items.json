@@ -382,8 +382,8 @@
             "azure-expressroute"
         ],
         "applies_to": [
-            "services/networking",
-            "oracle-iaas"
+            "oracle-iaas",
+            "services/networking"
         ],
         "file_paths": [
             "./well-architected/oracle-iaas/performance-efficiency.md",
@@ -2319,15 +2319,15 @@
         "description": "If third-party NVAs are required for inbound HTTP/S connections, deploy NVAs together with the applications that they're protecting and exposing to the internet.",
         "order": 137,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/network-virtual-appliances"
         ],
         "file_paths": [
-            "./well-architected/services/networking/network-virtual-appliances/reliability.md",
-            "./well-architected/services/networking/network-virtual-appliances/operational-excellence.md"
+            "./well-architected/services/networking/network-virtual-appliances/operational-excellence.md",
+            "./well-architected/services/networking/network-virtual-appliances/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -2339,15 +2339,15 @@
         "description": "If third-party NVAs are required for east-west or south-north traffic protection and filtering, reference Scenario: Route traffic through an NVA.",
         "order": 138,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/network-virtual-appliances"
         ],
         "file_paths": [
-            "./well-architected/services/networking/network-virtual-appliances/reliability.md",
-            "./well-architected/services/networking/network-virtual-appliances/operational-excellence.md"
+            "./well-architected/services/networking/network-virtual-appliances/operational-excellence.md",
+            "./well-architected/services/networking/network-virtual-appliances/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -2359,15 +2359,15 @@
         "description": "If third-party NVAs are required for east-west or south-north traffic protection and filtering, deploy the third-party NVAs in the central Hub Virtual Network.",
         "order": 139,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/network-virtual-appliances"
         ],
         "file_paths": [
-            "./well-architected/services/networking/network-virtual-appliances/reliability.md",
-            "./well-architected/services/networking/network-virtual-appliances/operational-excellence.md"
+            "./well-architected/services/networking/network-virtual-appliances/operational-excellence.md",
+            "./well-architected/services/networking/network-virtual-appliances/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -2379,8 +2379,8 @@
         "description": "Adding address space will cause an outage once a Virtual Network is connected through Virtual Network peering.",
         "order": 140,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-virtual-network"
@@ -2399,8 +2399,8 @@
         "description": "Only when Private Link isn't available and when there are no data exfiltration concerns.",
         "order": 141,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-virtual-network"
@@ -2419,8 +2419,8 @@
         "description": "Use either VNet injection for dedicated Azure services or Azure Private Link for available shared Azure services.",
         "order": 142,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-virtual-network"
@@ -2439,8 +2439,8 @@
         "description": "Avoids transit over the public internet.",
         "order": 143,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-virtual-network"
@@ -2459,8 +2459,8 @@
         "description": "Customers can get similar security capabilities in Azure as on-premises, but the implementation and architecture will need to be adapted to the cloud.",
         "order": 144,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-virtual-network"
@@ -2479,8 +2479,8 @@
         "description": "Azure PaaS services that have been injected into a Virtual Network still perform management plane operations using public IP addresses.",
         "order": 145,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-virtual-network"
@@ -2533,8 +2533,8 @@
         "description": "Protect backend services and reduce the load placed on an API Management scale unit. Rate limiting policies can be applied at Global, Product, API, and Operation levels to provide rate limit customization applied to API consumers.",
         "order": 148,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/api-management"
@@ -2757,8 +2757,8 @@
         "description": "Traffic manager doesn't forward traffic, but only completes the DNS redirection. The connection from the client is established directly to the target using any protocol.",
         "order": 161,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2777,8 +2777,8 @@
         "description": "Certain scenarios might force a customer to implement rules specifically on AppGateway: For example, if ModSec CRS 2.2.9, CRS 3.0 or CRS 3.1 rules are required, rules can be only implemented on AppGateway. Conversely, rate-limiting and geo-filtering are available only on Azure Front Door, not on AppGateway. Instructions on how to lock down traffic can be found at FAQ for Azure Front Door.",
         "order": 162,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2797,8 +2797,8 @@
         "description": "For more information, reference Health Endpoint Monitoring pattern.",
         "order": 163,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2817,8 +2817,8 @@
         "description": "Health probes are http(s) endpoints that are queried by the load balancer (Azure Front Door, Traffic Manager, AppGateway) service to determine if the backend is healthy enough to handle requests.",
         "order": 164,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2837,8 +2837,8 @@
         "description": "Don't centrally manage Application Gateway v2 or third-party NVAs within the organization and share with other workloads.",
         "order": 165,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2857,8 +2857,8 @@
         "description": "- Azure Front Door optimizes the number of TCP connections to the backend when forwarding traffic.- Changes to the routing configuration, based on backend health, are instantaneous. With Traffic Manager, traffic will point to the original backend until a new DNS lookup occurs, plus potential time for DNS propagation.- Front Door supports caching on global edge nodes, negating the need for a separate CDN service.- Front Door supports Web Application Firewall rules, negating the need for a separate WAF service.",
         "order": 166,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2877,8 +2877,8 @@
         "description": "Enable WAF protection and policies in either Application Gateway or Front Door.",
         "order": 167,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2897,8 +2897,8 @@
         "description": "Don't centrally manage Application Delivery within an organization.",
         "order": 168,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/application-delivery"
@@ -2934,8 +2934,8 @@
         "description": "Front Door doesn't support SSL passthrough. Front Door must hold the certificate to terminate the encrypted inbound connection.",
         "order": 170,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/azure-front-door"
@@ -3005,15 +3005,15 @@
         "description": "When a backend becomes unavailable, Traffic Manager won't fail over to another region immediately. There will be a time interval where clients can't be served. The length of this interval depends on the time settings of the health probe (probe interval and the number of unhealthy responses allowed). If the resulting interval is still too large for the scenario, consider switching to Azure Front Door for global load balancing.",
         "order": 174,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/networking/traffic-manager"
         ],
         "file_paths": [
-            "./well-architected/services/networking/traffic-manager/reliability.md",
-            "./well-architected/services/networking/traffic-manager/operational-excellence.md"
+            "./well-architected/services/networking/traffic-manager/operational-excellence.md",
+            "./well-architected/services/networking/traffic-manager/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3161,15 +3161,15 @@
         "description": "Azure Defender for Azure Storage provides an extra layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. Security alerts are triggered in Azure Security Center when anomalies in activity occur. Alerts are also sent through email to subscription administrators, with details of suspicious activity and recommendations on how to investigate, and remediate threats. For more information, reference Configure Azure Defender for Azure Storage.",
         "order": 183,
         "categories": [
-            "security",
-            "operational-excellence"
+            "operational-excellence",
+            "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3181,17 +3181,17 @@
         "description": "Soft delete for Azure Storage blobs enables you to recover blob data after it has been deleted.",
         "order": 184,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3204,17 +3204,17 @@
         "description": "Azure AD provides superior security and ease of use over Shared Key for authorizing requests to blob storage. It's recommended to use Azure AD authorization with your blob and queue applications when possible to minimize potential security vulnerabilities inherent in Shared Key. For more information, reference Authorize access to Azure blobs and queues using Azure Active Directory.",
         "order": 185,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3227,15 +3227,15 @@
         "description": "When assigning a role to a user, group, or application, grant that security principal only those permissions necessary for them to complete their tasks. Limiting access to resources helps prevent both unintentional and malicious misuse of your data.",
         "order": 186,
         "categories": [
-            "security",
-            "operational-excellence"
+            "operational-excellence",
+            "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3247,17 +3247,17 @@
         "description": "Azure Blob and Queue storage support Azure AD authentication with managed identities for Azure resources. Managed identities for Azure resources can authorize access to blob and queue data using Azure AD credentials from applications running in Azure virtual machines (VMs), function apps, virtual machine scale sets, and other services. By using managed identities for Azure resources together with Azure AD authentication, you can avoid storing credentials with your applications that run in the cloud and issues with expiring service principals. Reference Authorize access to blob and queue data with managed identities for Azure resources for more information.",
         "order": 187,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3270,17 +3270,17 @@
         "description": "Consider using Blob versioning to maintain previous versions of an object or the use of legal holds and time-based retention policies to store blob data in a WORM (Write Once, Read Many) state. Immutable blobs can be read, but can't be modified or deleted during the retention interval. For more information, reference Store business-critical blob data with immutable storage.",
         "order": 188,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3293,17 +3293,17 @@
         "description": "By default, network access to Storage Accounts isn't restricted and is open to all traffic coming from the internet. Access to storage accounts should be granted to specific Azure Virtual Networks only whenever possible or use private endpoints to allow clients on a virtual network (VNet) to access data securely over a Private Link. Reference Use private endpoints for Azure Storage for more information. Exceptions can be made for Storage Accounts that need to be accessible over the internet.",
         "order": 189,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3316,17 +3316,17 @@
         "description": "Configure firewall rules to limit access to your storage account to requests that originate from specified IP addresses or ranges, or from a list of subnets in an Azure Virtual Network (VNet). For more information about configuring firewall rules, reference Configure Azure Storage firewalls and virtual networks.",
         "order": 190,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3339,17 +3339,17 @@
         "description": "Limiting network access to networks hosting clients requiring access reduces the exposure of your resources to network attacks either by using the built-in Firewall and virtual networks functionality or by using private endpoints.",
         "order": 191,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3362,17 +3362,17 @@
         "description": "Turning on firewall rules for storage accounts blocks incoming requests for data by default, unless the requests originate from a service operating within an Azure Virtual Network (VNet) or from allowed public IP addresses. Blocked requests include those requests from other Azure services, from the Azure portal, from logging and metrics services, and so on. You can permit requests from other Azure services by adding an exception to allow trusted Microsoft services to access the storage account. For more information about adding an exception for trusted Microsoft services, reference Configure Azure Storage firewalls and virtual networks.",
         "order": 192,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3385,17 +3385,17 @@
         "description": "When you enable the Secure transfer required option, all requests made against the storage account must take place over secure connections. Any requests made over HTTP will fail. For more information, reference Require secure transfer in Azure Storage.",
         "order": 193,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3408,17 +3408,17 @@
         "description": "Requiring HTTPS when a client uses a SAS token to access blob data helps to minimize the risk of eavesdropping. For more information, reference Grant limited access to Azure Storage resources using shared access signatures (SAS).",
         "order": 194,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3431,17 +3431,17 @@
         "description": "It's recommended to use Azure AD to authorize requests to Azure Storage and to prevent Shared Key Authorization. For scenarios that require Shared Key authorization, always prefer SAS tokens over distributing the Shared Key.",
         "order": 195,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3454,17 +3454,17 @@
         "description": "Rotating the account keys periodically reduces the risk of exposing your data to malicious actors.",
         "order": 196,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3477,17 +3477,17 @@
         "description": "If a SAS is compromised, you'll want to revoke that SAS immediately. To revoke a user delegation SAS, revoke the user delegation key to quickly invalidate all signatures associated with that key. To revoke a service SAS that's associated with a stored access policy, you can delete the stored access policy, rename the policy, or change its expiry time to a time that is in the past.",
         "order": 197,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3500,17 +3500,17 @@
         "description": "If a SAS is compromised, it's valid only for a short time. This practice is especially important if you can't reference a stored access policy. Near-term expiration times also limit the amount of data that can be written to a blob by limiting the time available to upload to it. Clients should renew the SAS well before the expiration to allow time for retries if the service providing the SAS is unavailable.",
         "order": 198,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "security"
         ],
         "applies_to": [
             "services/storage/storage-accounts"
         ],
         "file_paths": [
-            "./well-architected/services/storage/storage-accounts/security.md",
+            "./well-architected/services/storage/storage-accounts/operational-excellence.md",
             "./well-architected/services/storage/storage-accounts/reliability.md",
-            "./well-architected/services/storage/storage-accounts/operational-excellence.md"
+            "./well-architected/services/storage/storage-accounts/security.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -3867,8 +3867,8 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service",
-            "services/compute"
+            "services/compute",
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
@@ -4274,15 +4274,15 @@
         "description": "Scaling ASE instances vertically or horizontally takes 30 to 60 minutes as new private instances need to be provisioned. We highly recommend investing in up-front planning for scaling during spikes in load or transient failure scenarios.",
         "order": 243,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4294,15 +4294,15 @@
         "description": "Deployment slots allow for code to be deployed to instances that are warmed-up before serving production traffic. For more information, reference Testing in production with Azure App Service.",
         "order": 244,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4314,15 +4314,15 @@
         "description": "Many events can lead App Service workers to restart, such as content deployment, App Settings changes, and VNet integration configuration changes. A best practice is to make changes in a deployment slot other than the slot currently configured to accept production traffic. After workers are recycled and warmed up, a swap can be performed without unnecessary down time.",
         "order": 245,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4334,15 +4334,15 @@
         "description": "Run from Package provides several advantages:- Eliminates file lock conflicts between deployment and runtime. - Ensures only fully deployed apps are running at any time.  - May reduce cold-start times, particularly for JavaScript functions with large npm package trees.",
         "order": 246,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4354,15 +4354,15 @@
         "description": "Azure App Service provides many configuration options that aren't enabled by default.",
         "order": 247,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4391,15 +4391,15 @@
         "description": "Any health check is better than none at all. The logic behind endpoint tests should assess all critical downstream dependencies to ensure overall health. As a best practice, we highly recommend tracking application health and cache status in real time as this removes unnecessary delays before action can be taken.",
         "order": 249,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4411,15 +4411,15 @@
         "description": "The default limit of App Service workers is 30. If the App Service routinely uses 15 or more instances, consider opening a support ticket to increase the maximum number of workers to 2x the instance count required to serve normal peak load.",
         "order": 250,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4431,15 +4431,15 @@
         "description": "Enabling local cache is always appropriate because it can lead to slower worker startup times. When coupled with Deployment slots, it can improve resiliency by removing dependencies on file servers and also reduces storage-related recycle events. Don't use local cache with a single worker instance or when shared storage is required.",
         "order": 251,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4451,15 +4451,15 @@
         "description": "Diagnostic logging provides the ability to ingest rich application and platform-level logs through Log Analytics, Azure Storage, or a third-party tool using Event Hub.",
         "order": 252,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4471,15 +4471,15 @@
         "description": "Application performance monitoring with Application Insights provides deep analyses into application performance. For Windows Plans, a codeless deployment approach is possible to quickly get a performance analysis without changing any code.",
         "order": 253,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4491,15 +4491,15 @@
         "description": "It's a good practice to regularly review service-related diagnostics and recommendations, and take action as appropriate.",
         "order": 254,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-app-service"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-app-service/reliability.md",
-            "./well-architected/services/compute/azure-app-service/operational-excellence.md"
+            "./well-architected/services/compute/azure-app-service/operational-excellence.md",
+            "./well-architected/services/compute/azure-app-service/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -4715,8 +4715,8 @@
         "description": "Staying up to date will ensure the region can be brought online quickly without waiting for file upload and deployment.",
         "order": 267,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-batch"
@@ -4735,22 +4735,22 @@
         "description": "Using a job to run a single task is inefficient. For example, it's more efficient to use a single job containing 1000 tasks rather than creating 100 jobs that contain 10 tasks each. Running 1000 jobs, each with a single task, would be the least efficient, slowest, and most expensive approach.",
         "order": 268,
         "categories": [
-            "reliability",
             "operational-excellence",
+            "reliability",
             "performance-efficiency"
         ],
         "applies_to": [
             "services/compute/azure-batch"
         ],
         "file_paths": [
-            "./well-architected/services/compute/azure-batch/performance-efficiency.md",
             "./well-architected/services/compute/azure-batch/operational-excellence.md",
-            "./well-architected/services/compute/azure-batch/reliability.md"
+            "./well-architected/services/compute/azure-batch/reliability.md",
+            "./well-architected/services/compute/azure-batch/performance-efficiency.md"
         ],
         "pillars": [
-            "Performance Efficiency",
             "Operational Excellence",
-            "Reliability"
+            "Reliability",
+            "Performance Efficiency"
         ]
     },
     {
@@ -4758,8 +4758,8 @@
         "description": "There's often no charge for creating accounts and charges accrue only when you use the account, or when you store data.",
         "order": 269,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/compute/azure-batch"
@@ -4906,8 +4906,8 @@
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
         ],
         "pillars": [
-            "Operational Excellence",
-            "Reliability"
+            "Reliability",
+            "Operational Excellence"
         ]
     },
     {
@@ -5910,8 +5910,8 @@
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
         ],
         "pillars": [
-            "Performance Efficiency",
-            "Cost Optimization"
+            "Cost Optimization",
+            "Performance Efficiency"
         ]
     },
     {
@@ -7153,8 +7153,8 @@
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
         ],
         "pillars": [
-            "Operational Excellence",
-            "Reliability"
+            "Reliability",
+            "Operational Excellence"
         ]
     },
     {
@@ -7188,8 +7188,8 @@
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
         ],
         "pillars": [
-            "Operational Excellence",
-            "Reliability"
+            "Reliability",
+            "Operational Excellence"
         ]
     },
     {
@@ -7206,8 +7206,8 @@
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
         ],
         "pillars": [
-            "Operational Excellence",
-            "Reliability"
+            "Reliability",
+            "Operational Excellence"
         ]
     },
     {
@@ -7241,8 +7241,8 @@
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
         ],
         "pillars": [
-            "Operational Excellence",
-            "Reliability"
+            "Reliability",
+            "Operational Excellence"
         ]
     },
     {
@@ -8253,15 +8253,15 @@
         "description": "Schedule the days and times that Redis Server updates will be applied to the cache, which doesn't include Azure updates, or updates to the VM operating system.",
         "order": 474,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-cache-redis"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-cache-redis/reliability.md",
-            "./well-architected/services/data/azure-cache-redis/operational-excellence.md"
+            "./well-architected/services/data/azure-cache-redis/operational-excellence.md",
+            "./well-architected/services/data/azure-cache-redis/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8273,15 +8273,15 @@
         "description": "Set alerts for exceptions, high CPU, high memory usage, server load, and evicted keys for insights about when to scale the cache. If the cache needs to be scaled, understanding when to scale is important because it will increase CPU during the scaling event to migrate data.",
         "order": 475,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-cache-redis"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-cache-redis/reliability.md",
-            "./well-architected/services/data/azure-cache-redis/operational-excellence.md"
+            "./well-architected/services/data/azure-cache-redis/operational-excellence.md",
+            "./well-architected/services/data/azure-cache-redis/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8293,15 +8293,15 @@
         "description": "Gives the customer more control over the traffic that can connect to the cache. Make sure that the subnet has sufficient address space available to deploy the cache nodes and shards (cluster).",
         "order": 476,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-cache-redis"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-cache-redis/reliability.md",
-            "./well-architected/services/data/azure-cache-redis/operational-excellence.md"
+            "./well-architected/services/data/azure-cache-redis/operational-excellence.md",
+            "./well-architected/services/data/azure-cache-redis/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8347,15 +8347,15 @@
         "description": "Understand how data loss can occur with cache reboots and how to test the application for resiliency.",
         "order": 479,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-cache-redis"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-cache-redis/reliability.md",
-            "./well-architected/services/data/azure-cache-redis/operational-excellence.md"
+            "./well-architected/services/data/azure-cache-redis/operational-excellence.md",
+            "./well-architected/services/data/azure-cache-redis/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8418,15 +8418,15 @@
         "description": "This tier provides higher resiliency to failures and faster failover times because of the underlying HA architecture, among other benefits. For more information, reference SQL Managed Instance High availability.",
         "order": 483,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-sql-managed-instance"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-sql-managed-instance/reliability.md",
-            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md"
+            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md",
+            "./well-architected/services/data/azure-sql-managed-instance/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8438,15 +8438,15 @@
         "description": "If an outage impacts one or more of the databases in the managed instance, you can manually or automatically failover all the databases inside the instance to a secondary region. For more information, read the Autofailover groups documentation for managed instance.",
         "order": 484,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-sql-managed-instance"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-sql-managed-instance/reliability.md",
-            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md"
+            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md",
+            "./well-architected/services/data/azure-sql-managed-instance/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8458,15 +8458,15 @@
         "description": "Although Azure SQL MI is resilient to transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL MI, make sure your code can retry the call. For more information, reference how to implement retry logic.",
         "order": 485,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-sql-managed-instance"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-sql-managed-instance/reliability.md",
-            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md"
+            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md",
+            "./well-architected/services/data/azure-sql-managed-instance/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8478,15 +8478,15 @@
         "description": "Use one of the available solutions to monitor your SQL MI to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. For more information, check out the Azure SQL Managed Instance monitoring options.",
         "order": 486,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/data/azure-sql-managed-instance"
         ],
         "file_paths": [
-            "./well-architected/services/data/azure-sql-managed-instance/reliability.md",
-            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md"
+            "./well-architected/services/data/azure-sql-managed-instance/operational-excellence.md",
+            "./well-architected/services/data/azure-sql-managed-instance/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8498,15 +8498,15 @@
         "description": "The Delivery Failed metric will increase every time a message can't be delivered to an event handler (timeout or a non-200-204 HTTP status code). If an event can't be lost, set up a Dead-Letter-Queue (DLQ) storage account. A DLQ account is where events that can't be delivered after the maximum retry count will be placed. Optionally, implement a notification system on the DLQ storage account, for example, by handling a new file event through Event Grid.",
         "order": 487,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-grid"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-grid/reliability.md",
-            "./well-architected/services/messaging/event-grid/operational-excellence.md"
+            "./well-architected/services/messaging/event-grid/operational-excellence.md",
+            "./well-architected/services/messaging/event-grid/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8518,15 +8518,15 @@
         "description": "The service will deliver a json array with multiple events to the subscribers, instead of an array with one event. The consuming application must be able to process these arrays.",
         "order": 488,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-grid"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-grid/reliability.md",
-            "./well-architected/services/messaging/event-grid/operational-excellence.md"
+            "./well-architected/services/messaging/event-grid/operational-excellence.md",
+            "./well-architected/services/messaging/event-grid/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8538,15 +8538,15 @@
         "description": "If the message payload is large, only one or a few messages will fit in the batch. The consuming service will need to process more event batches. If your event has a large payload, consider storing it elsewhere, such as in blob storage, and passing a reference in the event. When integrating with third-party services through the CloudEvents schema, it's not recommended to exceed 64KB events.",
         "order": 489,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-grid"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-grid/reliability.md",
-            "./well-architected/services/messaging/event-grid/operational-excellence.md"
+            "./well-architected/services/messaging/event-grid/operational-excellence.md",
+            "./well-architected/services/messaging/event-grid/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8558,15 +8558,15 @@
         "description": "Batch size selection depends on the payload size and the message volume.",
         "order": 490,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-grid"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-grid/reliability.md",
-            "./well-architected/services/messaging/event-grid/operational-excellence.md"
+            "./well-architected/services/messaging/event-grid/operational-excellence.md",
+            "./well-architected/services/messaging/event-grid/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8578,15 +8578,15 @@
         "description": "The Unmatched metric will show messages that are published, but not matched to any subscription. Depending on your application architecture, the latter may be intentional.",
         "order": 491,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-grid"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-grid/reliability.md",
-            "./well-architected/services/messaging/event-grid/operational-excellence.md"
+            "./well-architected/services/messaging/event-grid/operational-excellence.md",
+            "./well-architected/services/messaging/event-grid/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8632,15 +8632,15 @@
         "description": "When using HTTPS, ensure a proper retry pattern is implemented.",
         "order": 494,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8652,15 +8652,15 @@
         "description": "The service will deliver a json array with multiple events to the subscribers, instead of an array with one event. The consuming application must process these arrays.",
         "order": 495,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8672,15 +8672,15 @@
         "description": "To achieve maximum scale on the side of the consuming application, every consumer should read from a single partition.",
         "order": 496,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8692,15 +8692,15 @@
         "description": "EventProcessorHost has been deprecated.",
         "order": 497,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8712,15 +8712,15 @@
         "description": "This option allows the creation of a secondary namespace in a different region. Only the active namespace receives messages at any time. Messages and events aren't replicated to the secondary region. The RTO for the regional failover is up to 30 minutes. Confirm this RTO aligns with the requirements of the customer and fits in the broader availability strategy. If a higher RTO is required, consider implementing a client-side failover pattern.",
         "order": 498,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8732,15 +8732,15 @@
         "description": "Event Publishers automatically set the partition key to the publisher name, so this feature should only be used if the events originate from all publishers evenly.",
         "order": 499,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8752,15 +8752,15 @@
         "description": "If ordering events is essential, implement ordering downstream or use a different messaging service instead.",
         "order": 500,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8772,15 +8772,15 @@
         "description": "AMQP has higher network costs when initializing the session, but HTTPS requires TLS overhead for every request. AMQP has higher performance for frequent publishers.",
         "order": 501,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8792,15 +8792,15 @@
         "description": "For maximum throughput, use the maximum number of partitions (32) when creating the Event Hub. The maximum number of partitions will allow you to scale up to 32 concurrent processing entities and will offer the highest send and receive availability.",
         "order": 502,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8812,15 +8812,15 @@
         "description": "Data Lake will charge for minimal file size for storage (gen1) or minimal transaction size (gen2). If you set the time window so low that the file hasn't reached minimum size, you'll incur extra cost.",
         "order": 503,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/event-hubs"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/event-hubs/reliability.md",
-            "./well-architected/services/messaging/event-hubs/operational-excellence.md"
+            "./well-architected/services/messaging/event-hubs/operational-excellence.md",
+            "./well-architected/services/messaging/event-hubs/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -8832,8 +8832,8 @@
         "description": "This recommendation keeps traffic on the Azure Backbone. Note: The default connection protocol for Microsoft.Azure.ServiceBus and Windows.Azure.ServiceBus namespaces is AMQP.",
         "order": 504,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/service-bus"
@@ -9056,15 +9056,15 @@
         "description": "These configurations can be further enhanced with a Concierge Service.",
         "order": 517,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9076,15 +9076,15 @@
         "description": "AMQP and MQTT have higher network costs when initializing the session, however HTTPS requires extra TLS overhead for every request. AMQP and MQTT have higher performance for frequent publishers.",
         "order": 518,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9096,15 +9096,15 @@
         "description": "Make sure you have processes in place to update the certificate before they expire.",
         "order": 519,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9116,15 +9116,15 @@
         "description": "The number of device-to-cloud partitions for the Event Hub-compatible endpoint reflect the degree of downstream parallelism you can achieve. This will allow you to scale up to 32 concurrent processing entities and will offer the highest send and receive availability. This number can't be changed after creation.",
         "order": 520,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9136,15 +9136,15 @@
         "description": "Adding more than one IoT Hub per region doesn't offer extra resiliency because all hubs can run on the same underlying cluster.",
         "order": 521,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9156,15 +9156,15 @@
         "description": "The service will deliver an array with multiple events to the consumers, instead of an array with one event. The consuming application must process these arrays.",
         "order": 522,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9176,15 +9176,15 @@
         "description": "When using message routing in IoT Hub, latency of the message delivery increases. On average, latency shouldn't exceed 500 ms, but there's no guarantee for the delivery latency.",
         "order": 523,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9196,15 +9196,15 @@
         "description": "This option will move the IoT Hub endpoint to the paired Azure region. Only the device registry gets replicated. Events aren't replicated to the secondary region. The RTO for the customer-initiated failover is between 10 minutes to a couple of hours. For a Microsoft-initiated failover, the RTO is 2-26 hours. Confirm this RTO aligns with the requirements of the customer and fits in the broader availability strategy. If a higher RTO is required, consider implementing a client-side failover pattern.",
         "order": 524,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9216,15 +9216,15 @@
         "description": "When using HTTPS, implement a proper retry pattern.",
         "order": 525,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/messaging/iot-hub"
         ],
         "file_paths": [
-            "./well-architected/services/messaging/iot-hub/reliability.md",
-            "./well-architected/services/messaging/iot-hub/operational-excellence.md"
+            "./well-architected/services/messaging/iot-hub/operational-excellence.md",
+            "./well-architected/services/messaging/iot-hub/reliability.md"
         ],
         "pillars": [
             "Operational Excellence",
@@ -9236,8 +9236,8 @@
         "description": "Deploy workloads in either an active-active or active-passive configuration across Azure Stack Hub stamps or Azure.",
         "order": 526,
         "categories": [
-            "reliability",
-            "operational-excellence"
+            "operational-excellence",
+            "reliability"
         ],
         "applies_to": [
             "services/hybrid/azure-stack-hub"
