@@ -1,0 +1,54 @@
+<table>
+<thead>
+<tr>
+<th>Recommendation</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Configure your throughput based on your performance baseline.</td>
+<td>Use tools like the <a href="https://cosmos.azure.com/capacitycalculator/">capacity calculator</a> to determine the amount of throughput required for your performance baseline. Use features like <a href="/azure/cosmos-db/nosql/how-to-provision-autoscale-throughput">autoscale</a> to scale your actual throughput to more closely match your actual workload. Monitor your actual throughput consumption afterwards and make adjustments.</td>
+</tr>
+<tr>
+<td>Use optimization techniques on the client and server sides when appropriate.</td>
+<td>Take advantage of the built-in <a href="/azure/cosmos-db/integrated-cache">integrated cache</a>. Configure the SDK to manage how many items are prefetched (buffered) and returned for each page.</td>
+</tr>
+<tr>
+<td>Deploy Azure Cosmos DB for NoSQL to regions closest to your end users.</td>
+<td>Reduce latency by deploying Azure Cosmos DB for NoSQL to the regions closest to your end users as much as possible. Take advantage of read replication to provide performant read performance regardless of how you configure write (single or multiple regions). Configure the (<a href="/azure/cosmos-db/nosql/best-practice-dotnet">.NET</a>/<a href="/azure/cosmos-db/nosql/best-practice-java">Java</a>) SDK to prefer regions closer to your end user.</td>
+</tr>
+<tr>
+<td>Configure the SDK for <a href="/azure/cosmos-db/nosql/sdk-connection-modes">Direct mode</a>.</td>
+<td>Direct mode is the preferred option for best performance. This mode allows your client to open TCP connections directly to partitions in the service and send requests directly with no intermediary gateway. This mode offers better performance because there are fewer network hops.</td>
+</tr>
+<tr>
+<td>Disable indexing for bulk operations.</td>
+<td>If there are many insert/replace/upsert operations, disable indexing to improve the speed of the operation while using the <a href="/azure/cosmos-db/nosql/tutorial-dotnet-bulk-import">bulk support</a> of the corresponding SDK. Indexing can be immediately reenabled later.</td>
+</tr>
+<tr>
+<td>Create composite indexes for fields that are used in complex operations.</td>
+<td>Composite indexes can increase the efficiency of operations on multiple fields by orders of magnitude. In many cases, use <a href="/azure/cosmos-db/index-overview#composite-indexes">composite indexes</a> for <code>ORDER BY</code> statements with multiple fields.</td>
+</tr>
+<tr>
+<td>Optimize host client machines for the SDKs.</td>
+<td>For most common case, use at least 4-cores and 8-GB memory on 64-bite host machines using the SDKs (<a href="/azure/cosmos-db/nosql/best-practice-dotnet#checklist">.NET</a>/<a href="/azure/cosmos-db/nosql/best-practice-java">Java</a>). Also, enable <a href="/azure/virtual-network/create-vm-accelerated-networking-powershell">accelerated networking</a> on host machines.</td>
+</tr>
+<tr>
+<td>Use the singleton pattern for the <code>CosmosClient</code> class in most SDKs.</td>
+<td>Use the client class in most SDKs as a singleton. The client class manages its own lifecycle and is designed to not be disposed. Constantly creating and disposing of instances can result in reduced performance.</td>
+</tr>
+<tr>
+<td>Keep item sizes less than <strong>100 KB</strong> in size.</td>
+<td>Larger items consumer more throughput for common read and write operations. Queries on larger items that project all fields can also have a significant throughput cost.</td>
+</tr>
+<tr>
+<td>Use subqueries strategically to optimize queries that join large data sets.</td>
+<td>Queries that join child arrays can increase in complexity if multiple arrays are involved and not filtered. For example, a query that joins more than two arrays of at least <strong>10</strong> items each can expand to <strong>1,000+</strong> tuples. <a href="/azure/cosmos-db/nosql/query/subquery#optimize-self-join-expressions">Optimize self-join expressions</a> by using subqueries to filter the arrays before <a href="/azure/cosmos-db/nosql/query/join">joining arrays within the item</a>. For cross-partition queries, optimize your query to include a filter on the partition key to optimize the routing of your query to the least amount of partitions possible.</td>
+</tr>
+<tr>
+<td>Use analytical workloads for the most complex queries.</td>
+<td>If you run frequent aggregations or join queries over large containers, consider enabling the analytical store and doing queries in Azure Synapse Analytics.</td>
+</tr>
+</tbody>
+</table>

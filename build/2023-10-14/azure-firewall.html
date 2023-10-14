@@ -1,0 +1,46 @@
+<table>
+<thead>
+<tr>
+<th>Recommendation</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use <em>Policy Analytics</em> dashboard to identify potential optimizations for Firewall Policies.</td>
+<td><a href="/azure/firewall/policy-analytics">Policy Analytics</a> is a new feature that provides insights into the impact of your Azure Firewall policies. It helps you identify potential issues (hitting policy limits, low utilization rules, redundant rules, rules too generic, IP Groups usage recommendation) in your policies and provides recommendations to improve your security posture and rule processing performance.</td>
+</tr>
+<tr>
+<td>For Firewall Policies with large <a href="/azure/firewall/policy-rule-sets">rule sets</a>, place the most frequently used rules early in the group to optimize latency.</td>
+<td>Rules are processed based on rule type, inheritance, Rule Collection Group priority and Rule Collection priority. Highest priority Rule Collection Groups are processed first. Inside a rule collection group, Rule Collections with highest priority are processed first. Placing most used rules higher in rule set will optimize processing latency. How rules are processed and evaluated is explained in <a href="/azure/firewall/rule-processing#rule-processing-using-firewall-policy">this article</a>.</td>
+</tr>
+<tr>
+<td>Use <em>IP Groups</em> to summarize IP address ranges.</td>
+<td>You can use IP Groups to summarize IP ranges, so you don't exceed <a href="/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-firewall-limits">the limit of unique source/destination network rules</a>. For each rule, Azure multiplies ports by IP addresses. So, if you have one rule with four IP address ranges and five ports, you'll consume 20 network rules. The IP Group is treated as a single address for the purpose of creating network rules.</td>
+</tr>
+<tr>
+<td>Consider <em>Web Categories</em> to allow or deny outbound access in bulk.</td>
+<td>Instead of explicitly building and maintaining a long list of public Internet sites, consider the usage of Azure Firewall <a href="/azure/firewall/web-categories">Web Categories</a>. This feature will dynamically categorize web content and will permit the creation of compact Application Rules.</td>
+</tr>
+<tr>
+<td>Evaluate the performance impact of <em>IDPS</em> in <em>Alert and deny</em> mode.</td>
+<td>If Azure Firewall is required to operate in <a href="/azure/firewall/premium-features#idps">IDPS</a> mode <em>Alert and deny</em>, carefully consider the performance impact as documented in <a href="/azure/firewall/firewall-performance">this page</a>.</td>
+</tr>
+<tr>
+<td>Assess potential <a href="/azure/firewall/overview#known-issues">SNAT port exhaustion problem</a>.</td>
+<td>Azure Firewall currently supports 2496 ports per Public IP address per backend Virtual Machine Scale Set instance. By default, there are two Virtual Machine Scale Set instances. So, there are 4992 ports per flow destination IP, destination port and protocol (TCP or UDP). The firewall scales up to a maximum of 20 instances. You can work around the limits by configuring Azure Firewall deployments with a minimum of five public IP addresses for deployments susceptible to SNAT exhaustion.</td>
+</tr>
+<tr>
+<td>Properly warm up Azure Firewall before any performance test.</td>
+<td>Create initial traffic that isn't part of your load tests 20 minutes before the test. Use diagnostics settings to capture scale-up and scale-down events. You can use the <a href="/azure/load-testing/overview-what-is-azure-load-testing">Azure Load Testing</a> service to generate the initial traffic. Allows the Azure Firewall instance to scale up its instances to the maximum.</td>
+</tr>
+<tr>
+<td>Configure an Azure Firewall subnet (AzureFirewallSubnet) with a /26 address space.</td>
+<td>Azure Firewall is a dedicated deployment in your virtual network. Within your virtual network, a dedicated subnet is required for the instance of Azure Firewall. Azure Firewall provisions more capacity as it scales.<br/>A /26 address space for its subnets ensures that the firewall has enough IP addresses available to accommodate the scaling. Azure Firewall doesn't need a subnet bigger than /26. The Azure Firewall subnet name must be <strong>AzureFirewallSubnet</strong>.</td>
+</tr>
+<tr>
+<td>Do not enable advanced logging if not required</td>
+<td>Azure Firewall provides some advanced logging capabilities that can be expensive to maintain always active. Instead, they should be used for troubleshooting purposes only, and limited in duration, then disabled when no more necessary. For example, <a href="/azure/azure-monitor/reference/tables/azfwfatflow">Top Flows</a> and <a href="/azure/azure-monitor/reference/tables/azfwflowtrace">Flow Trace</a> logs are expensive can cause excessive CPU and storage usage on the Azure Firewall infrastructure.</td>
+</tr>
+</tbody>
+</table>
