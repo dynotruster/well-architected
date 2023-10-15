@@ -109,13 +109,13 @@
             "overview"
         ],
         "applies_to": [
-            "oracle-iaas/overview"
+            "oracle-iaas"
         ],
         "file_paths": [
             "./well-architected/oracle-iaas/overview.md"
         ],
         "pillars": [
-            "Not Defined"
+            "Reliability"
         ]
     },
     {
@@ -126,13 +126,13 @@
             "overview"
         ],
         "applies_to": [
-            "oracle-iaas/overview"
+            "oracle-iaas"
         ],
         "file_paths": [
             "./well-architected/oracle-iaas/overview.md"
         ],
         "pillars": [
-            "Not Defined"
+            "Reliability"
         ]
     },
     {
@@ -143,13 +143,13 @@
             "overview"
         ],
         "applies_to": [
-            "oracle-iaas/overview"
+            "oracle-iaas"
         ],
         "file_paths": [
             "./well-architected/oracle-iaas/overview.md"
         ],
         "pillars": [
-            "Not Defined"
+            "Reliability"
         ]
     },
     {
@@ -160,13 +160,13 @@
             "overview"
         ],
         "applies_to": [
-            "oracle-iaas/overview"
+            "oracle-iaas"
         ],
         "file_paths": [
             "./well-architected/oracle-iaas/overview.md"
         ],
         "pillars": [
-            "Not Defined"
+            "Reliability"
         ]
     },
     {
@@ -177,13 +177,13 @@
             "overview"
         ],
         "applies_to": [
-            "oracle-iaas/overview"
+            "oracle-iaas"
         ],
         "file_paths": [
             "./well-architected/oracle-iaas/overview.md"
         ],
         "pillars": [
-            "Not Defined"
+            "Reliability"
         ]
     },
     {
@@ -3868,7 +3868,7 @@
         ],
         "applies_to": [
             "services/compute/azure-service-fabric",
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
@@ -4815,7 +4815,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4832,7 +4832,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4849,7 +4849,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4866,7 +4866,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4883,7 +4883,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4900,7 +4900,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4918,7 +4918,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4935,7 +4935,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4952,7 +4952,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4969,7 +4969,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -4986,7 +4986,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5003,7 +5003,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5020,7 +5020,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5037,7 +5037,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5054,7 +5054,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5071,7 +5071,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5088,7 +5088,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5105,7 +5105,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5122,7 +5122,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5139,7 +5139,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5156,7 +5156,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5173,7 +5173,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5190,7 +5190,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5207,7 +5207,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5224,7 +5224,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5241,7 +5241,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5258,7 +5258,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5275,7 +5275,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5292,7 +5292,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5309,7 +5309,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5326,7 +5326,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5343,7 +5343,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5360,7 +5360,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5377,7 +5377,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5394,7 +5394,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5411,7 +5411,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5428,7 +5428,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5445,7 +5445,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5462,7 +5462,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5479,7 +5479,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5496,7 +5496,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5513,7 +5513,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5530,7 +5530,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5547,7 +5547,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5564,7 +5564,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5581,7 +5581,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-kubernetes-service/azure-kubernetes-service"
+            "services/compute/azure-kubernetes-service"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-kubernetes-service/azure-kubernetes-service.md"
@@ -5666,7 +5666,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5683,7 +5683,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5700,7 +5700,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5717,7 +5717,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5734,7 +5734,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5751,7 +5751,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5768,7 +5768,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5785,7 +5785,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5802,7 +5802,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5819,7 +5819,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5836,7 +5836,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5853,7 +5853,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5870,7 +5870,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5887,7 +5887,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5904,7 +5904,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5922,7 +5922,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5940,7 +5940,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5957,7 +5957,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5974,7 +5974,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -5991,7 +5991,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6008,7 +6008,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6025,7 +6025,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6042,7 +6042,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6059,7 +6059,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6076,7 +6076,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6093,7 +6093,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6110,7 +6110,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6127,7 +6127,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6144,7 +6144,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6161,7 +6161,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -6178,7 +6178,7 @@
             "virtual-machines-review"
         ],
         "applies_to": [
-            "services/compute/virtual-machines/virtual-machines-review"
+            "services/compute/virtual-machines"
         ],
         "file_paths": [
             "./well-architected/services/compute/virtual-machines/virtual-machines-review.md"
@@ -7831,7 +7831,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7848,7 +7848,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7865,7 +7865,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7882,7 +7882,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7899,7 +7899,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7916,7 +7916,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7933,7 +7933,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7950,7 +7950,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7967,7 +7967,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7984,7 +7984,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8001,7 +8001,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8018,7 +8018,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8035,7 +8035,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8052,7 +8052,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8069,7 +8069,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8086,7 +8086,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8103,7 +8103,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8120,7 +8120,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8137,7 +8137,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8154,7 +8154,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8171,7 +8171,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8188,7 +8188,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8205,7 +8205,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8222,7 +8222,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8239,7 +8239,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql"
+            "services/data/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"

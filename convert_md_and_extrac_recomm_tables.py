@@ -5,14 +5,12 @@ import markdown
 from bs4 import BeautifulSoup
 import json
 import logging
-from matplotlib import category
 import colorlog
-import spacy
 from collections import OrderedDict
 
 order_counter = 0  # Global order counter
 root_folder = './well-architected' 
-today = datetime.date.today().strftime('%Y-%m-%d')
+today = datetime.date.today().strftime('%Y-%m')
 build_dir = os.path.join(root_folder, f'build/{today}')
 # Load pre-trained word embeddings model
 
@@ -88,7 +86,7 @@ def get_pillar(file_path_part, previous_hader):
         return most_sim[0]
     else:
         logger.warning(f'Invalid pillar >>>>>> : {previous_hader}')
-        return "Not Defined"
+        return "Reliability"
         
        
         
@@ -102,11 +100,15 @@ def get_applies_to(file_path):
         'performance-efficiency',
         'security'
     ]
+    if category  in pillar_categories:
+         return applies_to
+    
     if category not in pillar_categories:
-        logger.info(f'Extend applies to with category{applies_to + category}')
-        return applies_to + "/" + category
-    else:
-        return applies_to
+        if category != 'overview' and category.replace('-review','') not in applies_to:
+            return applies_to + "/" + category
+        else:
+            return applies_to
+       
     
     
 def get_category(file_path):
@@ -244,11 +246,27 @@ def merge_similar_items(items):
     
     return processed_items
 
-
+def produce_final_items(items):
+    processed_items = []
+    while items:
+        current_item = items.pop(0)
+        final_item = {
+            "title": current_item["title"],
+            "description": current_item["description"],
+            "order": current_item["order"],
+            "applies_to": ", ".join(current_item["applies_to"]),
+            "pillars": ", ".join(current_item["pillars"]),
+            "type" : "Azure-Well-Arch-Oct-2023",
+            "comments": "",
+            "azureMatchedRuels":"",
+        }
+        processed_items.append(final_item)
+    return processed_items
+    
 if __name__ == "__main__":
     root_folder = '.'      # Replace with the path to your folder
 
-    today = datetime.date.today().strftime('%Y-%m-%d')
+    today = datetime.date.today().strftime('%Y-%m')
     build_dir = os.path.join(root_folder, f'build/{today}')
     table_data = convert_md_to_html(root_folder)
 
@@ -261,15 +279,25 @@ if __name__ == "__main__":
 
 
 
-    similar_groups = merge_similar_items(table_data)
+    merged_itmes = merge_similar_items(table_data)
+
+    merged_items_path = os.path.join(root_folder, build_dir, 'merged-itmes.json')
+
+    with open(merged_items_path, 'w', encoding='utf-8') as json_file:
+        json.dump(merged_itmes, json_file, indent=4, ensure_ascii=False)
+
+    logger.info(f'Saved merged items to {merged_items_path}')
+
+
+
+
+    final_items = produce_final_items(merged_itmes)
 
     final_items_path = os.path.join(root_folder, build_dir, 'final_items.json')
 
     with open(final_items_path, 'w', encoding='utf-8') as json_file:
-        json.dump(similar_groups, json_file, indent=4, ensure_ascii=False)
+        json.dump(final_items, json_file, indent=4, ensure_ascii=False)
 
-    logger.info(f'Saved extracted items to {final_items_path}')
-
-
+    logger.info(f'Saved merged items to {final_items_path}')
 
 

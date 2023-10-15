@@ -60,7 +60,7 @@
         "category": "overview",
         "applies_to": "oracle-iaas",
         "file_path": "./well-architected/oracle-iaas/overview.md",
-        "pillar": "Not Defined"
+        "pillar": "Reliability"
     },
     {
         "title": "Right-Size your environment",
@@ -69,7 +69,7 @@
         "category": "overview",
         "applies_to": "oracle-iaas",
         "file_path": "./well-architected/oracle-iaas/overview.md",
-        "pillar": "Not Defined"
+        "pillar": "Reliability"
     },
     {
         "title": "Provide the version of your application",
@@ -78,7 +78,7 @@
         "category": "overview",
         "applies_to": "oracle-iaas",
         "file_path": "./well-architected/oracle-iaas/overview.md",
-        "pillar": "Not Defined"
+        "pillar": "Reliability"
     },
     {
         "title": "Security",
@@ -87,7 +87,7 @@
         "category": "overview",
         "applies_to": "oracle-iaas",
         "file_path": "./well-architected/oracle-iaas/overview.md",
-        "pillar": "Not Defined"
+        "pillar": "Reliability"
     },
     {
         "title": "Availability",
@@ -96,7 +96,7 @@
         "category": "overview",
         "applies_to": "oracle-iaas",
         "file_path": "./well-architected/oracle-iaas/overview.md",
-        "pillar": "Not Defined"
+        "pillar": "Reliability"
     },
     {
         "title": "Use Perf Insights",
@@ -256,7 +256,7 @@
         "description": "Easily create hub-and-spoke and transitive architectures with native security services for traffic governance and protection.  For more information on network topologies, see the Azure Cloud Adoption Framework documentation.",
         "order": 29,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -265,7 +265,7 @@
         "description": "Azure Firewall Policies can be arranged in an hierarchical structure to overlay a central base policy. Allow for granular policies to meet the requirements of specific regions. Delegate incremental firewall policies to local security teams through role-based access control (RBAC). Some settings are specific per instance, for example DNAT Rules and DNS configuration, then multiple specialized policies may be required.",
         "order": 30,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -274,7 +274,7 @@
         "description": "For existing deployments, migrate Azure Firewall rules to Azure Firewall Manager policies. Use Azure Firewall Manager to centrally manage your firewalls and policies.  For more information, see Migrate to Azure Firewall Premium.",
         "order": 31,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -283,7 +283,7 @@
         "description": "Azure Firewall Product Group maintains an updated list of known-issues at this location. This list contains important information related to by-design behavior, fixes under construction, platform limitations, along with possible workarounds or mitigation.",
         "order": 32,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -292,7 +292,7 @@
         "description": "There are limits on the policy structure, including numbers of Rules and Rule Collection Groups, total policy size, source/target destinations. Be sure to compose your policy and stay behind the documented thresholds.",
         "order": 33,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -301,7 +301,7 @@
         "description": "Azure Firewall provides different SLAs when it's deployed in a single availability zone and when it's deployed in multiple zones. For more information, see SLA for Azure Firewall. For information about all Azure SLAs, see SLA summary for Azure services.",
         "order": 34,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -310,7 +310,7 @@
         "description": "For traditional Hub & Spokes architectures, multi-region details are explained in this article. For secured virtual hubs (Azure Virtual WAN), Routing Intent and Policies must be configured to secure inter-hub and branch-to-branch communications. For workloads designed to be resistant to failures and fault tolerant, remember to consider that instances of Azure Firewall and Azure Virtual Network as regional resources.",
         "order": 35,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -319,7 +319,7 @@
         "description": "Closely monitor key metrics indicator of Azure Firewall health state such as Throughput, Firewall health state, SNAT port utilization and AZFW Latency Probe metrics. Additionally, Azure Firewall now integrates with Azure Resource Health. With the Azure Firewall Resource Health check, you can now view the health status of your Azure Firewall and address service problems that may affect your Azure Firewall resource.",
         "order": 36,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Reliability"
     },
@@ -328,7 +328,7 @@
         "description": "Azure Firewall must have direct internet connectivity. If your AzureFirewallSubnet learns a default route to your on-premises network via the Border Gateway Protocol, you must configure Azure Firewall in the forced tunneling mode. Using the forced tunneling feature, you'll need another /26 address space for the Azure Firewall Management subnet. You're required to name it AzureFirewallManagementSubnet.If this is an existing Azure Firewall instance that can't be reconfigured in the forced tunneling mode, create a UDR with a 0.0.0.0/0 route. Set the NextHopType value as Internet. Associate it with AzureFirewallSubnet to maintain internet connectivity.",
         "order": 37,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -337,7 +337,7 @@
         "description": "When you deploy a new Azure Firewall instance, if you enable the forced tunneling mode, you can set the public IP address to None to deploy a fully private data plane. However, the management plane still requires a public IP for management purposes only. The internal traffic from virtual and on-premises networks won't use that public IP. For more about forced tunneling, see Azure Firewall forced tunneling.",
         "order": 38,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -346,7 +346,7 @@
         "description": "Azure Firewall Policies can be arranged in an hierarchical structure to overlay a central base policy. Allow for granular policies to meet the requirements of specific regions. Each policy can contains different sets of DNAT, Network and Application rules with specific priority, action and processing order. Create your rules based on least privilege access Zero Trust principle . How rules are processed is explained in this article.",
         "order": 39,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -355,7 +355,7 @@
         "description": "You can enable threat intelligence-based filtering for your firewall to alert and deny traffic from or to unknown IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence Feed. Intelligent Security Graph powers Microsoft threat intelligence and is used by multiple services, including Microsoft Defender for Cloud.",
         "order": 40,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -364,7 +364,7 @@
         "description": "IDPS is one of the most powerful Azure Firewall (Premium) security feature and should be enabled. Based on security and application requirements, and considering the performance impact (see the Cost section below), Alert or Alert and deny modes can be selected.",
         "order": 41,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -373,7 +373,7 @@
         "description": "Enabling this feature points clients in the VNets to Azure Firewall as a DNS server. It will protect internal DNS infrastructure that will not be directly accessed and exposed. Azure Firewall must be also configured to use custom DNS that will be used to forward DNS queries.",
         "order": 42,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -382,7 +382,7 @@
         "description": "In a traditional Hub & Spokes architecture, configure UDRs to force traffic through Azure Firewall for SpoketoSpoke, SpoketoInternet, and SpoketoHybrid connectivity. In Azure Virtual WAN, instead, configure Routing Intent and Policies to redirect private and/or Internet traffic through the Azure Firewall instance integrated into the hub.",
         "order": 43,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -391,7 +391,7 @@
         "description": "In order to prevent traffic bypassing the firewall, the association of Public IP addresses to VM network interfaces should be restricted. In the Azure Cloud Adoption Framework (CAF) model, a specific Azure Policy is assigned to the CORP Management Group.",
         "order": 44,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -400,7 +400,7 @@
         "description": "With explicit proxy feature enabled on the outbound path, you can configure a proxy setting on the sending web application (such as a web browser) with Azure Firewall configured as the proxy. As a result, web traffic will reach the firewall's private IP address and therefore egresses directly from the firewall without using a UDR. This feature also facilitates the usage of multiple firewalls without modifying existing network routes.",
         "order": 45,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -409,7 +409,7 @@
         "description": "You can use your familiar, best-in-breed, third-party SECaaS offerings to protect internet access for your users. This scenario does require Azure Virtual WAN with a S2S VPN Gateway in the Hub, as it uses an IPSec tunnel to connect to the provider's infrastructure. SECaaS providers may charge additional license fees and limit throughput on IPSec connections. Alternative solutions such ZScaler Cloud Connector exist and may be more suitable.",
         "order": 46,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -418,7 +418,7 @@
         "description": "You can use FQDN based on DNS resolution in Azure Firewall and firewall policies. This capability allows you to filter outbound traffic with any TCP/UDP protocol (including NTP, SSH, RDP, and more). You must enable the Azure Firewall DNS Proxy configuration to use FQDNs in your network rules. To learn how it works, see Azure Firewall FQDN filtering in network rules.",
         "order": 47,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -427,7 +427,7 @@
         "description": "A service tag represents a group of IP address prefixes to help minimize complexity for security rule creation. Using Service Tags in Network Rules, it is possible to enable outbound access to specific services in Azure, Dynamics and Office 365 without opening wide ranges of IP addresses. Azure will maintain automatically the mapping between these tags and underlying IP addresses used by each service. The list of Service Tags available to Azure Firewall are listed here: Az Firewall Service Tags.",
         "order": 48,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -436,7 +436,7 @@
         "description": "An FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services. You can use an FQDN tag in application rules to allow the required outbound network traffic through your firewall for some specific Azure services, Office 365, Windows 365 and Intune.",
         "order": 49,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -445,7 +445,7 @@
         "description": "A DDoS protection plan provides enhanced mitigation features to defend your firewall from DDoS attacks. Azure Firewall Manager is an integrated tool to create your firewall infrastructure and DDoS protection plans. For more information, see Configure an Azure DDoS Protection Plan using Azure Firewall Manager.",
         "order": 50,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -454,7 +454,7 @@
         "description": "With Azure Firewall Premium, if TLS Inspection feature is used, it is recommended to leverage an internal Enterprise Certification Authority (CA) for production environment. Self-signed certificates should be used for testing/PoC purposes only.",
         "order": 51,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -463,7 +463,7 @@
         "description": "If your security requirements necessitate implementing a Zero-Trust approach for web applications (inspection and encryption), it is recommended to follow this guide. In this document, how to integrate together Azure Firewall and Application Gateway will be explained, in both traditional Hub & Spoke and Virtual WAN scenarios.",
         "order": 52,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Security"
     },
@@ -472,7 +472,7 @@
         "description": "Azure Firewall can be deployed in three different SKUs: Basic, Standard and Premium. Azure Firewall Premium is recommended to secure highly sensitive applications (such as payment processing). Azure Firewall Standard is recommended for customers looking for Layer 3–Layer 7 firewall and needs autoscaling to handle peak traffic periods of up to 30 Gbps. Azure Firewall Basic is recommended for SMB customers with throughput needs of 250 Mbps. If required, downgrade or upgrade is possible between Standard and Premium as documented here.   For more information, see Choose the right Azure Firewall SKU to meet your needs.",
         "order": 53,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -481,7 +481,7 @@
         "description": "You might have development or testing environments that are used only during business hours. For more information, see Deallocate and allocate Azure Firewall.",
         "order": 54,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -490,7 +490,7 @@
         "description": "You can use a central instance of Azure Firewall in the hub virtual network or Virtual WAN secure hub and share the same firewall across many spoke virtual networks that are connected to the same hub from the same region. Ensure there's no unexpected cross-region traffic as part of the hub-spoke topology.",
         "order": 55,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -499,7 +499,7 @@
         "description": "Top Flows log (known in the industry as Fat Flows), shows the top connections that are contributing to the highest throughput through the firewall. It is recommended to regularly review traffic processed by the Azure Firewall and search for possible optimizations to reduce the amount of traffic traversing the firewall.",
         "order": 56,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -508,7 +508,7 @@
         "description": "To identify unused Azure Firewall deployments, start by analyzing the monitoring metrics and UDRs associated with subnets pointing to the firewall's private IP. Combine that information with other validations, such as if your instance of Azure Firewall has any rules (classic) for NAT, Network and Application, or even if the DNS Proxy setting is configured to Disabled, and with internal documentation about your environment and deployments. You can detect deployments that are cost-effective over time.  For more information about monitoring logs and metrics, see Monitor Azure Firewall logs and metrics and SNAT port utilization.",
         "order": 57,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -517,7 +517,7 @@
         "description": "Review your Firewall Manager policies, associations, and inheritance carefully. Policies are billed based on firewall associations. A policy with zero or one firewall association is free of charge. A policy with multiple firewall associations is billed at a fixed rate.For more information, see Pricing - Azure Firewall Manager.",
         "order": 58,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -526,7 +526,7 @@
         "description": "Validate whether all the associated public IP addresses are in use. If they aren't in use, disassociate and delete them. Evaluate SNAT port utilization before removing any IP addresses.You'll only use the number of public IPs your firewall needs. For more information, see Monitor Azure Firewall logs and metrics and SNAT port utilization.",
         "order": 59,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -535,7 +535,7 @@
         "description": "Azure Firewall has the ability to comprehensively log metadata of all traffic it sees, to Log Analytics Workspaces, Storage or third party solutions through Event Hub. However, all logging solutions incur costs for data processing and storage. At very large volumes these costs can be significant, a cost effective approach and alternative to Log Analytics described here should be considered and cost estimated . Consider whether it is required to log traffic metadata for all logging categories and modify in Diagnostic Settings if needed.",
         "order": 60,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Cost Optimization"
     },
@@ -544,7 +544,7 @@
         "description": "Azure Firewall should be used to control traffic across VNets, between VNets and on-premises networks, outbound traffic to the Internet and incoming non-HTTP/s traffic. For intra-VNet traffic control, it is recommended to use Network Security Groups.",
         "order": 61,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -553,7 +553,7 @@
         "description": "If Infrastructure-as-Code (IaC) approach is used to maintain Azure Firewall and all dependencies then backup and versioning of Azure Firewall Policies should be already in place. If not, a companion mechanism based on external Logic App can be deployed to automate and provide an effective solution.",
         "order": 62,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -562,7 +562,7 @@
         "description": "Diagnostic Logs is a key component for many monitoring tools and strategies for Azure Firewall and should be enabled. You can monitor Azure Firewall by using firewall logs or workbooks. You can also use activity logs for auditing operations on Azure Firewall resources.",
         "order": 63,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -571,7 +571,7 @@
         "description": "Structured Firewall Logs are a type of log data that are organized in a specific new format. They use a predefined schema to structure log data in a way that makes it easy to search, filter, and analyze. The latest monitoring tools are based on this type of logs hence it is often a pre-requisite. Use the previous Diagnostic Logs format only if there is an existing tool with a pre-requisite on that. Do not enable both logging formats at the same time.",
         "order": 64,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -580,7 +580,7 @@
         "description": "Azure Firewall portal experience now includes a new workbook under the Monitoring section UI, a separate installation is no more required. With the Azure Firewall Workbook, you can extract valuable insights from Azure Firewall events, delve into your application and network rules, and examine statistics regarding firewall activities across URLs, ports, and addresses.",
         "order": 65,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -589,7 +589,7 @@
         "description": "Alerts should be created to monitor at least Throughput, Firewall health state, SNAT port utilization and AZFW Latency Probe metrics.For information about monitoring logs and metrics, see Monitor Azure Firewall logs and metrics.",
         "order": 66,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -598,7 +598,7 @@
         "description": "If these tools are available in the environment, it is recommended to leverage integration with Microsoft Defender for Cloud and Microsoft Sentinel solutions. With Microsoft Defender for Cloud integration, you can visualize the all-up status of network infrastructure and network security in one place, including Azure Network Security across all VNets and Virtual Hubs spread across different regions in Azure. Integration with Microsoft Sentinel provides threat detection and prevention capabilities.",
         "order": 67,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -607,7 +607,7 @@
         "description": "Policy Analytics is a new feature that provides insights into the impact of your Azure Firewall policies. It helps you identify potential issues (hitting policy limits, low utilization rules, redundant rules, rules too generic, IP Groups usage recommendation) in your policies and provides recommendations to improve your security posture and rule processing performance.",
         "order": 68,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -616,7 +616,7 @@
         "description": "Sample queries are provided for Azure Firewall. Those will enable you to quickly identify what's happening inside your firewall and check to see which rule was triggered, or which rule is allowing/blocking a request.",
         "order": 69,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -625,7 +625,7 @@
         "description": "",
         "order": 70,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Operational Excellence"
     },
@@ -634,7 +634,7 @@
         "description": "Policy Analytics is a new feature that provides insights into the impact of your Azure Firewall policies. It helps you identify potential issues (hitting policy limits, low utilization rules, redundant rules, rules too generic, IP Groups usage recommendation) in your policies and provides recommendations to improve your security posture and rule processing performance.",
         "order": 71,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -643,7 +643,7 @@
         "description": "Rules are processed based on rule type, inheritance, Rule Collection Group priority and Rule Collection priority. Highest priority Rule Collection Groups are processed first. Inside a rule collection group, Rule Collections with highest priority are processed first. Placing most used rules higher in rule set will optimize processing latency. How rules are processed and evaluated is explained in this article.",
         "order": 72,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -652,7 +652,7 @@
         "description": "You can use IP Groups to summarize IP ranges, so you don't exceed the limit of unique source/destination network rules. For each rule, Azure multiplies ports by IP addresses. So, if you have one rule with four IP address ranges and five ports, you'll consume 20 network rules. The IP Group is treated as a single address for the purpose of creating network rules.",
         "order": 73,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -661,7 +661,7 @@
         "description": "Instead of explicitly building and maintaining a long list of public Internet sites, consider the usage of Azure Firewall Web Categories. This feature will dynamically categorize web content and will permit the creation of compact Application Rules.",
         "order": 74,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -670,7 +670,7 @@
         "description": "If Azure Firewall is required to operate in IDPS mode Alert and deny, carefully consider the performance impact as documented in this page.",
         "order": 75,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -679,7 +679,7 @@
         "description": "Azure Firewall currently supports 2496 ports per Public IP address per backend Virtual Machine Scale Set instance. By default, there are two Virtual Machine Scale Set instances. So, there are 4992 ports per flow destination IP, destination port and protocol (TCP or UDP). The firewall scales up to a maximum of 20 instances. You can work around the limits by configuring Azure Firewall deployments with a minimum of five public IP addresses for deployments susceptible to SNAT exhaustion.",
         "order": 76,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -688,7 +688,7 @@
         "description": "Create initial traffic that isn't part of your load tests 20 minutes before the test. Use diagnostics settings to capture scale-up and scale-down events. You can use the Azure Load Testing service to generate the initial traffic. Allows the Azure Firewall instance to scale up its instances to the maximum.",
         "order": 77,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -697,7 +697,7 @@
         "description": "Azure Firewall is a dedicated deployment in your virtual network. Within your virtual network, a dedicated subnet is required for the instance of Azure Firewall. Azure Firewall provisions more capacity as it scales.A /26 address space for its subnets ensures that the firewall has enough IP addresses available to accommodate the scaling. Azure Firewall doesn't need a subnet bigger than /26. The Azure Firewall subnet name must be AzureFirewallSubnet.",
         "order": 78,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -706,7 +706,7 @@
         "description": "Azure Firewall provides some advanced logging capabilities that can be expensive to maintain always active. Instead, they should be used for troubleshooting purposes only, and limited in duration, then disabled when no more necessary. For example, Top Flows and Flow Trace logs are expensive can cause excessive CPU and storage usage on the Azure Firewall infrastructure.",
         "order": 79,
         "category": "azure-firewall",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-firewall",
         "file_path": "./well-architected/services/networking/azure-firewall.md",
         "pillar": "Performance Efficiency"
     },
@@ -715,7 +715,7 @@
         "description": "During the initial planning phase, you want to decide whether you want to configure an ExpressRoute circuit or an ExpressRoute Direct connection. An ExpressRoute circuit allows a private dedicated connection into Azure with the help of a connectivity provider. ExpressRoute Direct allows you to extend on-premises network directly into the Microsoft network at a peering location. You also need to identify the bandwidth requirement and the SKU type requirement for your business needs.",
         "order": 80,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -724,7 +724,7 @@
         "description": "For better resiliency, plan to have multiple paths between the on-premises edge and the peering locations (provider/Microsoft edge locations). This configuration can be achieved by going through different service provider or through a different location from the on-premises network.",
         "order": 81,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -733,7 +733,7 @@
         "description": "To plan for disaster recovery, set up ExpressRoute circuits in more than one peering locations. You can create circuits in peering locations in the same metro or different metro and choose to work with different service providers for diverse paths through each circuit. For more information, see Designing for disaster recovery and Designing for high availability.",
         "order": 82,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -742,7 +742,7 @@
         "description": "ExpressRoute dedicated circuits guarantee 99.95% availability when an active-active connectivity is configured between on-premises and Azure. This mode provides higher availability of your Expressroute connection. It's also recommended to configure BFD for faster failover if there's a link failure on a connection.",
         "order": 83,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -751,7 +751,7 @@
         "description": "Create availability zone aware Virtual Network Gateway for higher resiliency and plan for Virtual Network Gateways in different region for disaster recovery and high availability.",
         "order": 84,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -760,7 +760,7 @@
         "description": "Set up monitoring and alerts for ExpressRoute circuits and Virtual Network Gateway health based on various metrics available.",
         "order": 85,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -769,7 +769,7 @@
         "description": "ExpressRoute uses service health to notify about planned and unplanned maintenance. Configuring service health will notify you about changes made to your ExpressRoute circuits.",
         "order": 86,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Reliability"
     },
@@ -778,7 +778,7 @@
         "description": "Activity logs provide insights into operations that were performed at the subscription level for ExpressRoute resources. With Activity logs, you can determine who and when an operation was performed at the control plane. Data retention is only 90 days and required to be stored in Log Analytics, Event Hubs or a storage account for archive.",
         "order": 87,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Security"
     },
@@ -787,7 +787,7 @@
         "description": "Use Azure RBAC to configure roles to limit user accounts that can add, update, or delete peering configuration on an ExpressRoute circuit.",
         "order": 88,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Security"
     },
@@ -796,7 +796,7 @@
         "description": "During configuration of private peering or Microsoft peering, apply an MD5 hash to secure messages between the on-premises route and the MSEE routers.",
         "order": 89,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Security"
     },
@@ -805,7 +805,7 @@
         "description": "Media Access Control security is a point-to-point security at the data link layer. ExpressRoute Direct supports configuring MACSec to prevent security threats to protocols such as ARP, DHCP, LACP not normally secured on the Ethernet link. For more information on how to configure MACSec, see MACSec for ExpressRoute Direct ports.",
         "order": 90,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Security"
     },
@@ -814,7 +814,7 @@
         "description": "Configure a Site-to-site VPN tunnel over your ExpressRoute circuit to encrypt data transferring between your on-premises network and Azure virtual network. You can configure a tunnel using private peering or using Microsoft peering.",
         "order": 91,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Security"
     },
@@ -823,7 +823,7 @@
         "description": "For information about ExpressRoute pricing, see Understand pricing for Azure ExpressRoute. You can also use the Pricing calculator.Ensure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
         "order": 92,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Cost Optimization"
     },
@@ -832,7 +832,7 @@
         "description": "The way you're charged for your ExpressRoute usage varies between the three different SKU types. With Local SKU, you're automatically charged with an Unlimited data plan. With Standard and Premium SKU, you can select between a Metered or an Unlimited data plan. All ingress data are free of charge except when using the Global Reach add-on. It's important to understand which SKU types and data plan works best for your workload to best optimize cost and budget. For more information resizing ExpressRoute circuit, see upgrading ExpressRoute circuit bandwidth.",
         "order": 93,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Cost Optimization"
     },
@@ -841,7 +841,7 @@
         "description": "ExpressRoute virtual network gateways are used to pass traffic into a virtual network over private peering. Review the performance and scale needs of your preferred Virtual Network Gateway SKU. Select the appropriate gateway SKU on your on-premises to Azure workload.",
         "order": 94,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Cost Optimization"
     },
@@ -850,7 +850,7 @@
         "description": "Monitor the cost of your ExpressRoute circuit and create alerts for spending anomalies and overspending risks. For more information, see Monitoring ExpressRoute costs.",
         "order": 95,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Cost Optimization"
     },
@@ -859,7 +859,7 @@
         "description": "ExpressRoute circuits are charged from the moment they're created. To reduce unnecessary cost, deprovision the circuit with the service provider and delete the ExpressRoute circuit from your subscription. For steps on how to remove an ExpressRoute circuit, see Deprovisioning an ExpressRoute circuit.",
         "order": 96,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Cost Optimization"
     },
@@ -868,7 +868,7 @@
         "description": "Connection monitoring allows you to monitor connectivity between your on-premises resources and Azure over the ExpressRoute private peering and Microsoft peering connection. Connection monitor can detect networking issues by identifying where along the network path the problem is and help you quickly resolve configuration or hardware failures.",
         "order": 97,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Operational Excellence"
     },
@@ -877,7 +877,7 @@
         "description": "Set up Service Health notifications to alert when planned and upcoming maintenance is happening to all ExpressRoute circuits in your subscription. Service Health also displays past maintenance along with RCA if an unplanned maintenance were to occur.",
         "order": 98,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Operational Excellence"
     },
@@ -886,7 +886,7 @@
         "description": "ExpressRoute Insights with Network Insights allow you to review and analyze ExpressRoute circuits, gateways, connections metrics and health dashboards. ExpressRoute Insights also provide a topology view of your ExpressRoute connections where you can view details of your peering components all in a single place.Metrics available:- Availability- Throughput- Gateway metrics",
         "order": 99,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Operational Excellence"
     },
@@ -895,7 +895,7 @@
         "description": "ExpressRoute uses Azure Monitor to collect metrics and create alerts base on your configuration. Metrics are collected for ExpressRoute circuits, ExpressRoute gateways, ExpressRoute gateway connections, and ExpressRoute Direct. These metrics are useful for diagnosing connectivity problems and understanding the performance of your ExpressRoute connection.",
         "order": 100,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Operational Excellence"
     },
@@ -904,7 +904,7 @@
         "description": "Use Azure Connectivity Toolkit to test performance across your ExpressRoute circuit to understand bandwidth capacity and latency of your network connection.",
         "order": 101,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Performance Efficiency"
     },
@@ -913,7 +913,7 @@
         "description": "Upgrade to a higher gateway SKU for improved throughput performance between on-premises and Azure environment.",
         "order": 102,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Performance Efficiency"
     },
@@ -922,7 +922,7 @@
         "description": "Upgrade your circuit bandwidth to meet your work load requirements. Circuit bandwidth is shared between all virtual networks connected to the ExpressRoute circuit. Depending on your work load, one or more virtual networks can use up all the bandwidth on the circuit.",
         "order": 103,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Performance Efficiency"
     },
@@ -931,7 +931,7 @@
         "description": "If you're using an Ultra performance or an ErGW3AZ virtual network gateway, you can enable FastPath to improve the data path performance between your on-premises network and Azure virtual network.",
         "order": 104,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Performance Efficiency"
     },
@@ -940,7 +940,7 @@
         "description": "Set up alerts base on ExpressRoute metrics to proactively notify you when a certain threshold is met. These metrics are useful to understand anomalies that can happen with your ExpressRoute connection such as outages and maintenance happening to your ExpressRoute circuits.",
         "order": 105,
         "category": "azure-expressroute",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-expressroute",
         "file_path": "./well-architected/services/networking/azure-expressroute.md",
         "pillar": "Performance Efficiency"
     },
@@ -949,7 +949,7 @@
         "description": "Plan enough time for updates before accessing Application Gateway or making further changes. For example, removing servers from backend pool might take some time because they have to drain existing connections.",
         "order": 106,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Reliability"
     },
@@ -958,7 +958,7 @@
         "description": "If Application Gateway is used to load balance incoming traffic over multiple backend instances, we recommend the use of health probes. These will ensure that traffic is not routed to backends that are unable to handle the traffic.",
         "order": 107,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Reliability"
     },
@@ -967,7 +967,7 @@
         "description": "The health probe sends requests to the configured endpoint at a set interval. Also, there's a threshold of failed requests that will be tolerated before the backend is marked unhealthy. These numbers present a trade-off.- Setting a higher interval puts a higher load on your service. Each Application Gateway instance sends its own health probes, so 100 instances every 30 seconds means 100 requests per 30 seconds.- Setting a lower interval leaves more time before an outage is detected.- Setting a low unhealthy threshold may mean that short, transient failures may take down a backend. - Setting a high threshold it can take longer to take a backend out of rotation.",
         "order": 108,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Reliability"
     },
@@ -976,7 +976,7 @@
         "description": "Suppose each backend has its own dependencies to ensure failures are isolated. For example, an application hosted behind Application Gateway may have multiple backends, each connected to a different database (replica). When such a dependency fails, the application may be working but won't return valid results. For that reason, the health endpoint should ideally validate all dependencies. Keep in mind that if each call to the health endpoint has a direct dependency call, that database would receive 100 queries every 30 seconds instead of 1. To avoid this, the health endpoint should cache the state of the dependencies for a short period of time.",
         "order": 109,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Reliability"
     },
@@ -985,7 +985,7 @@
         "description": "Certain scenarios can force you to implement rules specifically on Application Gateway. For example, if ModSec CRS 2.2.9, CRS 3.0 or CRS 3.1 rules are required, these rules can be only implemented on Application Gateway. Conversely, rate-limiting and geo-filtering are available only on Azure Front Door, not on AppGateway.",
         "order": 110,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Reliability"
     },
@@ -994,7 +994,7 @@
         "description": "Set up a TLS policy for extra security. Ensure you're using the latest TLS policy version (AppGwSslPolicy20170401S). This enforces TLS 1.2 and stronger ciphers.",
         "order": 111,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1003,7 +1003,7 @@
         "description": "There are advantages of using Application Gateway for TLS termination:- Performance improves because requests going to different backends to have to re-authenticate to each backend.- Better utilization of backend servers because they don't have to perform TLS processing- Intelligent routing by accessing the request content.- Easier certificate management because the certificate only needs to be installed on Application Gateway.",
         "order": 112,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1012,7 +1012,7 @@
         "description": "Application Gateway is integrated with Key Vault. This provides stronger security, easier separation of roles and responsibilities, support for managed certificates, and an easier certificate renewal and rotation process.",
         "order": 113,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1021,7 +1021,7 @@
         "description": "A TLS certificate of the backend server must be issued by a well-known CA. If the certificate was not issued by a trusted CA, the Application Gateway checks if the certificate of the issuing CA was issued by a trusted CA, and so on until either a trusted CA is found. Only then a secure connection is established. Otherwise, Application Gateway marks the backend as unhealthy.",
         "order": 114,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1030,7 +1030,7 @@
         "description": "When the backend pool contains a resolvable FQDN, the DNS resolution is based on a private DNS zone or custom DNS server (if configured on the VNet), or it uses the default Azure-provided DNS.",
         "order": 115,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1039,7 +1039,7 @@
         "description": "NSGs are supported on Application Gateway subnet, but there are some restrictions. For instance, some communication with certain port ranges is prohibited. Make sure you understand the implications of those restrictions. For details, see Network security groups.",
         "order": 116,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1048,7 +1048,7 @@
         "description": "Using User Defined Routes (UDR) on the Application Gateway subnet can cause some issues. Health status in the back-end might be unknown. Application Gateway logs and metrics might not get generated. We recommend that you don't use UDRs on the Application Gateway subnet so that you can view the back-end health, logs, and metrics. If your organizations require to use UDR in the Application Gateway subnet, please ensure you review the supported scenarios. For more information, see Supported user-defined routes.",
         "order": 117,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1057,7 +1057,7 @@
         "description": "When WAF is enabled, every request must be buffered by the Application Gateway until it fully arrives and check if the request matches with any rule violation in its core rule set and then forward the packet to the backend instances. For large file uploads (30MB+ in size), this can result in a significant latency. Because Application Gateway capacity requirements are different with WAF, we do not recommend enabling WAF on Application Gateway without proper testing and validation.",
         "order": 118,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Security"
     },
@@ -1066,7 +1066,7 @@
         "description": "For information about Application Gateway pricing, see Understanding Pricing for Azure Application Gateway and Web Application Firewall. You can also leverage the Pricing calculator.Ensure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
         "order": 119,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Cost Optimization"
     },
@@ -1075,7 +1075,7 @@
         "description": "Identify and delete Application Gateway instances with empty backend pools to avoid unnecessary costs.",
         "order": 120,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Cost Optimization"
     },
@@ -1084,7 +1084,7 @@
         "description": "You aren't billed when Application Gateway is in the stopped state. Continuously running Application Gateway instances can incur extraneous costs. Evaluate usage patterns and stop instances when you don't need them. For example, usage after business hours in Dev/Test environments is expected to be low.See these articles for information about how to stop and start instances.- Stop-AzApplicationGateway- Start-AzApplicationGateway",
         "order": 121,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Cost Optimization"
     },
@@ -1093,7 +1093,7 @@
         "description": "A scale-out policy ensures that there will be enough instances to handle incoming traffic and spikes. Also, have a scale-in policy that makes sure the number of instances are reduced when demand drops. Consider the choice of instance size. The size can significantly impact the cost. Some considerations are described in the Estimate the Application Gateway instance count.For more information, see What is Azure Application Gateway v2?",
         "order": 122,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Cost Optimization"
     },
@@ -1102,7 +1102,7 @@
         "description": "You're billed based on metered instances of Application Gateway based on the metrics tracked by Azure. Evaluate the various metrics and capacity units and determine the cost drivers. For more information, see Azure Cost Management and Billing. The following metrics are key for Application Gateway. This information can be used to validate that the provisioned instance count matches the amount of incoming traffic.- Estimated Billed Capacity Units- Fixed Billable Capacity Units- Current Capacity UnitsFor more information, see Application Gateway metrics.Make sure you account for bandwidth costs. For details, see Traffic across billing zones and regions.",
         "order": 123,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Cost Optimization"
     },
@@ -1111,7 +1111,7 @@
         "description": "Use these metrics as indicators of utilization of the provisioned Application Gateway capacity. We strongly recommend setting up alerts on capacity. For details, see Application Gateway high traffic support.",
         "order": 124,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1120,7 +1120,7 @@
         "description": "There are other metrics that can indicate issues either at Application Gateway or the backend. We recommend evaluating the following alerts:- Unhealthy Host Count- Response Status (dimension 4xx and 5xx)- Backend Response Status (dimension 4xx and 5xx)- Backend Last Byte Response Time- Application Gateway Total TimeFor more information, see Metrics for Application Gateway.",
         "order": 125,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1129,7 +1129,7 @@
         "description": "Diagnostic logs allow you to view firewall logs, performance logs, and access logs. Use these logs to manage and troubleshoot issues with Application Gateway instances. For more information, see Back-end health and diagnostic logs for Application Gateway.",
         "order": 126,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1138,7 +1138,7 @@
         "description": "Azure Monitor Network Insights provides a comprehensive view of health and metrics for network resources, including Application Gateway. For additional details and supported capabilities for Application Gateway, see Azure Monitor Network insights.",
         "order": 127,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1147,7 +1147,7 @@
         "description": "Ensure you have configured the IdleTimeout settings to match the listener and traffic characteristics of the backend application. The default value is set to four minutes and can be configured to a maximum of 30. For more information, see Load Balancer TCP Reset and Idle Timeout.For workload considerations, see Monitoring application health for reliability.",
         "order": 128,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1156,7 +1156,7 @@
         "description": "Application Gateway checks for the renewed certificate version in the linked Key Vault at every 4-hour interval. If it is inaccessible due to any incorrect Key Vault configuration, it logs that error and pushes a corresponding Advisor recommendation. You must configure the Advisor alerts to stay updated and fix such issues immediately to avoid any Control or Data plane related problems. To set an alert for this specific case, use the Recommendation Type as Resolve Azure Key Vault issue for your Application Gateway.",
         "order": 129,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1165,7 +1165,7 @@
         "description": "SNAT port limitations are important for backend connections on the Application Gateway. There are separate factors that affect how Application Gateway reaches the SNAT port limit. For example, if the backend is a public IP address, it will require its own SNAT port. In order to avoid SNAT port limitations, you can increase the number of instances per Application Gateway, scale out the backends to have more IP addresses, or move your backends into the same virtual network and use private IP addresses for the backends.Requests per second (RPS) on the Application Gateway will be affected if the SNAT port limit is reached. For example, if an Application Gateway reaches the SNAT port limit, then it won't be able to open a new connection to the backend, and the request will fail.",
         "order": 130,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Operational Excellence"
     },
@@ -1174,7 +1174,7 @@
         "description": "Application Gateway v2 scales out based on many aspects, such as CPU, network throughput, current connections, and more. To determine the approximate instance count, factor in these metrics:Current compute units — Indicates CPU utilization. 1 Application Gateway instance is approximately 10 compute units.Throughput — Application Gateway instance can serve ~500 Mbps of throughput. This data depends on the type of payload.Consider this equation when calculating instance counts.After you've estimated the instance count, compare that value to the maximum instance count. This will indicate how close you are to the maximum available capacity.",
         "order": 131,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Performance Efficiency"
     },
@@ -1183,7 +1183,7 @@
         "description": "For Application Gateway v2 SKU, autoscaling takes some time (approximately six to seven minutes) before the additional set of instances is ready to serve traffic. During that time, if there are short spikes in traffic, expect transient latency or loss of traffic.We recommend that you set your minimum instance count to an optimal level. After you estimate the average instance count and determine your Application Gateway autoscaling trends, define the minimum instance count based on your application patterns. For information, see Application Gateway high traffic support.Check the Current Compute Units for the past one month. This metric represents the gateway's CPU utilization. To define the minimum instance count, divide the peak usage by 10. For example, if your average Current Compute Units in the past month is 50, set the minimum instance count to five.",
         "order": 132,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Performance Efficiency"
     },
@@ -1192,7 +1192,7 @@
         "description": "We recommend 125 as the maximum autoscale instance count. Make sure the subnet that has the Application Gateway has sufficient available IP addresses to support the scale-up set of instances.Setting the maximum instance count to 125 has no cost implications because you're billed only for the consumed capacity.",
         "order": 133,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Performance Efficiency"
     },
@@ -1201,7 +1201,7 @@
         "description": "Application Gateway needs a dedicated subnet within a virtual network. The subnet can have multiple instances of the deployed Application Gateway resource. You can also deploy other Application Gateway resources in that subnet, v1 or v2 SKU.Here are some considerations for defining the subnet size:- Application Gateway uses one private IP address per instance and another private IP address if a private front-end IP is configured.- Azure reserves five IP addresses in each subnet for internal use.- Application Gateway (Standard or WAF SKU) can support up to 32 instances. Taking 32 instance IP addresses + 1 private front-end IP + 5 Azure reserved, a minimum subnet size of /26 is recommended. Because the Standard_v2 or WAF_v2 SKU can support up to 125 instances, using the same calculation, a subnet size of /24 is recommended.- If you want to deploy additional Application Gateway resources in the same subnet, consider the additional IP addresses that will be required for their maximum instance count for both, Standard and Standard v2.",
         "order": 134,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Performance Efficiency"
     },
@@ -1210,7 +1210,7 @@
         "description": "The v2 SKU offers autoscaling to ensure that your Application Gateway can scale up as traffic increases. When compared to v1 SKU, v2 has capabilities that enhance the performance of the workload. For example, better TLS offload performance, quicker deployment and update times, zone redundancy, and more. For more information about autoscaling features, see Scaling Application Gateway v2 and WAF v2.If you are running v1 SKU Application gateway, consider migrating to the Application gateway v2 SKU. For more information, see Migrate Azure Application Gateway and Web Application Firewall from v1 to v2.",
         "order": 135,
         "category": "azure-application-gateway",
-        "applies_to": "services/networking",
+        "applies_to": "services/networking/azure-application-gateway",
         "file_path": "./well-architected/services/networking/azure-application-gateway.md",
         "pillar": "Performance Efficiency"
     },
@@ -2299,7 +2299,7 @@
         "description": "This level ensures the resource provider maintains cluster reliability. Standard cluster: A Standard SKU managed cluster provides the equivalent of durability level Silver. To achieve this using the standard cluster model, you will need to use 5 VMs (or more).",
         "order": 256,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2308,7 +2308,7 @@
         "description": "Service Fabric managed cluster supports deployments that span across multiple Availability Zones to provide zone resiliency. This configuration will ensure high-availability of the critical system services and your applications to protect from single-points-of-failure.",
         "order": 257,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2317,7 +2317,7 @@
         "description": "API Management can integrate with Service Fabric directly.",
         "order": 258,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2326,7 +2326,7 @@
         "description": "The Reliable Services model allows your services to stay up even in unreliable environments where your machines fail or hit network issues, or in cases where the services themselves encounter errors and crash or fail. For stateful services, your state is preserved even in the presence of network or other failures.",
         "order": 259,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2335,7 +2335,7 @@
         "description": "For example, you may have an API Management instance (one subnet), a frontend subnet (exposing a website directly), and a backend subnet (accessible only to frontend).",
         "order": 260,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2344,7 +2344,7 @@
         "description": "Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked.",
         "order": 261,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2353,7 +2353,7 @@
         "description": "Using an ACL provides an additional level of authentication.",
         "order": 262,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2362,7 +2362,7 @@
         "description": "Enforcing resource limits helps ensure that one service doesn't consume too many resources and starve other services.",
         "order": 263,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2371,7 +2371,7 @@
         "description": "Encryption on your secret values provides an additional level of security.",
         "order": 264,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2380,7 +2380,7 @@
         "description": "Having your applications use client certificates for authentication provides opportunities for security at both the cluster and workload level.",
         "order": 265,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2389,7 +2389,7 @@
         "description": "Using Managed Identity allow you to securely manage the credentials in your code for authenticating to various services without saving them locally on a developer workstation or in source control.",
         "order": 266,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2398,7 +2398,7 @@
         "description": "Following the best practices provides a security standard to follow.",
         "order": 267,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2407,7 +2407,7 @@
         "description": "Service Fabric uses managed disks by default, so avoiding temp disk offerings ensures you don't pay for unneeded resources.",
         "order": 268,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -2416,7 +2416,7 @@
         "description": "Make the most of the resources you're paying for. Using a temporary disk instead of a managed disk can reduce costs for stateless workloads.",
         "order": 269,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -2425,7 +2425,7 @@
         "description": "Matching your selection to your workload demands ensures you don't pay for unneeded resources.",
         "order": 270,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -2434,7 +2434,7 @@
         "description": "Application Insights integrates with the Azure platform, including Service Fabric.",
         "order": 271,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2443,7 +2443,7 @@
         "description": "For example, Key Vault offers a feature that sends an email when x% of the certificate's lifespan has elapsed.",
         "order": 272,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2452,7 +2452,7 @@
         "description": "Practicing service disruption scenarios will help you understand what is at-risk in your infrastructure and how to best mitigate the issues if they arise.",
         "order": 273,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2461,7 +2461,7 @@
         "description": "Azure Monitor integrates well with the Azure platform, including Service Fabric.",
         "order": 274,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2470,7 +2470,7 @@
         "description": "Azure Pipelines integrates well with the Azure platform, including Service Fabric.",
         "order": 275,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2479,7 +2479,7 @@
         "description": "By default, Windows Defender antivirus is installed on Windows Server 2016 and 2019. To reduce any performance impact and resource consumption overhead incurred by Windows Defender, and if your security policies allow you to exclude processes and paths for open-source software, you can exclude.",
         "order": 276,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2488,7 +2488,7 @@
         "description": "Autoscaling gives great elasticity and enables addition or reduction of nodes on demand on a secondary node type. This automated and elastic behavior reduces the management overhead and potential business impact by monitoring and optimizing the amount of nodes servicing your workload.",
         "order": 277,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2497,7 +2497,7 @@
         "description": "Accelerated networking enables a high-performance path that bypasses the host from the data path, which reduces latency, jitter, and CPU utilization for the most demanding network workloads.",
         "order": 278,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2506,7 +2506,7 @@
         "description": "This encryption method improves on ADE by supporting all OS types and images, including custom images, for your VMs by encrypting data in the Azure Storage service.",
         "order": 279,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2515,7 +2515,7 @@
         "description": "Service Fabric supports several programming models. Each come with their own advantages and disadvantages. Knowing about the available programming models can help you make the best choices for designing your services.",
         "order": 280,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2524,7 +2524,7 @@
         "description": "Using microservices allows you to get the most out of Service Fabric's features.",
         "order": 281,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2533,7 +2533,7 @@
         "description": "Using event-driven architecture allows you to get the most out of Service Fabric's features.",
         "order": 282,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2542,7 +2542,7 @@
         "description": "Using background processing allows you to get the most out of Service Fabric's features.",
         "order": 283,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2551,7 +2551,7 @@
         "description": "You can use scaling to enable maximum resource utilization for your solution.",
         "order": 284,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -3928,7 +3928,7 @@
         "description": "Availability zones provide distinct power, networking, and cooling isolating hardware failures to a subset of your replicas. Azure Cosmos DB has multiple replicas that span across a single random availability zone when the availability zones feature isn't used. If the availability zone feature is used, replicas span across multiple availability zones.",
         "order": 437,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Reliability"
     },
@@ -3937,7 +3937,7 @@
         "description": "Spanning multiple regions prevents your account from being entirely unavailable if there's an isolated region outage.",
         "order": 438,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Reliability"
     },
@@ -3946,7 +3946,7 @@
         "description": "Service-managed failover allows Azure Cosmos DB to change the write region of a multiple-region account to preserve availability. This change occurs without user interaction. Understand the tradeoffs with service-managed failover and plan for forced failover if necessary. For more information, see building highly available applications.",
         "order": 439,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Reliability"
     },
@@ -3955,7 +3955,7 @@
         "description": "Temporarily disabling service-manage failover allows you to validate the end-to-end high availability of your application with a manual failover started using a script or the Azure portal. Afterwards, you can reenable service-managed failover.",
         "order": 440,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Reliability"
     },
@@ -3964,7 +3964,7 @@
         "description": "Go through the security baseline including identity management and data protection. Implement the recommendations to secure your Azure Cosmos DB account.",
         "order": 441,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -3973,7 +3973,7 @@
         "description": "Avoid leaving unnecessary or unused public endpoints available for surface area attacks to your account.",
         "order": 442,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -3982,7 +3982,7 @@
         "description": "Use role-based access control to prevent unintended access to your account. Assign appropriate roles and permissions to users or applications accessing Azure Cosmos DB.",
         "order": 443,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -3991,7 +3991,7 @@
         "description": "Implement virtual network service endpoints and firewall rules to restrict access to your Azure Cosmos DB account. Use network security groups (NSGs) to control inbound and outbound traffic to and from the Azure Cosmos DB resources. Limiting access to trusted networks and applying appropriate network security measures helps protect your data from unauthorized access.",
         "order": 444,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -4000,7 +4000,7 @@
         "description": "Follow secure coding practices and perform secure code reviews when developing applications that interact with Azure Cosmos DB. Protect against common security vulnerabilities like injection attacks, cross-site scripting (XSS), or insecure direct object references (IDOR). Implement input validation, parameterized queries, and appropriate error handling for common HTTP status codes to prevent security risks.",
         "order": 445,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -4009,7 +4009,7 @@
         "description": "Monitoring helps you track access patterns and audit logs, ensuring that your database remains secure and compliant with relevant data protection regulations. Monitoring data-plane metrics can also help identify unfamiliar patterns that may reveal a security breach. For more information, see security checklist for Azure databases.",
         "order": 446,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -4018,7 +4018,7 @@
         "description": "Microsoft Defender detects attempts to exploit databases in your Azure Cosmos DB for NoSQL account. Defender detects potential SQL injections, suspicious access patterns, and other potential exploitation.",
         "order": 447,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Security"
     },
@@ -4027,7 +4027,7 @@
         "description": "Use metrics to monitor RU consumption from the very beginning of your solution. Use queries and other data research techniques to find antipatterns in your application code.",
         "order": 448,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4036,7 +4036,7 @@
         "description": "The default indexing policy indexes all paths in an item, and this policy can have significant impacts to RU consumption and costs. Use an indexing policy designed based on only the paths that you need to index for your common queries. For write-heavy workloads, disable automatic indexing of columns not used in queries.",
         "order": 449,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4045,7 +4045,7 @@
         "description": "The partition key[s] should distribute throughput consumption and data storage evenly across logical partitions. The selection should also minimize the number of unbounded cross-partition queries. Avoid hot partitions that receive a disproportionate amount of traffic, as unbalance partitions can increase throughput costs and transient errors. Use the most common search queries to determine potential partition key[s] that likely executes only single-partition or bounded cross-partition queries.",
         "order": 450,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4054,7 +4054,7 @@
         "description": "Compare the provisioned throughput types and select the appropriate option for your workload. Generally, smaller and dev/test workloads may benefit from serverless throughput or manual shared throughput at the database level. Larger, mission-critical workloads may benefit from provisioned throughput assigned at the container level.",
         "order": 451,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4063,7 +4063,7 @@
         "description": "You may not always need to change the standard default consistency level or override it in client sessions. Consider the higher costs associated with reads at stronger consistency levels.",
         "order": 452,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4072,7 +4072,7 @@
         "description": "The Azure Cosmos DB emulator is an option for dev/test and continuous integration that can save on the costs of these common workloads for your development team. The emulator is also available as a Docker container image.",
         "order": 453,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4081,7 +4081,7 @@
         "description": "Design partitions to take advantage of transactional batch operations within a logical partition key for inserting. Use batch operations in client-side SDKS for inserting, updating, or deleting multiple documents in a single transaction request. This step can reduce the number of individual requests and can eventually lead to better throughput efficiency.",
         "order": 454,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4090,7 +4090,7 @@
         "description": "Author queries to only project the minimal number of fields required from a result set. If calculations on fields are necessary, evaluate the throughput cost of performing those calculations server-side versus client-side.",
         "order": 455,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4099,7 +4099,7 @@
         "description": "Evaluate and author queries to ensure they search within a single logical partition whenever possible. Use query filters to control which logical partitions the query targets. If a query must search across logical partitions, bound the query to only search a subset of logical partitions instead of a full scan.",
         "order": 456,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4108,7 +4108,7 @@
         "description": "Use TTL to automatically delete data that's no longer needed. Manage storage costs by removing expired or obsolete data. If necessary, export the expired data to a lower-cost storage solution.",
         "order": 457,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4117,7 +4117,7 @@
         "description": "Azure Cosmos DB analytical store automatically syncs your data to a separate column store to optimize for large aggregations, reporting, and analytical queries.",
         "order": 458,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Cost Optimization"
     },
@@ -4126,7 +4126,7 @@
         "description": "Each Azure Cosmos DB for NoSQL SDK has a minimum recommended version. For more information, see .NET SDK and Java SDK.",
         "order": 459,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4135,7 +4135,7 @@
         "description": "Consider flags, such as the user-agent suffix, to identify what workload each log entry or metric should be associated with.",
         "order": 460,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4144,7 +4144,7 @@
         "description": "Use the diagnostics injection techniques for each SDK to add supplemental information about the workload alongside default metrics and logs. For more information, see .NET SDK and Java SDK.",
         "order": 461,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4153,7 +4153,7 @@
         "description": "Connectivity and availability issues may occur due to client-side host machine issues. Monitor resources such as CPU, memory, and storage on host machines with client applications using the Azure Cosmos DB for NoSQL SDKs.",
         "order": 462,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4162,7 +4162,7 @@
         "description": "Scenarios that require a high degree of throughput benefit from using the bulk feature of the SDK. The bulk feature automatically manages and batches operations to maximize throughput.",
         "order": 463,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4171,7 +4171,7 @@
         "description": "Use alerts to track throughput throttling beyond expected thresholds. Over time, review and adjust alerts as you learn more about your workload in relation to Azure Cosmos DB. The Normalized RU Consumption metric is a metric that measures the percentage utilization of provisioned throughput on a database or container. If this metric is consistently at 100%, requests likely return a transient error.",
         "order": 464,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4180,7 +4180,7 @@
         "description": "Use metrics to track the performance of your top queries over time. Evaluate if there are efficiencies to be found by updating th indexing policy or changing queries. If query performance is poor, troubleshoot performance and apply query best practices. For more information, see query performance tips.",
         "order": 465,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4189,7 +4189,7 @@
         "description": "Consider Azure Resource Manager, Bicep, or Terraform templates to automate the deployment of your account and subsequent resources. Ensure that your team is using the same templates to deploy to other nonproduction environments.",
         "order": 466,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4198,7 +4198,7 @@
         "description": "Use specific metrics to find common problems in your workload including, but not limited to; RU utilization, RU utilization by partition, throttling, and request volumes by type. For more information, see monitor data reference.",
         "order": 467,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Operational Excellence"
     },
@@ -4207,7 +4207,7 @@
         "description": "Use tools like the capacity calculator to determine the amount of throughput required for your performance baseline. Use features like autoscale to scale your actual throughput to more closely match your actual workload. Monitor your actual throughput consumption afterwards and make adjustments.",
         "order": 468,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4216,7 +4216,7 @@
         "description": "Take advantage of the built-in integrated cache. Configure the SDK to manage how many items are prefetched (buffered) and returned for each page.",
         "order": 469,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4225,7 +4225,7 @@
         "description": "Reduce latency by deploying Azure Cosmos DB for NoSQL to the regions closest to your end users as much as possible. Take advantage of read replication to provide performant read performance regardless of how you configure write (single or multiple regions). Configure the (.NET/Java) SDK to prefer regions closer to your end user.",
         "order": 470,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4234,7 +4234,7 @@
         "description": "Direct mode is the preferred option for best performance. This mode allows your client to open TCP connections directly to partitions in the service and send requests directly with no intermediary gateway. This mode offers better performance because there are fewer network hops.",
         "order": 471,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4243,7 +4243,7 @@
         "description": "If there are many insert/replace/upsert operations, disable indexing to improve the speed of the operation while using the bulk support of the corresponding SDK. Indexing can be immediately reenabled later.",
         "order": 472,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4252,7 +4252,7 @@
         "description": "Composite indexes can increase the efficiency of operations on multiple fields by orders of magnitude. In many cases, use composite indexes for ORDER BY statements with multiple fields.",
         "order": 473,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4261,7 +4261,7 @@
         "description": "For most common case, use at least 4-cores and 8-GB memory on 64-bite host machines using the SDKs (.NET/Java). Also, enable accelerated networking on host machines.",
         "order": 474,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4270,7 +4270,7 @@
         "description": "Use the client class in most SDKs as a singleton. The client class manages its own lifecycle and is designed to not be disposed. Constantly creating and disposing of instances can result in reduced performance.",
         "order": 475,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4279,7 +4279,7 @@
         "description": "Larger items consumer more throughput for common read and write operations. Queries on larger items that project all fields can also have a significant throughput cost.",
         "order": 476,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4288,7 +4288,7 @@
         "description": "Queries that join child arrays can increase in complexity if multiple arrays are involved and not filtered. For example, a query that joins more than two arrays of at least 10 items each can expand to 1,000+ tuples. Optimize self-join expressions by using subqueries to filter the arrays before joining arrays within the item. For cross-partition queries, optimize your query to include a filter on the partition key to optimize the routing of your query to the least amount of partitions possible.",
         "order": 477,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4297,7 +4297,7 @@
         "description": "If you run frequent aggregations or join queries over large containers, consider enabling the analytical store and doing queries in Azure Synapse Analytics.",
         "order": 478,
         "category": "cosmos-db",
-        "applies_to": "services/data",
+        "applies_to": "services/data/cosmos-db",
         "file_path": "./well-architected/services/data/cosmos-db.md",
         "pillar": "Performance Efficiency"
     },
@@ -4306,7 +4306,7 @@
         "description": "If your primary database fails, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only. Active geo-replication enables you to create readable replicas and manually failover to any replica if there is a datacenter outage or application upgrade. Up to four secondaries are supported in the same or different regions, and the secondaries can also be used for read-only access queries. The failover must be initiated manually by the application or the user. After failover, the new primary has a different connection end point.",
         "order": 479,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4315,7 +4315,7 @@
         "description": "You can use the readable secondary databases to offload read-only query workloads. Because autofailover groups involve multiple databases, these databases must be configured on the primary server. Autofailover groups support replication of all databases in the group to only one secondary server or instance in a different region. Learn more about AutoFailover Groups and DR design.",
         "order": 480,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4324,7 +4324,7 @@
         "description": "By default, the cluster of nodes for the premium availability model is created in the same datacenter. With the introduction of Azure Availability Zones, SQL Database can place different replicas of the Business Critical database to different availability zones in the same region. To eliminate a single point of failure, the control ring is also duplicated across multiple zones as three gateway rings (GW). The routing to a specific gateway ring is controlled by Azure Traffic Manager (ATM). Because the zone redundant configuration in the Premium or Business Critical service tiers doesn't create extra database redundancy, you can enable it at no extra cost. Learn more about Zone-redundant databases.",
         "order": 481,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4333,7 +4333,7 @@
         "description": "Use one of the available solutions to monitor SQL DB to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. Reference Azure SQL Analytics for more information.",
         "order": 482,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4342,7 +4342,7 @@
         "description": "Although Azure SQL Database is resilient when it concerns transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL Database, make sure your code can retry the call. For more information, reference how to implement retry logic.",
         "order": 483,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4351,7 +4351,7 @@
         "description": "If you're not using encryption keys in Azure Key Vault to protect your data, back up your keys.",
         "order": 484,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4360,7 +4360,7 @@
         "description": "Determine whether you have legacy applications that require older TLS or unencrypted connections. After you enforce a version of TLS, it's not possible to revert to the default. Review and configure the minimum TLS version for SQL Database connections via the Azure portal. If not, set the latest TLS version to the minimum.",
         "order": 485,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4369,7 +4369,7 @@
         "description": "Consider designing database tables based on the Ledger to provide auditing, tamper-evidence, and trust of all data changes.",
         "order": 486,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4378,7 +4378,7 @@
         "description": "Consider designing application access based around Always Encrypted to protect sensitive data inside applications by delegating data access to encryption keys.",
         "order": 487,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4387,7 +4387,7 @@
         "description": "Private endpoint connections enforce secure communication by enabling private connectivity to Azure SQL Database. You can use a private endpoint to secure connections and deny public network access by default. Azure Private Link for Azure SQL Database is a type of private endpoint recommended for Azure SQL Database.",
         "order": 488,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4396,7 +4396,7 @@
         "description": "Monitor for vulnerability assessment scan results and recommendations for how to remediate database vulnerabilities.",
         "order": 489,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4405,7 +4405,7 @@
         "description": "Detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases with Advanced Threat Protection for Azure SQL Database. Advanced Threat Protection integrates its alerts with Microsoft Defender for Cloud.",
         "order": 490,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4414,7 +4414,7 @@
         "description": "Track database events with Auditing for Azure SQL Database.",
         "order": 491,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4423,7 +4423,7 @@
         "description": "Consider configuring a user-assigned managed identity (UMI). Managed identities for Azure resources eliminate the need to manage credentials in code.",
         "order": 492,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4432,7 +4432,7 @@
         "description": "Consider disabling SQL-based authentication and allowing only on Azure AD authentication.",
         "order": 493,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4441,7 +4441,7 @@
         "description": "Optimize the queries, tables, and databases using Query Performance Insights and Performance Recommendations to help reduce resource consumption, and arrive at appropriate configuration.",
         "order": 494,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4450,7 +4450,7 @@
         "description": "Evaluate the resource usage for all databases and determine if they've been sized and provisioned correctly. For non-production databases, consider scaling resources down as applicable. The DTUs or vCores for a database can be scaled on demand, for example, when running a load test or user acceptance test.",
         "order": 495,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4459,7 +4459,7 @@
         "description": "For vCore databases in Azure SQL Database, the storage consumed by each type of backup (full, differential, and log) is reported on the database monitoring pane as a separate metric. Backup storage consumption up to the maximum data size for a database is not charged. Excess backup storage consumption will depend on the workload and maximum size of the individual databases. For more information, see Backup storage consumption.",
         "order": 496,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4468,7 +4468,7 @@
         "description": "Consider using Azure SQL Database serverless over the Provisioned Computing Tier. Serverless is a compute tier for single databases that automatically scales compute based on workload demand and bills for the amount of compute used per second. The serverless compute tier also automatically pauses databases during inactive periods when only storage is billed. It automatically resumes databases when activity returns. Azure SQL Database serverless isn't suited for all scenarios. If you have a database with unpredictable or bursty usage patterns interspersed with periods of low or idle usage, serverless is a solution that can help you optimize price-performance.",
         "order": 497,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4477,7 +4477,7 @@
         "description": "You can reduce compute costs associated with Azure SQL Database by using Reservation Discount. Once you've determined the total compute capacity and performance tier for Azure SQL databases in a region, you can use this information to reserve the capacity. The reservation can span one or three years. For more information, reference Save costs for resources with reserved capacity.",
         "order": 498,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4486,7 +4486,7 @@
         "description": "Azure SQL Database elastic pools are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single server and share a set number of resources at a set price. For more information, see Elastic pools for managing and scaling multiple databases.",
         "order": 499,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4495,7 +4495,7 @@
         "description": "If your primary database fails, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only. Active geo-replication enables you to create readable replicas and manually failover to any replica if there is a datacenter outage or application upgrade. Up to four secondaries are supported in the same or different regions, and the secondaries can also be used for read-only access queries. The failover must be initiated manually by the application or the user. After failover, the new primary has a different connection end point.",
         "order": 500,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4504,7 +4504,7 @@
         "description": "You can use the readable secondary databases to offload read-only query workloads. Because autofailover groups involve multiple databases, these databases must be configured on the primary server. Autofailover groups support replication of all databases in the group to only one secondary server or instance in a different region. Learn more about Auto-Failover Groups and DR design.",
         "order": 501,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4513,7 +4513,7 @@
         "description": "By default, the cluster of nodes for the premium availability model is created in the same datacenter. With the introduction of Azure Availability Zones, SQL Database can place different replicas of the Business Critical database to different availability zones in the same region. To eliminate a single point of failure, the control ring is also duplicated across multiple zones as three gateway rings (GW). The routing to a specific gateway ring is controlled by Azure Traffic Manager (ATM). Because the zone redundant configuration in the Premium or Business Critical service tiers doesn't create extra database redundancy, you can enable it at no extra cost. Learn more about Zone-redundant databases.",
         "order": 502,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4522,7 +4522,7 @@
         "description": "Use one of the available solutions to monitor SQL DB to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. Reference Azure SQL Analytics for more information.",
         "order": 503,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4531,7 +4531,7 @@
         "description": "Although Azure SQL Database is resilient when it concerns transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL Database, make sure your code can retry the call. For more information, reference how to implement retry logic and Configurable retry logic in SqlClient introduction.",
         "order": 504,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4540,7 +4540,7 @@
         "description": "If you're not using encryption keys in Azure Key Vault to protect your data, back up your keys.",
         "order": 505,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4549,7 +4549,7 @@
         "description": "Azure SQL Database provides built-in tools to identify the causes of high CPU usage and to optimize workload performance.",
         "order": 506,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4558,7 +4558,7 @@
         "description": "Blocking due to concurrency and terminated sessions due to deadlocks have different causes and outcomes.",
         "order": 507,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4567,7 +4567,7 @@
         "description": "Tune your application and database to improve performance. Review best practices.",
         "order": 508,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4576,7 +4576,7 @@
         "description": "After deployment, use built-in reporting in the Azure portal to regularly review peak and average database utilization and right-size up or down. You can easily scale single databases or elastic pools with no data loss and minimal downtime.",
         "order": 509,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4585,7 +4585,7 @@
         "description": "In the Intelligent Performance menu of the database page in the Azure portal, review and consider action on any of the Performance Recommendations and implement any index, schema, and parameterization issues.",
         "order": 510,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4594,7 +4594,7 @@
         "description": "Review Query Performance Insight for Azure SQL Database reports to identify top resource-consuming queries, long running queries, and more.",
         "order": 511,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4603,7 +4603,7 @@
         "description": "Provide peak performance and stable workloads through continuous performance tuning based on AI and machine learning. Consider using Azure Automation to configure email notifications for automatic tuning.",
         "order": 512,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4612,7 +4612,7 @@
         "description": "In-memory technologies enable you to improve performance of your application, and potentially reduce cost of your database. Consider designing some database objects in high-volume OLTP applications.",
         "order": 513,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4621,7 +4621,7 @@
         "description": "Enabled by default in Azure SQL Database, the Query Store contains a wealth of query performance and resource consumption data, as well as advanced tuning features like Query Store hints and automatic plan correction. Review Query Store defaults in Azure SQL Database.",
         "order": 514,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4630,7 +4630,7 @@
         "description": "Applications should include automatic transaction retry logic for transient errors including common connection errors. Leverage exponential retry interval logic.",
         "order": 515,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
