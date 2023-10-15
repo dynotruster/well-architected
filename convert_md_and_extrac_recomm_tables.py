@@ -11,7 +11,7 @@ from collections import defaultdict
 
 order_counter = 0  # Global order counter
 local_counter = defaultdict(int)
-
+base_url = "https://learn.microsoft.com/en-us/azure"
 root_folder = './well-architected' 
 today = datetime.date.today().strftime('%Y-%m')
 build_dir = os.path.join(root_folder, f'build/{today}')
@@ -270,12 +270,12 @@ def gen_aid(applies_to):
 
     parts = last_part.split('-')
 
-    prefix_parts = [part[:2].upper() for part in parts]
+    prefix_parts = [part[:3].upper() for part in parts]
 
     # Joining the extracted letters with a '-'
     prefix = '-'.join(prefix_parts)
     if '-' not in prefix:
-        prefix = 'AZ-' + prefix
+        prefix = 'AZU-' + prefix
     elif prefix.count('-') == 2 :
         prefix_parts = prefix.split('-')[1:3]  # Keep only the two segments following the first dash
         prefix = '-'.join(prefix_parts)
@@ -295,6 +295,7 @@ def produce_final_items(items):
     processed_items = []
     while items:
         current_item = items.pop(0)
+        links = ", ".join([f'{base_url}{path[1:-3]}' for path in  current_item["file_paths"]])
         final_item = {
             "aid": gen_aid(current_item["applies_to"][0]),
             "title": current_item["title"],
@@ -303,6 +304,7 @@ def produce_final_items(items):
             "applies_to": ", ".join(current_item["applies_to"]),
             "pillars": ", ".join(current_item["pillars"]),
             "type" : "Azure-Well-Arch-Oct-2023",
+            "links" : links,
             "comments": "",
             "azureMatchedRuels":"",
         }
