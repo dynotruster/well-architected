@@ -251,6 +251,7 @@ def produce_final_items(items):
     while items:
         current_item = items.pop(0)
         final_item = {
+            "aid": f'AZWAF-{current_item["order"]:03d}',
             "title": current_item["title"],
             "description": current_item["description"],
             "order": current_item["order"],
