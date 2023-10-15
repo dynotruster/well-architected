@@ -94,8 +94,21 @@ def get_pillar(file_path_part, previous_hader):
         
 def get_applies_to(file_path):
     applies_to = '/'.join(file_path.split('/')[2:-1])  # Exclude root and file name
-    return applies_to
-
+    category = file_path.split('/')[-1].split('.')[0].replace('-well-architected-framework', '')
+    pillar_categories = [
+        'cost-optimization',
+        'operational-excellence',
+        'reliability',
+        'performance-efficiency',
+        'security'
+    ]
+    if category not in pillar_categories:
+        logger.info(f'Extend applies to with category{applies_to + category}')
+        return applies_to + "/" + category
+    else:
+        return applies_to
+    
+    
 def get_category(file_path):
     category = file_path.split('/')[-1].split('.')[0]
     return category
