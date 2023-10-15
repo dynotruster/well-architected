@@ -7,8 +7,11 @@ import json
 import logging
 import colorlog
 from collections import OrderedDict
+from collections import defaultdict
 
 order_counter = 0  # Global order counter
+local_counter = defaultdict(int)
+
 root_folder = './well-architected' 
 today = datetime.date.today().strftime('%Y-%m')
 build_dir = os.path.join(root_folder, f'build/{today}')
@@ -246,12 +249,46 @@ def merge_similar_items(items):
     
     return processed_items
 
+
+
+generated_aids = set()
+
+def gen_aid(applies_to):
+    # Extracting the last part of the path
+    last_part = applies_to.split('/')[-1]
+
+    # Splitting the last part by '-'
+    parts = last_part.split('-')
+
+    # Check for the conditions: more than two dashes and begins with "azure-"
+    if last_part.count('-') > 2 and last_part.startswith('azure-'):
+        # Remove "azure-" from the beginning
+        last_part = last_part.replace('azure-', '', 1)
+        # Remove "-instance" from the end if present
+        last_part = last_part[:-9] if last_part.endswith('-instance') else last_part
+
+    # Taking the first two letters from each part
+    prefix_parts = [part[:2].upper() for part in parts]
+
+    # Joining the extracted letters with a '-'
+    prefix = '-'.join(prefix_parts)
+
+    local_counter[last_part] += 1
+
+    # Creating the AID
+    aid = f'{prefix}-{"{:02d}".format(local_counter[last_part])}'
+    if aid in generated_aids:
+        raise ValueError(f'Duplicate AID generated: {aid}')
+    
+    generated_aids.add(aid)
+    return aid
+
 def produce_final_items(items):
     processed_items = []
     while items:
         current_item = items.pop(0)
         final_item = {
-            "aid": f'AZWAF-{current_item["order"]:03d}',
+            "aid": gen_aid(current_item["applies_to"][0]),
             "title": current_item["title"],
             "description": current_item["description"],
             "order": current_item["order"],
