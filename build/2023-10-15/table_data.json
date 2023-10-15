@@ -2299,7 +2299,7 @@
         "description": "This level ensures the resource provider maintains cluster reliability. Standard cluster: A Standard SKU managed cluster provides the equivalent of durability level Silver. To achieve this using the standard cluster model, you will need to use 5 VMs (or more).",
         "order": 256,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2308,7 +2308,7 @@
         "description": "Service Fabric managed cluster supports deployments that span across multiple Availability Zones to provide zone resiliency. This configuration will ensure high-availability of the critical system services and your applications to protect from single-points-of-failure.",
         "order": 257,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2317,7 +2317,7 @@
         "description": "API Management can integrate with Service Fabric directly.",
         "order": 258,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2326,7 +2326,7 @@
         "description": "The Reliable Services model allows your services to stay up even in unreliable environments where your machines fail or hit network issues, or in cases where the services themselves encounter errors and crash or fail. For stateful services, your state is preserved even in the presence of network or other failures.",
         "order": 259,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -2335,7 +2335,7 @@
         "description": "For example, you may have an API Management instance (one subnet), a frontend subnet (exposing a website directly), and a backend subnet (accessible only to frontend).",
         "order": 260,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2344,7 +2344,7 @@
         "description": "Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked.",
         "order": 261,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2353,7 +2353,7 @@
         "description": "Using an ACL provides an additional level of authentication.",
         "order": 262,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2362,7 +2362,7 @@
         "description": "Enforcing resource limits helps ensure that one service doesn't consume too many resources and starve other services.",
         "order": 263,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2371,7 +2371,7 @@
         "description": "Encryption on your secret values provides an additional level of security.",
         "order": 264,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2380,7 +2380,7 @@
         "description": "Having your applications use client certificates for authentication provides opportunities for security at both the cluster and workload level.",
         "order": 265,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2389,7 +2389,7 @@
         "description": "Using Managed Identity allow you to securely manage the credentials in your code for authenticating to various services without saving them locally on a developer workstation or in source control.",
         "order": 266,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2398,7 +2398,7 @@
         "description": "Following the best practices provides a security standard to follow.",
         "order": 267,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -2407,7 +2407,7 @@
         "description": "Service Fabric uses managed disks by default, so avoiding temp disk offerings ensures you don't pay for unneeded resources.",
         "order": 268,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -2416,7 +2416,7 @@
         "description": "Make the most of the resources you're paying for. Using a temporary disk instead of a managed disk can reduce costs for stateless workloads.",
         "order": 269,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -2425,7 +2425,7 @@
         "description": "Matching your selection to your workload demands ensures you don't pay for unneeded resources.",
         "order": 270,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -2434,7 +2434,7 @@
         "description": "Application Insights integrates with the Azure platform, including Service Fabric.",
         "order": 271,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2443,7 +2443,7 @@
         "description": "For example, Key Vault offers a feature that sends an email when x% of the certificate's lifespan has elapsed.",
         "order": 272,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2452,7 +2452,7 @@
         "description": "Practicing service disruption scenarios will help you understand what is at-risk in your infrastructure and how to best mitigate the issues if they arise.",
         "order": 273,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2461,7 +2461,7 @@
         "description": "Azure Monitor integrates well with the Azure platform, including Service Fabric.",
         "order": 274,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2470,7 +2470,7 @@
         "description": "Azure Pipelines integrates well with the Azure platform, including Service Fabric.",
         "order": 275,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -2479,7 +2479,7 @@
         "description": "By default, Windows Defender antivirus is installed on Windows Server 2016 and 2019. To reduce any performance impact and resource consumption overhead incurred by Windows Defender, and if your security policies allow you to exclude processes and paths for open-source software, you can exclude.",
         "order": 276,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2488,7 +2488,7 @@
         "description": "Autoscaling gives great elasticity and enables addition or reduction of nodes on demand on a secondary node type. This automated and elastic behavior reduces the management overhead and potential business impact by monitoring and optimizing the amount of nodes servicing your workload.",
         "order": 277,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2497,7 +2497,7 @@
         "description": "Accelerated networking enables a high-performance path that bypasses the host from the data path, which reduces latency, jitter, and CPU utilization for the most demanding network workloads.",
         "order": 278,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2506,7 +2506,7 @@
         "description": "This encryption method improves on ADE by supporting all OS types and images, including custom images, for your VMs by encrypting data in the Azure Storage service.",
         "order": 279,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2515,7 +2515,7 @@
         "description": "Service Fabric supports several programming models. Each come with their own advantages and disadvantages. Knowing about the available programming models can help you make the best choices for designing your services.",
         "order": 280,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2524,7 +2524,7 @@
         "description": "Using microservices allows you to get the most out of Service Fabric's features.",
         "order": 281,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2533,7 +2533,7 @@
         "description": "Using event-driven architecture allows you to get the most out of Service Fabric's features.",
         "order": 282,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2542,7 +2542,7 @@
         "description": "Using background processing allows you to get the most out of Service Fabric's features.",
         "order": 283,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -2551,7 +2551,7 @@
         "description": "You can use scaling to enable maximum resource utilization for your solution.",
         "order": 284,
         "category": "azure-service-fabric-well-architected-framework",
-        "applies_to": "services/compute/azure-service-fabric-well-architected-framework",
+        "applies_to": "services/compute/azure-service-fabric",
         "file_path": "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4306,7 +4306,7 @@
         "description": "If your primary database fails, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only. Active geo-replication enables you to create readable replicas and manually failover to any replica if there is a datacenter outage or application upgrade. Up to four secondaries are supported in the same or different regions, and the secondaries can also be used for read-only access queries. The failover must be initiated manually by the application or the user. After failover, the new primary has a different connection end point.",
         "order": 479,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4315,7 +4315,7 @@
         "description": "You can use the readable secondary databases to offload read-only query workloads. Because autofailover groups involve multiple databases, these databases must be configured on the primary server. Autofailover groups support replication of all databases in the group to only one secondary server or instance in a different region. Learn more about AutoFailover Groups and DR design.",
         "order": 480,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4324,7 +4324,7 @@
         "description": "By default, the cluster of nodes for the premium availability model is created in the same datacenter. With the introduction of Azure Availability Zones, SQL Database can place different replicas of the Business Critical database to different availability zones in the same region. To eliminate a single point of failure, the control ring is also duplicated across multiple zones as three gateway rings (GW). The routing to a specific gateway ring is controlled by Azure Traffic Manager (ATM). Because the zone redundant configuration in the Premium or Business Critical service tiers doesn't create extra database redundancy, you can enable it at no extra cost. Learn more about Zone-redundant databases.",
         "order": 481,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4333,7 +4333,7 @@
         "description": "Use one of the available solutions to monitor SQL DB to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. Reference Azure SQL Analytics for more information.",
         "order": 482,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4342,7 +4342,7 @@
         "description": "Although Azure SQL Database is resilient when it concerns transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL Database, make sure your code can retry the call. For more information, reference how to implement retry logic.",
         "order": 483,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4351,7 +4351,7 @@
         "description": "If you're not using encryption keys in Azure Key Vault to protect your data, back up your keys.",
         "order": 484,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4360,7 +4360,7 @@
         "description": "Determine whether you have legacy applications that require older TLS or unencrypted connections. After you enforce a version of TLS, it's not possible to revert to the default. Review and configure the minimum TLS version for SQL Database connections via the Azure portal. If not, set the latest TLS version to the minimum.",
         "order": 485,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4369,7 +4369,7 @@
         "description": "Consider designing database tables based on the Ledger to provide auditing, tamper-evidence, and trust of all data changes.",
         "order": 486,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4378,7 +4378,7 @@
         "description": "Consider designing application access based around Always Encrypted to protect sensitive data inside applications by delegating data access to encryption keys.",
         "order": 487,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4387,7 +4387,7 @@
         "description": "Private endpoint connections enforce secure communication by enabling private connectivity to Azure SQL Database. You can use a private endpoint to secure connections and deny public network access by default. Azure Private Link for Azure SQL Database is a type of private endpoint recommended for Azure SQL Database.",
         "order": 488,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4396,7 +4396,7 @@
         "description": "Monitor for vulnerability assessment scan results and recommendations for how to remediate database vulnerabilities.",
         "order": 489,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4405,7 +4405,7 @@
         "description": "Detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases with Advanced Threat Protection for Azure SQL Database. Advanced Threat Protection integrates its alerts with Microsoft Defender for Cloud.",
         "order": 490,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4414,7 +4414,7 @@
         "description": "Track database events with Auditing for Azure SQL Database.",
         "order": 491,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4423,7 +4423,7 @@
         "description": "Consider configuring a user-assigned managed identity (UMI). Managed identities for Azure resources eliminate the need to manage credentials in code.",
         "order": 492,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4432,7 +4432,7 @@
         "description": "Consider disabling SQL-based authentication and allowing only on Azure AD authentication.",
         "order": 493,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4441,7 +4441,7 @@
         "description": "Optimize the queries, tables, and databases using Query Performance Insights and Performance Recommendations to help reduce resource consumption, and arrive at appropriate configuration.",
         "order": 494,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4450,7 +4450,7 @@
         "description": "Evaluate the resource usage for all databases and determine if they've been sized and provisioned correctly. For non-production databases, consider scaling resources down as applicable. The DTUs or vCores for a database can be scaled on demand, for example, when running a load test or user acceptance test.",
         "order": 495,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4459,7 +4459,7 @@
         "description": "For vCore databases in Azure SQL Database, the storage consumed by each type of backup (full, differential, and log) is reported on the database monitoring pane as a separate metric. Backup storage consumption up to the maximum data size for a database is not charged. Excess backup storage consumption will depend on the workload and maximum size of the individual databases. For more information, see Backup storage consumption.",
         "order": 496,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4468,7 +4468,7 @@
         "description": "Consider using Azure SQL Database serverless over the Provisioned Computing Tier. Serverless is a compute tier for single databases that automatically scales compute based on workload demand and bills for the amount of compute used per second. The serverless compute tier also automatically pauses databases during inactive periods when only storage is billed. It automatically resumes databases when activity returns. Azure SQL Database serverless isn't suited for all scenarios. If you have a database with unpredictable or bursty usage patterns interspersed with periods of low or idle usage, serverless is a solution that can help you optimize price-performance.",
         "order": 497,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4477,7 +4477,7 @@
         "description": "You can reduce compute costs associated with Azure SQL Database by using Reservation Discount. Once you've determined the total compute capacity and performance tier for Azure SQL databases in a region, you can use this information to reserve the capacity. The reservation can span one or three years. For more information, reference Save costs for resources with reserved capacity.",
         "order": 498,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4486,7 +4486,7 @@
         "description": "Azure SQL Database elastic pools are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single server and share a set number of resources at a set price. For more information, see Elastic pools for managing and scaling multiple databases.",
         "order": 499,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4495,7 +4495,7 @@
         "description": "If your primary database fails, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only. Active geo-replication enables you to create readable replicas and manually failover to any replica if there is a datacenter outage or application upgrade. Up to four secondaries are supported in the same or different regions, and the secondaries can also be used for read-only access queries. The failover must be initiated manually by the application or the user. After failover, the new primary has a different connection end point.",
         "order": 500,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4504,7 +4504,7 @@
         "description": "You can use the readable secondary databases to offload read-only query workloads. Because autofailover groups involve multiple databases, these databases must be configured on the primary server. Autofailover groups support replication of all databases in the group to only one secondary server or instance in a different region. Learn more about Auto-Failover Groups and DR design.",
         "order": 501,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4513,7 +4513,7 @@
         "description": "By default, the cluster of nodes for the premium availability model is created in the same datacenter. With the introduction of Azure Availability Zones, SQL Database can place different replicas of the Business Critical database to different availability zones in the same region. To eliminate a single point of failure, the control ring is also duplicated across multiple zones as three gateway rings (GW). The routing to a specific gateway ring is controlled by Azure Traffic Manager (ATM). Because the zone redundant configuration in the Premium or Business Critical service tiers doesn't create extra database redundancy, you can enable it at no extra cost. Learn more about Zone-redundant databases.",
         "order": 502,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4522,7 +4522,7 @@
         "description": "Use one of the available solutions to monitor SQL DB to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. Reference Azure SQL Analytics for more information.",
         "order": 503,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4531,7 +4531,7 @@
         "description": "Although Azure SQL Database is resilient when it concerns transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL Database, make sure your code can retry the call. For more information, reference how to implement retry logic and Configurable retry logic in SqlClient introduction.",
         "order": 504,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4540,7 +4540,7 @@
         "description": "If you're not using encryption keys in Azure Key Vault to protect your data, back up your keys.",
         "order": 505,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4549,7 +4549,7 @@
         "description": "Azure SQL Database provides built-in tools to identify the causes of high CPU usage and to optimize workload performance.",
         "order": 506,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4558,7 +4558,7 @@
         "description": "Blocking due to concurrency and terminated sessions due to deadlocks have different causes and outcomes.",
         "order": 507,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4567,7 +4567,7 @@
         "description": "Tune your application and database to improve performance. Review best practices.",
         "order": 508,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4576,7 +4576,7 @@
         "description": "After deployment, use built-in reporting in the Azure portal to regularly review peak and average database utilization and right-size up or down. You can easily scale single databases or elastic pools with no data loss and minimal downtime.",
         "order": 509,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4585,7 +4585,7 @@
         "description": "In the Intelligent Performance menu of the database page in the Azure portal, review and consider action on any of the Performance Recommendations and implement any index, schema, and parameterization issues.",
         "order": 510,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4594,7 +4594,7 @@
         "description": "Review Query Performance Insight for Azure SQL Database reports to identify top resource-consuming queries, long running queries, and more.",
         "order": 511,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4603,7 +4603,7 @@
         "description": "Provide peak performance and stable workloads through continuous performance tuning based on AI and machine learning. Consider using Azure Automation to configure email notifications for automatic tuning.",
         "order": 512,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4612,7 +4612,7 @@
         "description": "In-memory technologies enable you to improve performance of your application, and potentially reduce cost of your database. Consider designing some database objects in high-volume OLTP applications.",
         "order": 513,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4621,7 +4621,7 @@
         "description": "Enabled by default in Azure SQL Database, the Query Store contains a wealth of query performance and resource consumption data, as well as advanced tuning features like Query Store hints and automatic plan correction. Review Query Store defaults in Azure SQL Database.",
         "order": 514,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4630,7 +4630,7 @@
         "description": "Applications should include automatic transaction retry logic for transient errors including common connection errors. Leverage exponential retry interval logic.",
         "order": 515,
         "category": "azure-sql-database-well-architected-framework",
-        "applies_to": "services/data/azure-sql-database-well-architected-framework",
+        "applies_to": "services/data/azure-sql-database",
         "file_path": "./well-architected/services/data/azure-sql-database-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4702,7 +4702,7 @@
         "description": "Derive these values by conducting a risk assessment and ensuring you understand the cost and risk of downtime and data loss. These are nonfunctional requirements of a system and should be dictated by business requirements.",
         "order": 523,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4711,7 +4711,7 @@
         "description": "Azure Database for PostgreSQL Server offers high availability configurations, ensuring that the service remains available if there's a zone outage and no data is lost. When high availability is configured, the Azure Database for PostgreSQL server automatically provisions and manages a standby replica.",
         "order": 524,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4720,7 +4720,7 @@
         "description": "Cross-region read replicas can be deployed to protect your databases from region-level failures. Geo Redundant backups are enabled in selected regions and help with disaster recovery if the primary server region is down.",
         "order": 525,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4729,7 +4729,7 @@
         "description": "Read replicas can be deployed on a different region and promoted to a read-write server if disaster recovery is needed.",
         "order": 526,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4738,7 +4738,7 @@
         "description": "We have database monitoring in place to monitor and alert on database-level failures.",
         "order": 527,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Reliability"
     },
@@ -4747,7 +4747,7 @@
         "description": "Deploy the DigiCert Global Root certificate from a trusted Certificate Authority (CA) certificate needed to communicate over SSL with client applications.",
         "order": 528,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4756,7 +4756,7 @@
         "description": "As part of the Zero Trust Model for security, network segmentation is recommended where communication paths between components (in this case, application and database server) are restricted to only what's needed. This can be implemented using Network Security Group and Application Security Groups.",
         "order": 529,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4765,7 +4765,7 @@
         "description": "Microsoft Azure Active Directory (Azure AD) authentication is a mechanism of connecting to Azure Database for PostgreSQL using identities defined in Azure AD.",
         "order": 530,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4774,7 +4774,7 @@
         "description": "Row level security (RLS) is a PostgreSQL security feature that allows database administrators to define policies to control how specific rows of data display and operate for one or more roles. Row-level security is an additional filter you can apply to a PostgreSQL database table.",
         "order": 531,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Security"
     },
@@ -4783,7 +4783,7 @@
         "description": "Pick the pricing tier and compute SKUs that support the specific needs of your workload. Azure Advisor gives you recommendations to optimize and reduce your overall Azure spending. Recommendations include server right-sizing that you should follow.",
         "order": 532,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4792,7 +4792,7 @@
         "description": "High availability makes a standby server always available within the same zone or region. Enabling high availability doubles your cost.",
         "order": 533,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4801,7 +4801,7 @@
         "description": "You should manually adjust the compute and storage tiers to meet the application's requirements over time.",
         "order": 534,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4810,7 +4810,7 @@
         "description": "The Flexible server has a Start/Stop feature that you can use to stop the server from running when you don't need it.",
         "order": 535,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4819,7 +4819,7 @@
         "description": "Consider a one or three-year reservation to receive significant discounts on computing. Use these reservations for workloads with consistent compute usage for a year or more.",
         "order": 536,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4828,7 +4828,7 @@
         "description": "There's no extra charge for backup storage up to 100% of your total provisioned server storage.",
         "order": 537,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4837,7 +4837,7 @@
         "description": "Geo-redundant storage (GRS) costs twice as much as local redundant storage (LRS). GRS requires double the storage capacity of LRS.",
         "order": 538,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4846,7 +4846,7 @@
         "description": "You should evaluate your current and future storage needs before scaling up your storage. After you scale up storage, you can't scale down.",
         "order": 539,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4855,7 +4855,7 @@
         "description": "Deploy to the same region as the application(s) to minimize transfer costs. When you use virtual network integration, applications in a different virtual network don't have direct access to flexible servers. To grant them access, you need to configure virtual network peering. Virtual network peering has nominal inbound and outbound data transfer costs.",
         "order": 540,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4864,7 +4864,7 @@
         "description": "It's a trade-off of HA and costs. HA is double the cost for non-HA configuration, but it's needed.",
         "order": 541,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4873,7 +4873,7 @@
         "description": "You can consolidate multiple databases and servers into a single server to reduce costs.",
         "order": 542,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Cost Optimization"
     },
@@ -4882,7 +4882,7 @@
         "description": "Azure Database for PostgreSQL provides automated backups and point-in-time restore for your database. You can configure the retention period for backups up to 35 days.",
         "order": 543,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4891,7 +4891,7 @@
         "description": "Azure Database for PostgreSQL provides automated patching and updates for your database. You can configure the maintenance window for your server to minimize the impact on your workload.",
         "order": 544,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4900,7 +4900,7 @@
         "description": "Azure Database for PostgreSQL provides built-in monitoring and alerting capabilities. You can monitor the health and performance of your database using Azure Monitor. You can also set up alerts for critical metrics to get notified when your database isn't performing as expected.",
         "order": 545,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Operational Excellence"
     },
@@ -4909,7 +4909,7 @@
         "description": "You should design your schema and queries for efficiency to minimize resource consumption.",
         "order": 546,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },
@@ -4918,7 +4918,7 @@
         "description": "You can use read replicas to offload read traffic and enhance performance.",
         "order": 547,
         "category": "azure-db-postgresql-well-architected-framework",
-        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework",
+        "applies_to": "services/data/azure-db-postgresql/azure-db-postgresql",
         "file_path": "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md",
         "pillar": "Performance Efficiency"
     },

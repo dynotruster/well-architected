@@ -3628,7 +3628,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3645,7 +3645,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3662,7 +3662,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3679,7 +3679,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3696,7 +3696,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3713,7 +3713,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3730,7 +3730,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3747,7 +3747,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3764,7 +3764,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3781,7 +3781,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3798,7 +3798,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3815,7 +3815,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3832,7 +3832,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3849,7 +3849,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3867,7 +3867,7 @@
             "azure-kubernetes-service"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework",
+            "services/compute/azure-service-fabric",
             "services/compute/azure-kubernetes-service/azure-kubernetes-service"
         ],
         "file_paths": [
@@ -3886,7 +3886,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3903,7 +3903,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3920,7 +3920,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3937,7 +3937,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3954,7 +3954,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3971,7 +3971,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -3988,7 +3988,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4005,7 +4005,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4022,7 +4022,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4039,7 +4039,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4056,7 +4056,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4073,7 +4073,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4090,7 +4090,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -4107,7 +4107,7 @@
             "azure-service-fabric-well-architected-framework"
         ],
         "applies_to": [
-            "services/compute/azure-service-fabric-well-architected-framework"
+            "services/compute/azure-service-fabric"
         ],
         "file_paths": [
             "./well-architected/services/compute/azure-service-fabric-well-architected-framework.md"
@@ -7147,7 +7147,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7165,7 +7165,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7182,7 +7182,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7200,7 +7200,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7218,7 +7218,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7235,7 +7235,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7253,7 +7253,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7270,7 +7270,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7287,7 +7287,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7304,7 +7304,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7321,7 +7321,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7338,7 +7338,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7355,7 +7355,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7372,7 +7372,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7389,7 +7389,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7406,7 +7406,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7423,7 +7423,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7440,7 +7440,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7457,7 +7457,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7474,7 +7474,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7491,7 +7491,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7508,7 +7508,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7525,7 +7525,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7542,7 +7542,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7559,7 +7559,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7576,7 +7576,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7593,7 +7593,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7610,7 +7610,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7627,7 +7627,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7644,7 +7644,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7661,7 +7661,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7678,7 +7678,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7695,7 +7695,7 @@
             "azure-sql-database-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-sql-database-well-architected-framework"
+            "services/data/azure-sql-database"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-sql-database-well-architected-framework.md"
@@ -7831,7 +7831,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7848,7 +7848,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7865,7 +7865,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7882,7 +7882,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7899,7 +7899,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7916,7 +7916,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7933,7 +7933,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7950,7 +7950,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7967,7 +7967,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -7984,7 +7984,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8001,7 +8001,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8018,7 +8018,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8035,7 +8035,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8052,7 +8052,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8069,7 +8069,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8086,7 +8086,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8103,7 +8103,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8120,7 +8120,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8137,7 +8137,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8154,7 +8154,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8171,7 +8171,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8188,7 +8188,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8205,7 +8205,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8222,7 +8222,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
@@ -8239,7 +8239,7 @@
             "azure-db-postgresql-well-architected-framework"
         ],
         "applies_to": [
-            "services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework"
+            "services/data/azure-db-postgresql/azure-db-postgresql"
         ],
         "file_paths": [
             "./well-architected/services/data/azure-db-postgresql/azure-db-postgresql-well-architected-framework.md"
