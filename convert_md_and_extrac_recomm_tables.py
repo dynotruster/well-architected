@@ -258,25 +258,33 @@ def gen_aid(applies_to):
     last_part = applies_to.split('/')[-1]
 
     # Splitting the last part by '-'
-    parts = last_part.split('-')
 
     # Check for the conditions: more than two dashes and begins with "azure-"
-    if last_part.count('-') > 2 and last_part.startswith('azure-'):
+    if last_part.count('-') >= 2 and last_part.startswith('azure-'):
         # Remove "azure-" from the beginning
         last_part = last_part.replace('azure-', '', 1)
         # Remove "-instance" from the end if present
         last_part = last_part[:-9] if last_part.endswith('-instance') else last_part
 
     # Taking the first two letters from each part
+
+    parts = last_part.split('-')
+
     prefix_parts = [part[:2].upper() for part in parts]
 
     # Joining the extracted letters with a '-'
     prefix = '-'.join(prefix_parts)
+    if '-' not in prefix:
+        prefix = 'AZ-' + prefix
+    elif prefix.count('-') == 2 :
+        prefix_parts = prefix.split('-')[1:3]  # Keep only the two segments following the first dash
+        prefix = '-'.join(prefix_parts)
 
     local_counter[last_part] += 1
 
     # Creating the AID
     aid = f'{prefix}-{"{:02d}".format(local_counter[last_part])}'
+
     if aid in generated_aids:
         raise ValueError(f'Duplicate AID generated: {aid}')
     

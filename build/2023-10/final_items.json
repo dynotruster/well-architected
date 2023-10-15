@@ -1144,7 +1144,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-01",
+        "aid": "AP-GA-01",
         "title": "Plan for rule updates",
         "description": "Plan enough time for updates before accessing Application Gateway or making further changes. For example, removing servers from backend pool might take some time because they have to drain existing connections.",
         "order": 105,
@@ -1155,7 +1155,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-02",
+        "aid": "AP-GA-02",
         "title": "Use health probes to detect backend unavailability",
         "description": "If Application Gateway is used to load balance incoming traffic over multiple backend instances, we recommend the use of health probes. These will ensure that traffic is not routed to backends that are unable to handle the traffic.",
         "order": 106,
@@ -1166,7 +1166,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-03",
+        "aid": "AP-GA-03",
         "title": "Review the impact of the interval and threshold settings on health probes",
         "description": "The health probe sends requests to the configured endpoint at a set interval. Also, there's a threshold of failed requests that will be tolerated before the backend is marked unhealthy. These numbers present a trade-off.- Setting a higher interval puts a higher load on your service. Each Application Gateway instance sends its own health probes, so 100 instances every 30 seconds means 100 requests per 30 seconds.- Setting a lower interval leaves more time before an outage is detected.- Setting a low unhealthy threshold may mean that short, transient failures may take down a backend. - Setting a high threshold it can take longer to take a backend out of rotation.",
         "order": 107,
@@ -1177,7 +1177,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-04",
+        "aid": "AP-GA-04",
         "title": "Verify downstream dependencies through health endpoints",
         "description": "Suppose each backend has its own dependencies to ensure failures are isolated. For example, an application hosted behind Application Gateway may have multiple backends, each connected to a different database (replica). When such a dependency fails, the application may be working but won't return valid results. For that reason, the health endpoint should ideally validate all dependencies. Keep in mind that if each call to the health endpoint has a direct dependency call, that database would receive 100 queries every 30 seconds instead of 1. To avoid this, the health endpoint should cache the state of the dependencies for a short period of time.",
         "order": 108,
@@ -1188,7 +1188,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-05",
+        "aid": "AP-GA-05",
         "title": "When using Azure Front Door and Application Gateway to protect HTTP/S applications, use WAF policies in Front Door and lock down Application Gateway to receive traffic only from Azure Front Door.",
         "description": "Certain scenarios can force you to implement rules specifically on Application Gateway. For example, if ModSec CRS 2.2.9, CRS 3.0 or CRS 3.1 rules are required, these rules can be only implemented on Application Gateway. Conversely, rate-limiting and geo-filtering are available only on Azure Front Door, not on AppGateway.",
         "order": 109,
@@ -1199,7 +1199,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-06",
+        "aid": "AP-GA-06",
         "title": "Set up a TLS policy for enhanced security",
         "description": "Set up a TLS policy for extra security. Ensure you're using the latest TLS policy version (AppGwSslPolicy20170401S). This enforces TLS 1.2 and stronger ciphers.",
         "order": 110,
@@ -1210,7 +1210,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-07",
+        "aid": "AP-GA-07",
         "title": "Use AppGateway for TLS termination",
         "description": "There are advantages of using Application Gateway for TLS termination:- Performance improves because requests going to different backends to have to re-authenticate to each backend.- Better utilization of backend servers because they don't have to perform TLS processing- Intelligent routing by accessing the request content.- Easier certificate management because the certificate only needs to be installed on Application Gateway.",
         "order": 111,
@@ -1221,7 +1221,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-08",
+        "aid": "AP-GA-08",
         "title": "Use Azure Key Vault to store TLS certificates",
         "description": "Application Gateway is integrated with Key Vault. This provides stronger security, easier separation of roles and responsibilities, support for managed certificates, and an easier certificate renewal and rotation process.",
         "order": 112,
@@ -1232,7 +1232,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-09",
+        "aid": "AP-GA-09",
         "title": "When re-encrypting backend traffic, ensure the backend server certificate contains both the root and intermediate Certificate Authorities (CAs)",
         "description": "A TLS certificate of the backend server must be issued by a well-known CA. If the certificate was not issued by a trusted CA, the Application Gateway checks if the certificate of the issuing CA was issued by a trusted CA, and so on until either a trusted CA is found. Only then a secure connection is established. Otherwise, Application Gateway marks the backend as unhealthy.",
         "order": 113,
@@ -1243,7 +1243,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-10",
+        "aid": "AP-GA-10",
         "title": "Use an appropriate DNS server for backend pool resources",
         "description": "When the backend pool contains a resolvable FQDN, the DNS resolution is based on a private DNS zone or custom DNS server (if configured on the VNet), or it uses the default Azure-provided DNS.",
         "order": 114,
@@ -1254,7 +1254,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-11",
+        "aid": "AP-GA-11",
         "title": "Comply with all NSG restrictions for Application Gateway",
         "description": "NSGs are supported on Application Gateway subnet, but there are some restrictions. For instance, some communication with certain port ranges is prohibited. Make sure you understand the implications of those restrictions. For details, see Network security groups.",
         "order": 115,
@@ -1265,7 +1265,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-12",
+        "aid": "AP-GA-12",
         "title": "Refrain from using UDRs on the Application gateway subnet",
         "description": "Using User Defined Routes (UDR) on the Application Gateway subnet can cause some issues. Health status in the back-end might be unknown. Application Gateway logs and metrics might not get generated. We recommend that you don't use UDRs on the Application Gateway subnet so that you can view the back-end health, logs, and metrics. If your organizations require to use UDR in the Application Gateway subnet, please ensure you review the supported scenarios. For more information, see Supported user-defined routes.",
         "order": 116,
@@ -1276,7 +1276,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-13",
+        "aid": "AP-GA-13",
         "title": "Be aware of Application Gateway capacity changes when enabling WAF",
         "description": "When WAF is enabled, every request must be buffered by the Application Gateway until it fully arrives and check if the request matches with any rule violation in its core rule set and then forward the packet to the backend instances. For large file uploads (30MB+ in size), this can result in a significant latency. Because Application Gateway capacity requirements are different with WAF, we do not recommend enabling WAF on Application Gateway without proper testing and validation.",
         "order": 117,
@@ -1287,7 +1287,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-14",
+        "aid": "AP-GA-14",
         "title": "Familiarize yourself with Application Gateway pricing",
         "description": "For information about Application Gateway pricing, see Understanding Pricing for Azure Application Gateway and Web Application Firewall. You can also leverage the Pricing calculator.Ensure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
         "order": 118,
@@ -1298,7 +1298,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-15",
+        "aid": "AP-GA-15",
         "title": "Review underutilized resources",
         "description": "Identify and delete Application Gateway instances with empty backend pools to avoid unnecessary costs.",
         "order": 119,
@@ -1309,7 +1309,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-16",
+        "aid": "AP-GA-16",
         "title": "Stop Application Gateway instances when not in use",
         "description": "You aren't billed when Application Gateway is in the stopped state. Continuously running Application Gateway instances can incur extraneous costs. Evaluate usage patterns and stop instances when you don't need them. For example, usage after business hours in Dev/Test environments is expected to be low.See these articles for information about how to stop and start instances.- Stop-AzApplicationGateway- Start-AzApplicationGateway",
         "order": 120,
@@ -1320,7 +1320,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-17",
+        "aid": "AP-GA-17",
         "title": "Have a scale-in and scale-out policy",
         "description": "A scale-out policy ensures that there will be enough instances to handle incoming traffic and spikes. Also, have a scale-in policy that makes sure the number of instances are reduced when demand drops. Consider the choice of instance size. The size can significantly impact the cost. Some considerations are described in the Estimate the Application Gateway instance count.For more information, see What is Azure Application Gateway v2?",
         "order": 121,
@@ -1331,7 +1331,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-18",
+        "aid": "AP-GA-18",
         "title": "Review consumption metrics across different parameters",
         "description": "You're billed based on metered instances of Application Gateway based on the metrics tracked by Azure. Evaluate the various metrics and capacity units and determine the cost drivers. For more information, see Azure Cost Management and Billing. The following metrics are key for Application Gateway. This information can be used to validate that the provisioned instance count matches the amount of incoming traffic.- Estimated Billed Capacity Units- Fixed Billable Capacity Units- Current Capacity UnitsFor more information, see Application Gateway metrics.Make sure you account for bandwidth costs. For details, see Traffic across billing zones and regions.",
         "order": 122,
@@ -1342,7 +1342,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-19",
+        "aid": "AP-GA-19",
         "title": "Monitor capacity metrics",
         "description": "Use these metrics as indicators of utilization of the provisioned Application Gateway capacity. We strongly recommend setting up alerts on capacity. For details, see Application Gateway high traffic support.",
         "order": 123,
@@ -1353,7 +1353,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-20",
+        "aid": "AP-GA-20",
         "title": "Troubleshoot using metrics",
         "description": "There are other metrics that can indicate issues either at Application Gateway or the backend. We recommend evaluating the following alerts:- Unhealthy Host Count- Response Status (dimension 4xx and 5xx)- Backend Response Status (dimension 4xx and 5xx)- Backend Last Byte Response Time- Application Gateway Total TimeFor more information, see Metrics for Application Gateway.",
         "order": 124,
@@ -1364,7 +1364,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-21",
+        "aid": "AP-GA-21",
         "title": "Enable diagnostics on Application Gateway and Web Application Firewall (WAF)",
         "description": "Diagnostic logs allow you to view firewall logs, performance logs, and access logs. Use these logs to manage and troubleshoot issues with Application Gateway instances. For more information, see Back-end health and diagnostic logs for Application Gateway.",
         "order": 125,
@@ -1375,7 +1375,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-22",
+        "aid": "AP-GA-22",
         "title": "Use Azure Monitor Network Insights",
         "description": "Azure Monitor Network Insights provides a comprehensive view of health and metrics for network resources, including Application Gateway. For additional details and supported capabilities for Application Gateway, see Azure Monitor Network insights.",
         "order": 126,
@@ -1386,7 +1386,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-23",
+        "aid": "AP-GA-23",
         "title": "Match timeout settings with the backend application",
         "description": "Ensure you have configured the IdleTimeout settings to match the listener and traffic characteristics of the backend application. The default value is set to four minutes and can be configured to a maximum of 30. For more information, see Load Balancer TCP Reset and Idle Timeout.For workload considerations, see Monitoring application health for reliability.",
         "order": 127,
@@ -1397,7 +1397,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-24",
+        "aid": "AP-GA-24",
         "title": "Monitor Key Vault configuration issues using Azure Advisor",
         "description": "Application Gateway checks for the renewed certificate version in the linked Key Vault at every 4-hour interval. If it is inaccessible due to any incorrect Key Vault configuration, it logs that error and pushes a corresponding Advisor recommendation. You must configure the Advisor alerts to stay updated and fix such issues immediately to avoid any Control or Data plane related problems. To set an alert for this specific case, use the Recommendation Type as Resolve Azure Key Vault issue for your Application Gateway.",
         "order": 128,
@@ -1408,7 +1408,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-25",
+        "aid": "AP-GA-25",
         "title": "Consider SNAT port limitations in your design",
         "description": "SNAT port limitations are important for backend connections on the Application Gateway. There are separate factors that affect how Application Gateway reaches the SNAT port limit. For example, if the backend is a public IP address, it will require its own SNAT port. In order to avoid SNAT port limitations, you can increase the number of instances per Application Gateway, scale out the backends to have more IP addresses, or move your backends into the same virtual network and use private IP addresses for the backends.Requests per second (RPS) on the Application Gateway will be affected if the SNAT port limit is reached. For example, if an Application Gateway reaches the SNAT port limit, then it won't be able to open a new connection to the backend, and the request will fail.",
         "order": 129,
@@ -1419,7 +1419,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-26",
+        "aid": "AP-GA-26",
         "title": "Estimate the Application Gateway instance count",
         "description": "Application Gateway v2 scales out based on many aspects, such as CPU, network throughput, current connections, and more. To determine the approximate instance count, factor in these metrics:Current compute units — Indicates CPU utilization. 1 Application Gateway instance is approximately 10 compute units.Throughput — Application Gateway instance can serve ~500 Mbps of throughput. This data depends on the type of payload.Consider this equation when calculating instance counts.After you've estimated the instance count, compare that value to the maximum instance count. This will indicate how close you are to the maximum available capacity.",
         "order": 130,
@@ -1430,7 +1430,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-27",
+        "aid": "AP-GA-27",
         "title": "Define the minimum instance count",
         "description": "For Application Gateway v2 SKU, autoscaling takes some time (approximately six to seven minutes) before the additional set of instances is ready to serve traffic. During that time, if there are short spikes in traffic, expect transient latency or loss of traffic.We recommend that you set your minimum instance count to an optimal level. After you estimate the average instance count and determine your Application Gateway autoscaling trends, define the minimum instance count based on your application patterns. For information, see Application Gateway high traffic support.Check the Current Compute Units for the past one month. This metric represents the gateway's CPU utilization. To define the minimum instance count, divide the peak usage by 10. For example, if your average Current Compute Units in the past month is 50, set the minimum instance count to five.",
         "order": 131,
@@ -1441,7 +1441,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-28",
+        "aid": "AP-GA-28",
         "title": "Define the maximum instance count",
         "description": "We recommend 125 as the maximum autoscale instance count. Make sure the subnet that has the Application Gateway has sufficient available IP addresses to support the scale-up set of instances.Setting the maximum instance count to 125 has no cost implications because you're billed only for the consumed capacity.",
         "order": 132,
@@ -1452,7 +1452,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-29",
+        "aid": "AP-GA-29",
         "title": "Define Application Gateway subnet size",
         "description": "Application Gateway needs a dedicated subnet within a virtual network. The subnet can have multiple instances of the deployed Application Gateway resource. You can also deploy other Application Gateway resources in that subnet, v1 or v2 SKU.Here are some considerations for defining the subnet size:- Application Gateway uses one private IP address per instance and another private IP address if a private front-end IP is configured.- Azure reserves five IP addresses in each subnet for internal use.- Application Gateway (Standard or WAF SKU) can support up to 32 instances. Taking 32 instance IP addresses + 1 private front-end IP + 5 Azure reserved, a minimum subnet size of /26 is recommended. Because the Standard_v2 or WAF_v2 SKU can support up to 125 instances, using the same calculation, a subnet size of /24 is recommended.- If you want to deploy additional Application Gateway resources in the same subnet, consider the additional IP addresses that will be required for their maximum instance count for both, Standard and Standard v2.",
         "order": 133,
@@ -1463,7 +1463,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-GA-30",
+        "aid": "AP-GA-30",
         "title": "Take advantage of features for autoscaling and performance benefits",
         "description": "The v2 SKU offers autoscaling to ensure that your Application Gateway can scale up as traffic increases. When compared to v1 SKU, v2 has capabilities that enhance the performance of the workload. For example, better TLS offload performance, quicker deployment and update times, zone redundancy, and more. For more information about autoscaling features, see Scaling Application Gateway v2 and WAF v2.If you are running v1 SKU Application gateway, consider migrating to the Application gateway v2 SKU. For more information, see Migrate Azure Application Gateway and Web Application Firewall from v1 to v2.",
         "order": 134,
@@ -1474,7 +1474,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-LO-BA-01",
+        "aid": "LO-BA-01",
         "title": "For production workloads, use the Standard Stock Keeping Units (SKU).",
         "description": "Basic load balancers don't have a Service Level Agreement (SLA). The Standard SKU supports Availability Zones and multi-region load balancing.",
         "order": 135,
@@ -1485,7 +1485,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-LO-BA-02",
+        "aid": "LO-BA-02",
         "title": "For production workloads, use the Standard Stock Keeping Units (SKU).",
         "description": "Basic load balancers don't have a Service Level Agreement (SLA). The Standard SKU supports Availability Zones.",
         "order": 136,
@@ -1496,7 +1496,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "NE-VI-AP-01",
+        "aid": "VI-AP-01",
         "title": "NVAs should be deployed within a Landing Zone or solution-level Virtual Network.",
         "description": "If third-party NVAs are required for inbound HTTP/S connections, deploy NVAs together with the applications that they're protecting and exposing to the internet.",
         "order": 137,
@@ -1507,7 +1507,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "NE-VI-AP-02",
+        "aid": "VI-AP-02",
         "title": "For Virtual Wide Area Network (VWAN) topologies, deploy the NVAs to a separate Virtual Network (such as, NVA VNet). Connect the NVA to the regional Virtual WAN Hub and to the Landing Zones that require access to NVAs.",
         "description": "If third-party NVAs are required for east-west or south-north traffic protection and filtering, reference Scenario: Route traffic through an NVA.",
         "order": 138,
@@ -1518,7 +1518,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "NE-VI-AP-03",
+        "aid": "VI-AP-03",
         "title": "For non-Virtual Wide Area Network (WAN) topologies, deploy the third-party NVAs in the central Hub Virtual Network (VNet).",
         "description": "If third-party NVAs are required for east-west or south-north traffic protection and filtering, deploy the third-party NVAs in the central Hub Virtual Network.",
         "order": 139,
@@ -1529,7 +1529,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-VI-NE-01",
+        "aid": "VI-NE-01",
         "title": "Don't create Virtual Networks without planning the required address space in advance.",
         "description": "Adding address space will cause an outage once a Virtual Network is connected through Virtual Network peering.",
         "order": 140,
@@ -1540,7 +1540,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-VI-NE-02",
+        "aid": "VI-NE-02",
         "title": "Use VNet Service Endpoints to secure access to Azure Platform as a Service (PaaS) services from within a customer VNet.",
         "description": "Only when Private Link isn't available and when there are no data exfiltration concerns.",
         "order": 141,
@@ -1551,7 +1551,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-VI-NE-03",
+        "aid": "VI-NE-03",
         "title": "Access Azure PaaS services from on-premises through ExpressRoute Private Peering.",
         "description": "Use either VNet injection for dedicated Azure services or Azure Private Link for available shared Azure services.",
         "order": 142,
@@ -1562,7 +1562,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-VI-NE-04",
+        "aid": "VI-NE-04",
         "title": "To access Azure PaaS services from on-premises networks when VNet injection or Private Link aren't available, use ExpressRoute with Microsoft Peering when there are no data exfiltration concerns.",
         "description": "Avoids transit over the public internet.",
         "order": 143,
@@ -1573,7 +1573,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-VI-NE-05",
+        "aid": "VI-NE-05",
         "title": "Don't replicate on-premises perimeter network (also known as DMZ, demilitarized zone, and screened subnet) concepts and architectures into Azure.",
         "description": "Customers can get similar security capabilities in Azure as on-premises, but the implementation and architecture will need to be adapted to the cloud.",
         "order": 144,
@@ -1584,7 +1584,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-VI-NE-06",
+        "aid": "VI-NE-06",
         "title": "Ensure the communication between Azure PaaS services that have been injected into a Virtual Network is locked down within the Virtual Network using user-defined routes (UDRs) and network security groups (NSGs).",
         "description": "Azure PaaS services that have been injected into a Virtual Network still perform management plane operations using public IP addresses.",
         "order": 145,
@@ -1848,7 +1848,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-FR-DO-01",
+        "aid": "FR-DO-01",
         "title": "Use Web Application Firewall (WAF) policies in Front Door. Lock down Application Gateway to receive traffic only from Azure Front Door when using Azure Front Door and Application Gateway to protect HTTP/S applications.",
         "description": "Certain scenarios can force a customer to implement rules specifically on AppGateway: For example, if ModSec Core Rule Set (CRS) 2.2.9, CRS 3.0, or CRS 3.1 rules are required, rules can be only implemented on AppGatway. Rate-limiting and geo-filtering are available only on Azure Front Door, not on AppGateway. Instructions on how to lock down traffic can be found at Frequently asked questions for Azure Front Door",
         "order": 169,
@@ -1859,7 +1859,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-FR-DO-02",
+        "aid": "FR-DO-02",
         "title": "Ensure that the connection to the back-end is re-encrypted.",
         "description": "Front Door doesn't support SSL passthrough. Front Door must hold the certificate to terminate the encrypted inbound connection.",
         "order": 170,
@@ -1870,7 +1870,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-FR-DO-03",
+        "aid": "FR-DO-03",
         "title": "Use WAF policies in Front Door. Lock down Application Gateway to receive traffic only from Azure Front Door when using Azure Front Door and Application Gateway to protect HTTP/S applications.",
         "description": "Certain scenarios can force a customer to implement rules specifically on AppGateway: For example, if ModSec Core Rule Set (CRS) 2.2.9, CRS 3.0, or CRS 3.1 rules are required, rules can be only implemented on AppGatway. Rate-limiting and geo-filtering are available only on Azure Front Door, not on AppGateway. Instructions to lock down traffic on Azure Front Door can be found at Frequently asked questions for Azure Front Door.",
         "order": 171,
@@ -1881,7 +1881,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-FR-DO-04",
+        "aid": "FR-DO-04",
         "title": "Evaluate the four traffic routing methods in Azure Front Door.",
         "description": "The Front Door service supports various traffic-routing methods to determine how to route your HTTP/HTTPS traffic to the various service endpoints. For more information on traffic routing methods, see Front Door routing methods.",
         "order": 172,
@@ -1892,7 +1892,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-FR-DO-05",
+        "aid": "FR-DO-05",
         "title": "Consider using geo-filtering in Azure Front Door.",
         "description": "The Front Door service responds to user requests regardless of the location of the user making the request. To receive traffic from specific countries, use geo-filtering on Web Application Firewall for Azure Front Door. For more information on geo-filtering see Web Application Firewall on Front Door geo-filtering.",
         "order": 173,
@@ -2189,7 +2189,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "DI-01",
+        "aid": "AZ-DI-01",
         "title": "Configure data and log files on different disks for database workloads.",
         "description": "You can optimize IaaS DB workload performance by configuring system, data, and log files to be on different disk SKUs (leveraging Premium Disks for data and Ultra Disks for logs satisfies most production scenarios). Ultra Disk cost and performance can be optimized by taking advantage of configuring capacity, IOPS, and throughput independently. Also, you can dynamically configure these attributes. Example workloads include: - SQL on IaaS  - Cassandra DB  - Maria DB  - MySql and  - Mongo DB on IaaS",
         "order": 200,
@@ -2200,7 +2200,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "DI-02",
+        "aid": "AZ-DI-02",
         "title": "Use bursting for P20 and lower disks for workloads, such as batch jobs, workloads, which handle traffic spikes, and to improve OS boot time.",
         "description": "Azure Disks offer various SKUs and sizes to satisfy different workload requirements. Some of the more recent features could help further optimize cost performance of existing disk use cases. You can use disk bursting for Premium (disks P20 and lower). Example scenarios that could benefit from this feature include:  - Improving OS boot time  - Handling batch jobs  - Handling traffic spikes",
         "order": 201,
@@ -2211,7 +2211,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "DI-03",
+        "aid": "AZ-DI-03",
         "title": "Consider using Premium disks (P30 and greater).",
         "description": "Premium Disks (P30 and greater) can be reserved (one or three years) at a discounted price.",
         "order": 202,
@@ -2222,7 +2222,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "DI-04",
+        "aid": "AZ-DI-04",
         "title": "Optimize with managed disks.",
         "description": "Determine your performance needs in combination with your storage capacity needs, accounting for fluctuating workload patterns. Knowing your needs allows you to determine what disk type and disk size you need. Some higher performance disk types offer extra cost optimization features and strategies.",
         "order": 203,
@@ -2233,7 +2233,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "DI-05",
+        "aid": "AZ-DI-05",
         "title": "Consider Ephemeral OS disks.",
         "description": "Ephemeral OS disks provide top-tier performance at no extra cost, but are non-persistent, have limited capacity, and are restricted to OS and temp disk use only.",
         "order": 204,
@@ -2244,7 +2244,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-01",
+        "aid": "SE-FA-01",
         "title": "Cluster architecture: Use Standard SKU for production scenarios.",
         "description": "This level ensures the resource provider maintains cluster reliability. Standard cluster: A Standard SKU managed cluster provides the equivalent of durability level Silver. To achieve this using the standard cluster model, you will need to use 5 VMs (or more).",
         "order": 205,
@@ -2255,7 +2255,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-02",
+        "aid": "SE-FA-02",
         "title": "Cluster architecture: Consider using Availability Zones for your Service Fabric clusters.",
         "description": "Service Fabric managed cluster supports deployments that span across multiple Availability Zones to provide zone resiliency. This configuration will ensure high-availability of the critical system services and your applications to protect from single-points-of-failure.",
         "order": 206,
@@ -2266,7 +2266,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-03",
+        "aid": "SE-FA-03",
         "title": "Cluster architecture: Consider using Azure API Management to expose and offload cross-cutting functionality for APIs hosted on the cluster.",
         "description": "API Management can integrate with Service Fabric directly.",
         "order": 207,
@@ -2277,7 +2277,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-04",
+        "aid": "SE-FA-04",
         "title": "Workload architecture: For stateful workload scenarios, consider using Reliable Services.",
         "description": "The Reliable Services model allows your services to stay up even in unreliable environments where your machines fail or hit network issues, or in cases where the services themselves encounter errors and crash or fail. For stateful services, your state is preserved even in the presence of network or other failures.",
         "order": 208,
@@ -2288,7 +2288,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-05",
+        "aid": "SE-FA-05",
         "title": "Cluster architecture: Ensure Network Security Groups (NSG) are configured to restrict traffic flow between subnets and node types.",
         "description": "For example, you may have an API Management instance (one subnet), a frontend subnet (exposing a website directly), and a backend subnet (accessible only to frontend).",
         "order": 209,
@@ -2299,7 +2299,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-06",
+        "aid": "SE-FA-06",
         "title": "Cluster architecture: Deploy Key Vault certificates to Service Fabric cluster virtual machine scale sets.",
         "description": "Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked.",
         "order": 210,
@@ -2310,7 +2310,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-07",
+        "aid": "SE-FA-07",
         "title": "Cluster architecture: Apply an Access Control List (ACL) to your client certificate for your Service Fabric cluster.",
         "description": "Using an ACL provides an additional level of authentication.",
         "order": 211,
@@ -2321,7 +2321,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-08",
+        "aid": "SE-FA-08",
         "title": "Cluster architecture: Use resource requests and limits to govern resource usage across the nodes in your cluster.",
         "description": "Enforcing resource limits helps ensure that one service doesn't consume too many resources and starve other services.",
         "order": 212,
@@ -2332,7 +2332,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-09",
+        "aid": "SE-FA-09",
         "title": "Workload architecture: Encrypt Service Fabric package secret values.",
         "description": "Encryption on your secret values provides an additional level of security.",
         "order": 213,
@@ -2343,7 +2343,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-10",
+        "aid": "SE-FA-10",
         "title": "Workload architecture: Include client certificates in Service Fabric applications.",
         "description": "Having your applications use client certificates for authentication provides opportunities for security at both the cluster and workload level.",
         "order": 214,
@@ -2354,7 +2354,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-11",
+        "aid": "SE-FA-11",
         "title": "Workload architecture: Authenticate Service Fabric applications to Azure Resources using Managed Identity.",
         "description": "Using Managed Identity allow you to securely manage the credentials in your code for authenticating to various services without saving them locally on a developer workstation or in source control.",
         "order": 215,
@@ -2365,7 +2365,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-12",
+        "aid": "SE-FA-12",
         "title": "Cluster and workload architectures: Follow Service Fabric best practices when hosting untrusted applications.",
         "description": "Following the best practices provides a security standard to follow.",
         "order": 216,
@@ -2376,7 +2376,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-13",
+        "aid": "SE-FA-13",
         "title": "Cluster architecture: Avoid VM SKUs with temp disk offerings.",
         "description": "Service Fabric uses managed disks by default, so avoiding temp disk offerings ensures you don't pay for unneeded resources.",
         "order": 217,
@@ -2387,7 +2387,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-14",
+        "aid": "SE-FA-14",
         "title": "Cluster architecture: If you need to select a certain VM SKU for capacity reasons and it happens to offer temp disk, consider using temporary disk support for your stateless workloads.",
         "description": "Make the most of the resources you're paying for. Using a temporary disk instead of a managed disk can reduce costs for stateless workloads.",
         "order": 218,
@@ -2398,7 +2398,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-15",
+        "aid": "SE-FA-15",
         "title": "Cluster and workload architectures: Align SKU selection and managed disk size with workload requirements.",
         "description": "Matching your selection to your workload demands ensures you don't pay for unneeded resources.",
         "order": 219,
@@ -2409,7 +2409,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-16",
+        "aid": "SE-FA-16",
         "title": "Workload architecture: Use Application Insights to monitor your workloads.",
         "description": "Application Insights integrates with the Azure platform, including Service Fabric.",
         "order": 220,
@@ -2420,7 +2420,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-17",
+        "aid": "SE-FA-17",
         "title": "Cluster and workload architectures: Create a process for monitoring the expiration date of client certificates.",
         "description": "For example, Key Vault offers a feature that sends an email when x% of the certificate's lifespan has elapsed.",
         "order": 221,
@@ -2431,7 +2431,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-18",
+        "aid": "SE-FA-18",
         "title": "Cluster and workload architectures: For pre-production clusters use Azure Chaos Studio to drill service disruption on a Virtual Machine Scale Set instance failure.",
         "description": "Practicing service disruption scenarios will help you understand what is at-risk in your infrastructure and how to best mitigate the issues if they arise.",
         "order": 222,
@@ -2442,7 +2442,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-19",
+        "aid": "SE-FA-19",
         "title": "Cluster and workload architectures: Use Azure Monitor to monitor cluster and container infrastructure events.",
         "description": "Azure Monitor integrates well with the Azure platform, including Service Fabric.",
         "order": 223,
@@ -2453,7 +2453,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-20",
+        "aid": "SE-FA-20",
         "title": "Cluster and workload architectures: Use Azure Pipelines for your continuous integration and deployment solution.",
         "description": "Azure Pipelines integrates well with the Azure platform, including Service Fabric.",
         "order": 224,
@@ -2464,7 +2464,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-21",
+        "aid": "SE-FA-21",
         "title": "Cluster architecture: Exclude the Service Fabric processes from Windows Defender to improve performance.",
         "description": "By default, Windows Defender antivirus is installed on Windows Server 2016 and 2019. To reduce any performance impact and resource consumption overhead incurred by Windows Defender, and if your security policies allow you to exclude processes and paths for open-source software, you can exclude.",
         "order": 225,
@@ -2475,7 +2475,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-22",
+        "aid": "SE-FA-22",
         "title": "Cluster architecture: Consider using Autoscaling for your cluster.",
         "description": "Autoscaling gives great elasticity and enables addition or reduction of nodes on demand on a secondary node type. This automated and elastic behavior reduces the management overhead and potential business impact by monitoring and optimizing the amount of nodes servicing your workload.",
         "order": 226,
@@ -2486,7 +2486,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-23",
+        "aid": "SE-FA-23",
         "title": "Cluster architecture: Consider using Accelerated Networking.",
         "description": "Accelerated networking enables a high-performance path that bypasses the host from the data path, which reduces latency, jitter, and CPU utilization for the most demanding network workloads.",
         "order": 227,
@@ -2497,7 +2497,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-24",
+        "aid": "SE-FA-24",
         "title": "Cluster architecture: Considering using encryption at host instead of Azure Disk Encryption (ADE).",
         "description": "This encryption method improves on ADE by supporting all OS types and images, including custom images, for your VMs by encrypting data in the Azure Storage service.",
         "order": 228,
@@ -2508,7 +2508,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-25",
+        "aid": "SE-FA-25",
         "title": "Workload architecture: Review the Service Fabric programming models to decide what model would best suit your services.",
         "description": "Service Fabric supports several programming models. Each come with their own advantages and disadvantages. Knowing about the available programming models can help you make the best choices for designing your services.",
         "order": 229,
@@ -2519,7 +2519,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-26",
+        "aid": "SE-FA-26",
         "title": "Workload architecture: Leverage loosely-coupled microservices for your workloads where appropriate.",
         "description": "Using microservices allows you to get the most out of Service Fabric's features.",
         "order": 230,
@@ -2530,7 +2530,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-27",
+        "aid": "SE-FA-27",
         "title": "Workload architecture: Leverage event-driven architecture for your workloads where appropriate.",
         "description": "Using event-driven architecture allows you to get the most out of Service Fabric's features.",
         "order": 231,
@@ -2541,7 +2541,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-28",
+        "aid": "SE-FA-28",
         "title": "Workload architecture: Leverage background processing for your workloads where appropriate.",
         "description": "Using background processing allows you to get the most out of Service Fabric's features.",
         "order": 232,
@@ -2552,7 +2552,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SE-FA-29",
+        "aid": "SE-FA-29",
         "title": "Cluster and workload architectures: Review the different ways you can scale your solution in Service Fabric.",
         "description": "You can use scaling to enable maximum resource utilization for your solution.",
         "order": 233,
@@ -2563,7 +2563,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-01",
+        "aid": "AP-SE-01",
         "title": "Ensure the ASE subnet is appropriately sized.",
         "description": "The size of the subnet used to host an ASE directly affects maximum scale. An ASE with no App Service plans will use 12 to 13 addresses before you create an app. It's recommended that you deploy ASEs into a /24 subnet. The maximum number of nodes in an ASE is 100. During a scale-up event, the new machines are provisioned and placed into the subnet before the applications are migrated to the new machines, and the old machines are removed. The subnet must allow for at least 200 machines to handle the maximum deployment size, which requires a /24 subnet. If you plan for insufficient capacity, scale-out operations will be limited.",
         "order": 234,
@@ -2574,7 +2574,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-02",
+        "aid": "AP-SE-02",
         "title": "Use App Service Premium v3 plan over the Premium v2 plan",
         "description": "The App Service Premium (v3) Plan has a 20% discount versus comparable Pv2 configurations. Reserved Instance commitment (1Y, 3Y, Dev/Test) discounts are available for App Services running in the Premium v3 plan. Consider adding an Azure savings plan for compute and get significant savings on compute services with a one or three year commitment.",
         "order": 235,
@@ -2585,7 +2585,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-03",
+        "aid": "AP-SE-03",
         "title": "Use a scale-out and scale-in rule combination",
         "description": "If you use only one part of the combination, autoscale will only take action in a single direction (scale out, or in) until it reaches the maximum, or minimum instance counts defined in the profile. This scaling behavior isn't optimal, ideally you want your resource to scale up at times of high usage to ensure availability. Similarly, at times of low usage, you want your resource to scale down, so you can realize cost savings.",
         "order": 236,
@@ -2596,7 +2596,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-04",
+        "aid": "AP-SE-04",
         "title": "Understand the behavior of multiple scaling rules in a profile.",
         "description": "There are cases where you may have to set multiple rules in a profile. On scale-out, autoscale runs if any rule is met. On scale-in, autoscale requires all rules to be met.",
         "order": 237,
@@ -2607,7 +2607,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-05",
+        "aid": "AP-SE-05",
         "title": "Consider Basic or Free tier for non-production usage.",
         "description": "For non-prod App Service plans, consider scaling to Basic or Free Tier and scale up, as needed, and scale down when not in use – for example, during a Load Test exercise or based on the capabilities provided (such as custom domain, SSL, and more).",
         "order": 238,
@@ -2618,7 +2618,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-06",
+        "aid": "AP-SE-06",
         "title": "Create a deployment plan because redeploying the app service can reset the scaled units.",
         "description": "Automatic scaling rules apply during operation of the environment, but redeploying the app service may cause the plan to reset to the default number of units. Customers should be aware of this behavior and plan for it during deployments. Deploy only during off-peak times or deploy maximum units with automatic scaling enabled to scale in and out to prevent website performance implications.",
         "order": 239,
@@ -2629,7 +2629,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-07",
+        "aid": "AP-SE-07",
         "title": "Review the App Service Advisor recommendations.",
         "description": "App Service Advisor gives you real-time recommendations in the portal on resource exhaustion and conditions related to CPU, memory, and connections.",
         "order": 240,
@@ -2640,7 +2640,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-08",
+        "aid": "AP-SE-08",
         "title": "Ensure you configure the App Service Environments (ASE) Network correctly.",
         "description": "One common ASE pitfall occurs when ASE is deployed into a subnet with an IP address space that is too small to support future expansion. In such cases, ASE can be left unable to scale without redeploying the entire environment into a larger subnet. We highly recommended that adequate IP addresses be used to support either the maximum number of workers or the largest number considered workloads will need. A single ASE cluster can scale to 201 instance, which would require a /24 subnet.",
         "order": 241,
@@ -2651,7 +2651,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-09",
+        "aid": "AP-SE-09",
         "title": "Configure Upgrade preference if you're using multiple environments.",
         "description": "If lower environments are used for staging or testing, consider configuring these environments to receive updates sooner than the production environment. This will help to identify any conflicts or problems with an update, and provides a window to mitigate issues before they reach the production environment. If multiple load balanced (zonal) production deployments are used, Upgrade preference can be used to protect the broader environment against issues from platform upgrades.",
         "order": 242,
@@ -2662,7 +2662,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-10",
+        "aid": "AP-SE-10",
         "title": "Scale out the ASE cluster.",
         "description": "Scaling ASE instances vertically or horizontally takes 30 to 60 minutes as new private instances need to be provisioned. We highly recommend investing in up-front planning for scaling during spikes in load or transient failure scenarios.",
         "order": 243,
@@ -2673,7 +2673,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-11",
+        "aid": "AP-SE-11",
         "title": "Use Deployment slots for resilient code deployments.",
         "description": "Deployment slots allow for code to be deployed to instances that are warmed-up before serving production traffic. For more information, reference Testing in production with Azure App Service.",
         "order": 244,
@@ -2684,7 +2684,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-12",
+        "aid": "AP-SE-12",
         "title": "Avoid unnecessary worker restarts.",
         "description": "Many events can lead App Service workers to restart, such as content deployment, App Settings changes, and VNet integration configuration changes. A best practice is to make changes in a deployment slot other than the slot currently configured to accept production traffic. After workers are recycled and warmed up, a swap can be performed without unnecessary down time.",
         "order": 245,
@@ -2695,7 +2695,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-13",
+        "aid": "AP-SE-13",
         "title": "Run From Package to avoid deployment conflicts",
         "description": "Run from Package provides several advantages:- Eliminates file lock conflicts between deployment and runtime. - Ensures only fully deployed apps are running at any time.  - May reduce cold-start times, particularly for JavaScript functions with large npm package trees.",
         "order": 246,
@@ -2706,7 +2706,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-14",
+        "aid": "AP-SE-14",
         "title": "Use Basic or higher plans with two or more worker instances for high availability.",
         "description": "Azure App Service provides many configuration options that aren't enabled by default.",
         "order": 247,
@@ -2717,7 +2717,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-15",
+        "aid": "AP-SE-15",
         "title": "Evaluate the use of TCP and SNAT ports.",
         "description": "TCP connections are used for all outbound connections, but SNAT ports are used when making outbound connections to public IP addresses. SNAT port exhaustion is a common failure scenario that can be predicted by load testing while monitoring ports using Azure Diagnostics. For more information, reference TCP and SNAT ports.",
         "order": 248,
@@ -2728,7 +2728,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-16",
+        "aid": "AP-SE-16",
         "title": "Enable Health check to identify non-responsive workers.",
         "description": "Any health check is better than none at all. The logic behind endpoint tests should assess all critical downstream dependencies to ensure overall health. As a best practice, we highly recommend tracking application health and cache status in real time as this removes unnecessary delays before action can be taken.",
         "order": 249,
@@ -2739,7 +2739,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-17",
+        "aid": "AP-SE-17",
         "title": "Enable Autoscale to ensure adequate resources are available to service requests.",
         "description": "The default limit of App Service workers is 30. If the App Service routinely uses 15 or more instances, consider opening a support ticket to increase the maximum number of workers to 2x the instance count required to serve normal peak load.",
         "order": 250,
@@ -2750,7 +2750,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-18",
+        "aid": "AP-SE-18",
         "title": "Enable Local_Cache to reduce dependencies on cluster file servers.",
         "description": "Enabling local cache is always appropriate because it can lead to slower worker startup times. When coupled with Deployment slots, it can improve resiliency by removing dependencies on file servers and also reduces storage-related recycle events. Don't use local cache with a single worker instance or when shared storage is required.",
         "order": 251,
@@ -2761,7 +2761,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-19",
+        "aid": "AP-SE-19",
         "title": "Enable Diagnostic Logging to provide insight into application behavior.",
         "description": "Diagnostic logging provides the ability to ingest rich application and platform-level logs through Log Analytics, Azure Storage, or a third-party tool using Event Hub.",
         "order": 252,
@@ -2772,7 +2772,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-20",
+        "aid": "AP-SE-20",
         "title": "Enable Application Insights alerts to make you aware of fault conditions.",
         "description": "Application performance monitoring with Application Insights provides deep analyses into application performance. For Windows Plans, a codeless deployment approach is possible to quickly get a performance analysis without changing any code.",
         "order": 253,
@@ -2783,7 +2783,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-21",
+        "aid": "AP-SE-21",
         "title": "Review Azure App Service diagnostics to ensure common problems are addressed.",
         "description": "It's a good practice to regularly review service-related diagnostics and recommendations, and take action as appropriate.",
         "order": 254,
@@ -2794,7 +2794,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-22",
+        "aid": "AP-SE-22",
         "title": "Evaluate per-app scaling for high density hosting on Azure App Service.",
         "description": "Per-app scaling can be enabled at the App Service plan level to allow for scaling an app independently from the App Service plan that hosts it. This way, an App Service plan can be scaled to 10 instances, but an app can be set to use only five. Apps are allocated to available App Service plan using a best effort approach for an even distribution across instances. While an even distribution isn't guaranteed, the platform will make sure that two instances of the same app won't be hosted on the same App Service plan instance.",
         "order": 255,
@@ -2805,7 +2805,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-23",
+        "aid": "AP-SE-23",
         "title": "Consider disabling ARR Affinity for your App Service.",
         "description": "ARR Affinity (Application Request Routing) sets an affinity cookie, which is used to redirect users to the same node that handled their previous requests.",
         "order": 256,
@@ -2816,7 +2816,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-24",
+        "aid": "AP-SE-24",
         "title": "Use a different store for session state.",
         "description": "Storing session state in memory can result in losing session state when there's a problem with the application or App Service. It also limits the possibility of spreading the load over other instances.",
         "order": 257,
@@ -2827,7 +2827,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-25",
+        "aid": "AP-SE-25",
         "title": "Enable Always On to ensure Web Jobs run reliably.",
         "description": "A web app can time out after 20 minutes of inactivity. Only requests to the actual web app reset the timer. If your app runs continuously or if you schedule Timer trigger Web Jobs, enable Always On. Only available in the Basic, Standard, and Premium pricing tiers.",
         "order": 258,
@@ -2838,7 +2838,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-26",
+        "aid": "AP-SE-26",
         "title": "Access the on-prem database using private connections like Azure VPN or Express Route.",
         "description": "Access the on-premises database through a private connection so that the connection is secure and predictable.",
         "order": 259,
@@ -2849,7 +2849,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-27",
+        "aid": "AP-SE-27",
         "title": "Set up backup and restore.",
         "description": "Backup and restore lets you manually create or schedule app backups. You can retain backups for an indefinite amount of time.",
         "order": 260,
@@ -2860,7 +2860,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-28",
+        "aid": "AP-SE-28",
         "title": "Understand IP Address deprecation impact.",
         "description": "Floating addresses aren't guaranteed to remain on the resource. It's essential to check for deprecated IP addresses.",
         "order": 261,
@@ -2871,7 +2871,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-29",
+        "aid": "AP-SE-29",
         "title": "Deploy in highly available configuration across Availability Zones.",
         "description": "Ensures applications can continue to operate even if there's a datacenter-level failure. This provides excellent redundancy without requiring multiple deployments in different Azure regions.",
         "order": 262,
@@ -2882,7 +2882,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-30",
+        "aid": "AP-SE-30",
         "title": "Configure ASE Network correctly.",
         "description": "A common ASE pitfall occurs when ASE is deployed into a subnet with an IP address space that is too small to support future expansion. In such cases, ASE can be left unable to scale without redeploying the entire environment into a larger subnet. We highly recommend that adequate IP addresses be used to support either the maximum number of workers or the largest number considered workloads will need. A single ASE cluster can scale to 201 instances, which would require a /24 subnet.",
         "order": 263,
@@ -2893,7 +2893,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-31",
+        "aid": "AP-SE-31",
         "title": "Configure Upgrade preference if multiple environments are used.",
         "description": "If lower environments are used for staging or testing, consider configuring these environments to receive updates sooner than the production environment. This will help to identify any conflicts or problems with an update, and provides a window to mitigate issues before they reach the production environment. If multiple load balanced (zonal) production deployments are used, Upgrade preference can be used to protect the broader environment against issues from platform upgrades.",
         "order": 264,
@@ -2904,7 +2904,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-32",
+        "aid": "AP-SE-32",
         "title": "Evaluate the use of TCP and SNAT ports.",
         "description": "TCP connections are used for all outbound connections; but, SNAT ports are used when making outbound connections to public IP addresses. SNAT port exhaustion is a common failure scenario that can be predicted by load testing while monitoring ports using Azure Diagnostics. For more information, reference TCP and SNAT ports.",
         "order": 265,
@@ -2915,7 +2915,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-AP-SE-33",
+        "aid": "AP-SE-33",
         "title": "Evaluate per-app scaling for high density hosting on Azure App Service.",
         "description": "Per-app scaling can be enabled at the App Service plan level to allow for scaling an app independently from the App Service plan that hosts it. This way, an App Service plan can be scaled to 10 instances, but an app can be set to use only five. Apps are allocated within the available App Service plan using a best effort approach for even distribution across instances. While an even distribution isn't guaranteed, the platform will make sure that two instances of the same app won't be hosted on the same App Service plan instance.",
         "order": 266,
@@ -2981,7 +2981,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-01",
+        "aid": "KU-SE-01",
         "title": "Cluster and workload architectures: Control pod scheduling using node selectors and affinity.",
         "description": "Allows the Kubernetes scheduler to logically isolate workloads by hardware in the node. Unlike tolerations, pods without a matching node selector can be scheduled on labeled nodes, which allows unused resources on the nodes to consume, but gives priority to pods that define the matching node selector. Use node affinity for more flexibility, which allows you to define what happens if the pod can't be matched with a node.",
         "order": 272,
@@ -2992,7 +2992,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-02",
+        "aid": "KU-SE-02",
         "title": "Cluster architecture: Ensure proper selection of network plugin based on network requirements and cluster sizing.",
         "description": "Azure CNI is required for specific scenarios, for example, Windows-based node pools, specific networking requirements and Kubernetes Network Policies. Reference Kubenet versus Azure CNI for more information.",
         "order": 273,
@@ -3003,7 +3003,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-03",
+        "aid": "KU-SE-03",
         "title": "Cluster and workload architectures: Use the AKS Uptime SLA for production grade clusters.",
         "description": "The AKS Uptime SLA guarantees: - 99.95% availability of the Kubernetes API server endpoint for AKS Clusters that use Azure Availability Zones, or  - 99.9% availability for AKS Clusters that don't use Azure Availability Zones.",
         "order": 274,
@@ -3014,7 +3014,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-04",
+        "aid": "KU-SE-04",
         "title": "Cluster and workload architectures: Configure monitoring of cluster with Container insights.",
         "description": "Container insights help monitor the health and performance of controllers, nodes, and containers that are available in Kubernetes through the Metrics API. Integration with Prometheus enables collection of application and workload metrics.",
         "order": 275,
@@ -3025,7 +3025,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-05",
+        "aid": "KU-SE-05",
         "title": "Cluster architecture: Use availability zones to maximize resilience within an Azure region by distributing AKS agent nodes across physically separate data centers.",
         "description": "By spreading node pools across multiple zones, nodes in one node pool will continue running even if another zone has gone down. If colocality requirements exist, either a regular VMSS-based AKS deployment into a single zone or proximity placement groups can be used to minimize internode latency.",
         "order": 276,
@@ -3036,7 +3036,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-06",
+        "aid": "KU-SE-06",
         "title": "Cluster architecture: Adopt a multiregion strategy by deploying AKS clusters deployed across different Azure regions to maximize availability and provide business continuity.",
         "description": "Internet facing workloads should leverage Azure Front Door or Azure Traffic Manager to route traffic globally across AKS clusters.",
         "order": 277,
@@ -3047,7 +3047,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-07",
+        "aid": "KU-SE-07",
         "title": "Cluster and workload architectures: Define Pod resource requests and limits in application deployment manifests, and enforce with Azure Policy.",
         "description": "Container CPU and memory resource limits are necessary to prevent resource exhaustion in your Kubernetes cluster.",
         "order": 278,
@@ -3058,7 +3058,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-08",
+        "aid": "KU-SE-08",
         "title": "Cluster and workload architectures: Keep the System node pool isolated from application workloads.",
         "description": "System node pools require a VM SKU of at least 2 vCPUs and 4 GB memory, but 4 vCPU or more is recommended. Reference System and user node pools for detailed requirements.",
         "order": 279,
@@ -3069,7 +3069,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-09",
+        "aid": "KU-SE-09",
         "title": "Cluster and workload architectures: Separate applications to dedicated node pools based on specific requirements.",
         "description": "Applications may share the same configuration and need GPU-enabled VMs, CPU or memory optimized VMs, or the ability to scale-to-zero. Avoid large number of node pools to reduce extra management overhead.",
         "order": 280,
@@ -3080,7 +3080,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-10",
+        "aid": "KU-SE-10",
         "title": "Cluster architecture: Use a NAT gateway for clusters that run workloads that make many concurrent outbound connections.",
         "description": "To avoid reliability issues with Azure Load Balancer limitations with high concurrent outbound traffic, us a NAT Gateway instead to support reliable egress traffic at scale.",
         "order": 281,
@@ -3091,7 +3091,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-11",
+        "aid": "KU-SE-11",
         "title": "Cluster architecture: Use Azure Active Directory integration.",
         "description": "Using Azure AD centralizes the identity management component. Any change in user account or group status is automatically updated in access to the AKS cluster. The developers and application owners of your Kubernetes cluster need access to different resources.",
         "order": 282,
@@ -3102,7 +3102,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-12",
+        "aid": "KU-SE-12",
         "title": "Cluster architecture: Authenticate with Azure Active Directory (Azure AD) to Azure Container Registry.",
         "description": "AKS and Azure AD enables authentication with Azure Container Registry without the use of imagePullSecrets secrets. Review Authenticate with Azure Container Registry from Azure Kubernetes Service for more information.",
         "order": 283,
@@ -3113,7 +3113,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-13",
+        "aid": "KU-SE-13",
         "title": "Cluster architecture: Secure network traffic to your API server with private AKS cluster.",
         "description": "By default, network traffic between your node pools and the API server travels the Microsoft backbone network; by using a private cluster, you can ensure network traffic to your API server remains on the private network only.",
         "order": 284,
@@ -3124,7 +3124,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-14",
+        "aid": "KU-SE-14",
         "title": "Cluster architecture: For non-private AKS clusters, use API server authorized IP ranges.",
         "description": "When using public clusters, you can still limit the traffic that can reach your clusters API server by using the authorized IP range feature. Include sources like the public IPs of your deployment build agents, operations management, and node pools' egress point (such as Azure Firewall).",
         "order": 285,
@@ -3135,7 +3135,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-15",
+        "aid": "KU-SE-15",
         "title": "Cluster architecture: Protect the API server with Azure Active Directory RBAC.",
         "description": "Securing access to the Kubernetes API Server is one of the most important things you can do to secure your cluster. Integrate Kubernetes role-based access control (RBAC) with Azure AD to control access to the API server. Disable local accounts to enforce all cluster access using Azure AD-based identities.",
         "order": 286,
@@ -3146,7 +3146,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-16",
+        "aid": "KU-SE-16",
         "title": "Cluster architecture: Use Azure network policies or Calico.",
         "description": "Secure and control network traffic between pods in a cluster.",
         "order": 287,
@@ -3157,7 +3157,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-17",
+        "aid": "KU-SE-17",
         "title": "Cluster architecture: Secure clusters and pods with Azure Policy.",
         "description": "Azure Policy can help to apply at-scale enforcement and safeguards on your clusters in a centralized, consistent manner. It can also control what functions pods are granted and if anything is running against company policy.",
         "order": 288,
@@ -3168,7 +3168,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-18",
+        "aid": "KU-SE-18",
         "title": "Cluster architecture: Secure container access to resources.",
         "description": "Limit access to actions that containers can perform. Provide the least number of permissions, and avoid the use of root or privileged escalation.",
         "order": 289,
@@ -3179,7 +3179,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-19",
+        "aid": "KU-SE-19",
         "title": "Workload architecture: Use a Web Application Firewall to secure HTTP(S) traffic.",
         "description": "To scan incoming traffic for potential attacks, use a web application firewall such as Azure Web Application Firewall (WAF) on Azure Application Gateway or Azure Front Door.",
         "order": 290,
@@ -3190,7 +3190,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-20",
+        "aid": "KU-SE-20",
         "title": "Cluster architecture: Control cluster egress traffic.",
         "description": "Ensure your cluster's outbound traffic is passing through a network security point such as Azure Firewall or an HTTP proxy.",
         "order": 291,
@@ -3201,7 +3201,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-21",
+        "aid": "KU-SE-21",
         "title": "Cluster architecture: Use the open-source Azure AD Workload Identity and Secrets Store CSI Driver with Azure Key Vault.",
         "description": "Protect and rotate secrets, certificates, and connection strings in Azure Key Vault with strong encryption. Provides an access audit log, and keeps core secrets out of the deployment pipeline.",
         "order": 292,
@@ -3212,7 +3212,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-22",
+        "aid": "KU-SE-22",
         "title": "Cluster architecture: Use Microsoft Defender for Containers.",
         "description": "Monitor and maintain the security of your clusters, containers, and their applications.",
         "order": 293,
@@ -3223,7 +3223,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-23",
+        "aid": "KU-SE-23",
         "title": "Cluster architecture: Select the right virtual machine instance type.",
         "description": "Selecting the right virtual machine instance type is critical as it directly impacts the cost of running applications on AKS. Choosing a high-performance instance without proper utilization can lead to wasteful spending, while choosing a powerful instance can lead to performance issues and increased downtime. To determine the right virtual machine instance type, consider workload characteristics, resource requirements, and availability needs.",
         "order": 294,
@@ -3234,7 +3234,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-24",
+        "aid": "KU-SE-24",
         "title": "Cluster architecture: Select virtual machines based on the Arm architecture.",
         "description": "AKS supports creating ARM64 Ubuntu agent nodes, as well as a of mix Intel and ARM architecture nodes within a cluster that can bring better performance at a lower cost.",
         "order": 295,
@@ -3245,7 +3245,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-25",
+        "aid": "KU-SE-25",
         "title": "Cluster architecture: Select the appropriate region.",
         "description": "Due to many factors, cost of resources varies per region in Azure. Evaluate the cost, latency, and compliance requirements to ensure you are running your workload cost-effectively and it doesn't affect your end-users or create extra networking charges.",
         "order": 296,
@@ -3256,7 +3256,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-26",
+        "aid": "KU-SE-26",
         "title": "Workload architecture: Maintain small and optimized images.",
         "description": "Streamlining your images helps reduce costs since new nodes need to download these images. Build images in a way that allows the container start as soon as possible to help avoid user request failures or timeouts while the application is starting up, potentially leading to overprovisioning.",
         "order": 297,
@@ -3267,7 +3267,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-27",
+        "aid": "KU-SE-27",
         "title": "Cluster architecture: Enable cluster autoscaler to automatically reduce the number of agent nodes in response to excess resource capacity.",
         "description": "Automatically scale down the number of nodes in your AKS cluster lets you run an efficient cluster when demand is low, scale up when demand returns.",
         "order": 298,
@@ -3278,7 +3278,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-28",
+        "aid": "KU-SE-28",
         "title": "Workload architecture: Use the Horizontal Pod Autoscaler.",
         "description": "Adjust the number of pods in a deployment depending on CPU utilization or other select metrics, which support cluster scale-in operations.",
         "order": 299,
@@ -3289,7 +3289,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-29",
+        "aid": "KU-SE-29",
         "title": "Workload architecture: Use Vertical Pod Autoscaler (preview).",
         "description": "Rightsize your pods and dynamically set requests and limits based on historic usage.",
         "order": 300,
@@ -3300,7 +3300,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-30",
+        "aid": "KU-SE-30",
         "title": "Workload architecture: Use Kubernetes Event Driven Autoscaling (KEDA).",
         "description": "Scale based on the number of events being processed. Choose from a rich catalogue of 50+ KEDA scalers.",
         "order": 301,
@@ -3311,7 +3311,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-31",
+        "aid": "KU-SE-31",
         "title": "Cluster and workload architectures: Adopt a cloud financial discipline and cultural practice to drive ownership of cloud usage.",
         "description": "The foundation of enabling cost optimization is the spread of a cost saving cluster. A financial operations approach (FinOps) is often used to help organizations reduce cloud costs. It is a practice involving collaboration between finance, operations, and engineering teams to drive alignment on cost saving goals and bring transparency to cloud costs.",
         "order": 302,
@@ -3322,7 +3322,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-32",
+        "aid": "KU-SE-32",
         "title": "Cluster architecture: Sign up for Azure Reservations or Azure Savings Plan.",
         "description": "If you properly planned for capacity, your workload is predictable and exists for an extended period of time, sign up for an Azure Reservation or a savings plan to further reduce your resource costs.",
         "order": 303,
@@ -3333,7 +3333,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-33",
+        "aid": "KU-SE-33",
         "title": "Cluster architecture: Configure monitoring of cluster with Container insights.",
         "description": "Container insights help provides actionable insights into your clusters idle and unallocated resources. Container insights also supports collecting Prometheus metrics and integrates with Azure Managed Grafana to get a holistic view of your application and infrastructure.",
         "order": 304,
@@ -3344,7 +3344,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-34",
+        "aid": "KU-SE-34",
         "title": "Cluster and workload architectures: Review AKS best practices documentation.",
         "description": "To build and run applications successfully in AKS, there are key considerations to understand and implement. These areas include multi-tenancy and scheduler features, cluster, and pod security, or business continuity and disaster recovery.",
         "order": 305,
@@ -3355,7 +3355,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-35",
+        "aid": "KU-SE-35",
         "title": "Cluster and workload architectures: Review Azure Chaos Studio.",
         "description": "Azure Chaos Studio can help simulate faults and trigger disaster recovery situations.",
         "order": 306,
@@ -3366,7 +3366,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-36",
+        "aid": "KU-SE-36",
         "title": "Cluster and workload architectures: Configure monitoring of cluster with Container insights.",
         "description": "Container insights help monitor the performance of containers by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API and container logs.",
         "order": 307,
@@ -3377,7 +3377,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-37",
+        "aid": "KU-SE-37",
         "title": "Workload architecture: Monitor application performance with Azure Monitor.",
         "description": "Configure Application Insights for code-based monitoring of applications running in an AKS cluster.",
         "order": 308,
@@ -3388,7 +3388,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-38",
+        "aid": "KU-SE-38",
         "title": "Workload architecture: Configure scraping of Prometheus metrics with Container insights.",
         "description": "Container insights, which are part of Azure Monitor, provide a seamless onboarding experience to collect Prometheus metrics. Reference Configure scraping of Prometheus metrics for more information.",
         "order": 309,
@@ -3399,7 +3399,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-39",
+        "aid": "KU-SE-39",
         "title": "Cluster architecture: Operationalize clusters and pods configuration standards with Azure Policy.",
         "description": "Azure Policy can help to apply at-scale enforcement and safeguards on your clusters in a centralized, consistent manner. It can also control what functions pods are granted and if anything is running against company policy.",
         "order": 310,
@@ -3410,7 +3410,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-40",
+        "aid": "KU-SE-40",
         "title": "Workload architecture: Use platform capabilities in your release engineering process.",
         "description": "Kubernetes and ingress controllers support many advanced deployment patterns for inclusion in your release engineering process. Consider patterns like blue-greem deployments or canary releases.",
         "order": 311,
@@ -3421,7 +3421,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-41",
+        "aid": "KU-SE-41",
         "title": "Cluster and workload architectures: For mission-critical workloads, use stamp-level blue/green deployments.",
         "description": "Automate your mission-critical design areas, including deployment and testing.",
         "order": 312,
@@ -3432,7 +3432,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-42",
+        "aid": "KU-SE-42",
         "title": "Cluster and workload architectures: Develop a detailed capacity plan and continually review and revise.",
         "description": "After formalizing your capacity plan, it should be frequently updated by continuously observing the resource utilization of the cluster.",
         "order": 313,
@@ -3443,7 +3443,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-43",
+        "aid": "KU-SE-43",
         "title": "Cluster architecture: Enable cluster autoscaler to automatically adjust the number of agent nodes in response to resource constraints.",
         "description": "The ability to automatically scale up or down the number of nodes in your AKS cluster lets you run an efficient, cost-effective cluster.",
         "order": 314,
@@ -3454,7 +3454,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-44",
+        "aid": "KU-SE-44",
         "title": "Cluster and workload architectures: Separate workloads into different node pools and consider scaling user node pools.",
         "description": "Unlike System node pools that always require running nodes, user node pools allow you to scale up or down.",
         "order": 315,
@@ -3465,7 +3465,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-45",
+        "aid": "KU-SE-45",
         "title": "Workload architecture: Use AKS advanced scheduler features.",
         "description": "Helps control balancing of resources for workloads that require them.",
         "order": 316,
@@ -3476,7 +3476,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-KU-SE-46",
+        "aid": "KU-SE-46",
         "title": "Workload architecture: Use meaningful workload scaling metrics.",
         "description": "Not all scale decisions can be derived from CPU or memory metrics. Often scale considerations will come from more complex or even external data points. Use KEDA to build a meaningful auto scale ruleset based on signals that are specific to your workload.",
         "order": 317,
@@ -3487,7 +3487,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "FU-01",
+        "aid": "AZ-FU-01",
         "title": "Evaluate if Azure Functions requires HTTP trigger.",
         "description": "Azure Functions supports multiple specific triggers and bindings. These include Azure Blob storage, Azure Cosmos DB, Azure Service Bus, and many more. If HTTP trigger is needed, then consider protecting that HTTP endpoint like any other web application. Common protection measures include keeping HTTP endpoint internal to specific Azure virtual networks by using Private endpoint connections or service endpoints. Consider using guidance available on Azure Functions networking options for more information. If Functions HTTP endpoint will be exposed to internet, then it's recommended to secure the endpoint behind a web application firewall (WAF).",
         "order": 318,
@@ -3498,7 +3498,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "FU-02",
+        "aid": "AZ-FU-02",
         "title": "Treat Azure Functions code just like any other code.",
         "description": "Subject Azure Functions code to code scanning tools that are integrated with CI/CD pipeline.",
         "order": 319,
@@ -3509,7 +3509,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "FU-03",
+        "aid": "AZ-FU-03",
         "title": "Use guidance available on Securing Azure Functions.",
         "description": "This guidance addresses key security concerns such as operations, deployment, and network security.",
         "order": 320,
@@ -3520,7 +3520,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "FU-04",
+        "aid": "AZ-FU-04",
         "title": "Consider using Azure Functions Proxy to act as a facade.",
         "description": "Functions Proxy can inspect and modify incoming requests and responses.",
         "order": 321,
@@ -4488,7 +4488,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-01",
+        "aid": "SQ-DA-01",
         "title": "Use Active Geo-Replication to create a readable secondary in a different region.",
         "description": "If your primary database fails, perform a manual failover to the secondary database. Until you fail over, the secondary database remains read-only. Active geo-replication enables you to create readable replicas and manually failover to any replica if there is a datacenter outage or application upgrade. Up to four secondaries are supported in the same or different regions, and the secondaries can also be used for read-only access queries. The failover must be initiated manually by the application or the user. After failover, the new primary has a different connection end point.",
         "order": 409,
@@ -4499,7 +4499,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-02",
+        "aid": "SQ-DA-02",
         "title": "Use Auto Failover Groups that can include one or multiple databases, typically used by the same application.",
         "description": "You can use the readable secondary databases to offload read-only query workloads. Because autofailover groups involve multiple databases, these databases must be configured on the primary server. Autofailover groups support replication of all databases in the group to only one secondary server or instance in a different region. Learn more about AutoFailover Groups and DR design.",
         "order": 410,
@@ -4510,7 +4510,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-03",
+        "aid": "SQ-DA-03",
         "title": "Use a Zone-Redundant database.",
         "description": "By default, the cluster of nodes for the premium availability model is created in the same datacenter. With the introduction of Azure Availability Zones, SQL Database can place different replicas of the Business Critical database to different availability zones in the same region. To eliminate a single point of failure, the control ring is also duplicated across multiple zones as three gateway rings (GW). The routing to a specific gateway ring is controlled by Azure Traffic Manager (ATM). Because the zone redundant configuration in the Premium or Business Critical service tiers doesn't create extra database redundancy, you can enable it at no extra cost. Learn more about Zone-redundant databases.",
         "order": 411,
@@ -4521,7 +4521,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-04",
+        "aid": "SQ-DA-04",
         "title": "Monitor your Azure SQL Database in near-real time to detect reliability incidents.",
         "description": "Use one of the available solutions to monitor SQL DB to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. Reference Azure SQL Analytics for more information.",
         "order": 412,
@@ -4532,7 +4532,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-05",
+        "aid": "SQ-DA-05",
         "title": "Implement Retry Logic.",
         "description": "Although Azure SQL Database is resilient when it concerns transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL Database, make sure your code can retry the call. For more information, reference how to implement retry logic.",
         "order": 413,
@@ -4543,7 +4543,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-06",
+        "aid": "SQ-DA-06",
         "title": "Back up your keys.",
         "description": "If you're not using encryption keys in Azure Key Vault to protect your data, back up your keys.",
         "order": 414,
@@ -4554,7 +4554,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-07",
+        "aid": "SQ-DA-07",
         "title": "Review the minimum TLS version.",
         "description": "Determine whether you have legacy applications that require older TLS or unencrypted connections. After you enforce a version of TLS, it's not possible to revert to the default. Review and configure the minimum TLS version for SQL Database connections via the Azure portal. If not, set the latest TLS version to the minimum.",
         "order": 415,
@@ -4565,7 +4565,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-08",
+        "aid": "SQ-DA-08",
         "title": "Ledger",
         "description": "Consider designing database tables based on the Ledger to provide auditing, tamper-evidence, and trust of all data changes.",
         "order": 416,
@@ -4576,7 +4576,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-09",
+        "aid": "SQ-DA-09",
         "title": "Always Encrypted",
         "description": "Consider designing application access based around Always Encrypted to protect sensitive data inside applications by delegating data access to encryption keys.",
         "order": 417,
@@ -4587,7 +4587,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-10",
+        "aid": "SQ-DA-10",
         "title": "Private endpoints and private link",
         "description": "Private endpoint connections enforce secure communication by enabling private connectivity to Azure SQL Database. You can use a private endpoint to secure connections and deny public network access by default. Azure Private Link for Azure SQL Database is a type of private endpoint recommended for Azure SQL Database.",
         "order": 418,
@@ -4598,7 +4598,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-11",
+        "aid": "SQ-DA-11",
         "title": "Automated vulnerability assessments",
         "description": "Monitor for vulnerability assessment scan results and recommendations for how to remediate database vulnerabilities.",
         "order": 419,
@@ -4609,7 +4609,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-12",
+        "aid": "SQ-DA-12",
         "title": "Advanced Threat Protection",
         "description": "Detect anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases with Advanced Threat Protection for Azure SQL Database. Advanced Threat Protection integrates its alerts with Microsoft Defender for Cloud.",
         "order": 420,
@@ -4620,7 +4620,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-13",
+        "aid": "SQ-DA-13",
         "title": "Auditing",
         "description": "Track database events with Auditing for Azure SQL Database.",
         "order": 421,
@@ -4631,7 +4631,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-14",
+        "aid": "SQ-DA-14",
         "title": "Managed identities",
         "description": "Consider configuring a user-assigned managed identity (UMI). Managed identities for Azure resources eliminate the need to manage credentials in code.",
         "order": 422,
@@ -4642,7 +4642,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-15",
+        "aid": "SQ-DA-15",
         "title": "Azure AD-only authentication",
         "description": "Consider disabling SQL-based authentication and allowing only on Azure AD authentication.",
         "order": 423,
@@ -4653,7 +4653,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-16",
+        "aid": "SQ-DA-16",
         "title": "Optimize queries.",
         "description": "Optimize the queries, tables, and databases using Query Performance Insights and Performance Recommendations to help reduce resource consumption, and arrive at appropriate configuration.",
         "order": 424,
@@ -4664,7 +4664,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-17",
+        "aid": "SQ-DA-17",
         "title": "Evaluate resource usage.",
         "description": "Evaluate the resource usage for all databases and determine if they've been sized and provisioned correctly. For non-production databases, consider scaling resources down as applicable. The DTUs or vCores for a database can be scaled on demand, for example, when running a load test or user acceptance test.",
         "order": 425,
@@ -4675,7 +4675,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-18",
+        "aid": "SQ-DA-18",
         "title": "Fine-tune backup storage consumption",
         "description": "For vCore databases in Azure SQL Database, the storage consumed by each type of backup (full, differential, and log) is reported on the database monitoring pane as a separate metric. Backup storage consumption up to the maximum data size for a database is not charged. Excess backup storage consumption will depend on the workload and maximum size of the individual databases. For more information, see Backup storage consumption.",
         "order": 426,
@@ -4686,7 +4686,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-19",
+        "aid": "SQ-DA-19",
         "title": "Evaluate Azure SQL Database Serverless.",
         "description": "Consider using Azure SQL Database serverless over the Provisioned Computing Tier. Serverless is a compute tier for single databases that automatically scales compute based on workload demand and bills for the amount of compute used per second. The serverless compute tier also automatically pauses databases during inactive periods when only storage is billed. It automatically resumes databases when activity returns. Azure SQL Database serverless isn't suited for all scenarios. If you have a database with unpredictable or bursty usage patterns interspersed with periods of low or idle usage, serverless is a solution that can help you optimize price-performance.",
         "order": 427,
@@ -4697,7 +4697,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-20",
+        "aid": "SQ-DA-20",
         "title": "Consider reserved capacity for Azure SQL Database.",
         "description": "You can reduce compute costs associated with Azure SQL Database by using Reservation Discount. Once you've determined the total compute capacity and performance tier for Azure SQL databases in a region, you can use this information to reserve the capacity. The reservation can span one or three years. For more information, reference Save costs for resources with reserved capacity.",
         "order": 428,
@@ -4708,7 +4708,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-21",
+        "aid": "SQ-DA-21",
         "title": "Elastic pools help you manage and scale multiple databases in Azure SQL Database",
         "description": "Azure SQL Database elastic pools are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single server and share a set number of resources at a set price. For more information, see Elastic pools for managing and scaling multiple databases.",
         "order": 429,
@@ -4719,7 +4719,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-22",
+        "aid": "SQ-DA-22",
         "title": "Use Auto Failover Groups that can include one or multiple databases, typically used by the same application.",
         "description": "You can use the readable secondary databases to offload read-only query workloads. Because autofailover groups involve multiple databases, these databases must be configured on the primary server. Autofailover groups support replication of all databases in the group to only one secondary server or instance in a different region. Learn more about Auto-Failover Groups and DR design.",
         "order": 430,
@@ -4730,7 +4730,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-23",
+        "aid": "SQ-DA-23",
         "title": "Implement Retry Logic.",
         "description": "Although Azure SQL Database is resilient when it concerns transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL Database, make sure your code can retry the call. For more information, reference how to implement retry logic and Configurable retry logic in SqlClient introduction.",
         "order": 431,
@@ -4741,7 +4741,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-24",
+        "aid": "SQ-DA-24",
         "title": "Diagnose and troubleshoot high CPU utilization.",
         "description": "Azure SQL Database provides built-in tools to identify the causes of high CPU usage and to optimize workload performance.",
         "order": 432,
@@ -4752,7 +4752,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-25",
+        "aid": "SQ-DA-25",
         "title": "Understand blocking and deadlocking issues.",
         "description": "Blocking due to concurrency and terminated sessions due to deadlocks have different causes and outcomes.",
         "order": 433,
@@ -4763,7 +4763,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-26",
+        "aid": "SQ-DA-26",
         "title": "Tune applications and databases for performance.",
         "description": "Tune your application and database to improve performance. Review best practices.",
         "order": 434,
@@ -4774,7 +4774,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-27",
+        "aid": "SQ-DA-27",
         "title": "Review Azure portal utilization reporting and scale as appropriate.",
         "description": "After deployment, use built-in reporting in the Azure portal to regularly review peak and average database utilization and right-size up or down. You can easily scale single databases or elastic pools with no data loss and minimal downtime.",
         "order": 435,
@@ -4785,7 +4785,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-28",
+        "aid": "SQ-DA-28",
         "title": "Review Performance Recommendations.",
         "description": "In the Intelligent Performance menu of the database page in the Azure portal, review and consider action on any of the Performance Recommendations and implement any index, schema, and parameterization issues.",
         "order": 436,
@@ -4796,7 +4796,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-29",
+        "aid": "SQ-DA-29",
         "title": "Review Query Performance Insight.",
         "description": "Review Query Performance Insight for Azure SQL Database reports to identify top resource-consuming queries, long running queries, and more.",
         "order": 437,
@@ -4807,7 +4807,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-30",
+        "aid": "SQ-DA-30",
         "title": "Configure Automatic tuning.",
         "description": "Provide peak performance and stable workloads through continuous performance tuning based on AI and machine learning. Consider using Azure Automation to configure email notifications for automatic tuning.",
         "order": 438,
@@ -4818,7 +4818,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-31",
+        "aid": "SQ-DA-31",
         "title": "Evaluate potential use of in-memory database objects.",
         "description": "In-memory technologies enable you to improve performance of your application, and potentially reduce cost of your database. Consider designing some database objects in high-volume OLTP applications.",
         "order": 439,
@@ -4829,7 +4829,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-32",
+        "aid": "SQ-DA-32",
         "title": "Leverage the Query Store.",
         "description": "Enabled by default in Azure SQL Database, the Query Store contains a wealth of query performance and resource consumption data, as well as advanced tuning features like Query Store hints and automatic plan correction. Review Query Store defaults in Azure SQL Database.",
         "order": 440,
@@ -4840,7 +4840,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-DA-33",
+        "aid": "SQ-DA-33",
         "title": "Implement retry logic for transient errors.",
         "description": "Applications should include automatic transaction retry logic for transient errors including common connection errors. Leverage exponential retry interval logic.",
         "order": 441,
@@ -4906,7 +4906,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-MY-01",
+        "aid": "DB-MY-01",
         "title": "Choose the appropriate server size for your workload.",
         "description": "Configuration options: Single Server and Flexible Server.",
         "order": 447,
@@ -4917,7 +4917,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-MY-02",
+        "aid": "DB-MY-02",
         "title": "Consider Reserved Capacity for Azure Database for MySQL Single Server.",
         "description": "Compute costs associated with Azure Database For MySQL Single Server Reservation Discount. Once you've determined the total compute capacity and performance tier for Azure Database for MySQL in a region, this information can be used to reserve the capacity. The reservation can span one or three years. You can realize significant cost optimization with this commitment.",
         "order": 448,
@@ -4928,7 +4928,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-01",
+        "aid": "DB-PO-01",
         "title": "Defined targets for RPO (Recovery Point Objective) and RTO (Recovery Time Objective) for workloads.",
         "description": "Derive these values by conducting a risk assessment and ensuring you understand the cost and risk of downtime and data loss. These are nonfunctional requirements of a system and should be dictated by business requirements.",
         "order": 449,
@@ -4939,7 +4939,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-02",
+        "aid": "DB-PO-02",
         "title": "Select the appropriate high availability configuration.",
         "description": "Azure Database for PostgreSQL Server offers high availability configurations, ensuring that the service remains available if there's a zone outage and no data is lost. When high availability is configured, the Azure Database for PostgreSQL server automatically provisions and manages a standby replica.",
         "order": 450,
@@ -4950,7 +4950,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-03",
+        "aid": "DB-PO-03",
         "title": "Configure geo-redundancy backup.",
         "description": "Cross-region read replicas can be deployed to protect your databases from region-level failures. Geo Redundant backups are enabled in selected regions and help with disaster recovery if the primary server region is down.",
         "order": 451,
@@ -4961,7 +4961,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-04",
+        "aid": "DB-PO-04",
         "title": "Test your disaster recovery plan to ensure rapid data restoration if there's a failure.",
         "description": "Read replicas can be deployed on a different region and promoted to a read-write server if disaster recovery is needed.",
         "order": 452,
@@ -4972,7 +4972,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-05",
+        "aid": "DB-PO-05",
         "title": "Monitor your server to ensure it's healthy and performing as expected.",
         "description": "We have database monitoring in place to monitor and alert on database-level failures.",
         "order": 453,
@@ -4983,7 +4983,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-06",
+        "aid": "DB-PO-06",
         "title": "SSL and enforce encryption to secure data in transit.",
         "description": "Deploy the DigiCert Global Root certificate from a trusted Certificate Authority (CA) certificate needed to communicate over SSL with client applications.",
         "order": 454,
@@ -4994,7 +4994,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-07",
+        "aid": "DB-PO-07",
         "title": "Implement network security groups and firewalls to control access to your database.",
         "description": "As part of the Zero Trust Model for security, network segmentation is recommended where communication paths between components (in this case, application and database server) are restricted to only what's needed. This can be implemented using Network Security Group and Application Security Groups.",
         "order": 455,
@@ -5005,7 +5005,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-08",
+        "aid": "DB-PO-08",
         "title": "Use Azure Active Directory for authentication and authorization to enhance identity management.",
         "description": "Microsoft Azure Active Directory (Azure AD) authentication is a mechanism of connecting to Azure Database for PostgreSQL using identities defined in Azure AD.",
         "order": 456,
@@ -5016,7 +5016,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-09",
+        "aid": "DB-PO-09",
         "title": "Configure row-level security.",
         "description": "Row level security (RLS) is a PostgreSQL security feature that allows database administrators to define policies to control how specific rows of data display and operate for one or more roles. Row-level security is an additional filter you can apply to a PostgreSQL database table.",
         "order": 457,
@@ -5027,7 +5027,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-10",
+        "aid": "DB-PO-10",
         "title": "Pick the right tier and SKU.",
         "description": "Pick the pricing tier and compute SKUs that support the specific needs of your workload. Azure Advisor gives you recommendations to optimize and reduce your overall Azure spending. Recommendations include server right-sizing that you should follow.",
         "order": 458,
@@ -5038,7 +5038,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-11",
+        "aid": "DB-PO-11",
         "title": "Understand high availability mode.",
         "description": "High availability makes a standby server always available within the same zone or region. Enabling high availability doubles your cost.",
         "order": 459,
@@ -5049,7 +5049,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-12",
+        "aid": "DB-PO-12",
         "title": "Adjust compute and storage tier.s",
         "description": "You should manually adjust the compute and storage tiers to meet the application's requirements over time.",
         "order": 460,
@@ -5060,7 +5060,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-13",
+        "aid": "DB-PO-13",
         "title": "Use the Start/Stop feature.",
         "description": "The Flexible server has a Start/Stop feature that you can use to stop the server from running when you don't need it.",
         "order": 461,
@@ -5071,7 +5071,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-14",
+        "aid": "DB-PO-14",
         "title": "Consider reserved instances.",
         "description": "Consider a one or three-year reservation to receive significant discounts on computing. Use these reservations for workloads with consistent compute usage for a year or more.",
         "order": 462,
@@ -5082,7 +5082,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-15",
+        "aid": "DB-PO-15",
         "title": "Use your provisioned storage.",
         "description": "There's no extra charge for backup storage up to 100% of your total provisioned server storage.",
         "order": 463,
@@ -5093,7 +5093,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-16",
+        "aid": "DB-PO-16",
         "title": "Understand redundancy costs.",
         "description": "Geo-redundant storage (GRS) costs twice as much as local redundant storage (LRS). GRS requires double the storage capacity of LRS.",
         "order": 464,
@@ -5104,7 +5104,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-17",
+        "aid": "DB-PO-17",
         "title": "Evaluate storage scale-up decisions.",
         "description": "You should evaluate your current and future storage needs before scaling up your storage. After you scale up storage, you can't scale down.",
         "order": 465,
@@ -5115,7 +5115,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-18",
+        "aid": "DB-PO-18",
         "title": "Deploy to the same region as the app.",
         "description": "Deploy to the same region as the application(s) to minimize transfer costs. When you use virtual network integration, applications in a different virtual network don't have direct access to flexible servers. To grant them access, you need to configure virtual network peering. Virtual network peering has nominal inbound and outbound data transfer costs.",
         "order": 466,
@@ -5126,7 +5126,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-19",
+        "aid": "DB-PO-19",
         "title": "High availability oriented cost description.",
         "description": "It's a trade-off of HA and costs. HA is double the cost for non-HA configuration, but it's needed.",
         "order": 467,
@@ -5137,7 +5137,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-20",
+        "aid": "DB-PO-20",
         "title": "Consolidate databases and servers.",
         "description": "You can consolidate multiple databases and servers into a single server to reduce costs.",
         "order": 468,
@@ -5148,7 +5148,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-21",
+        "aid": "DB-PO-21",
         "title": "Set up automated backups and retention policies to maintain data availability and meet compliance requirements.",
         "description": "Azure Database for PostgreSQL provides automated backups and point-in-time restore for your database. You can configure the retention period for backups up to 35 days.",
         "order": 469,
@@ -5159,7 +5159,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-22",
+        "aid": "DB-PO-22",
         "title": "Implement automated patching and updates to keep your PostgreSQL instance secure and up-to-date.",
         "description": "Azure Database for PostgreSQL provides automated patching and updates for your database. You can configure the maintenance window for your server to minimize the impact on your workload.",
         "order": 470,
@@ -5170,7 +5170,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-23",
+        "aid": "DB-PO-23",
         "title": "Monitor database health and performance using Azure Monitor and set up alerts for critical metrics.",
         "description": "Azure Database for PostgreSQL provides built-in monitoring and alerting capabilities. You can monitor the health and performance of your database using Azure Monitor. You can also set up alerts for critical metrics to get notified when your database isn't performing as expected.",
         "order": 471,
@@ -5181,7 +5181,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-24",
+        "aid": "DB-PO-24",
         "title": "Design your schema and queries for efficiency to minimize resource consumption.",
         "description": "You should design your schema and queries for efficiency to minimize resource consumption.",
         "order": 472,
@@ -5192,7 +5192,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-DB-PO-25",
+        "aid": "DB-PO-25",
         "title": "Implement read replicas to offload read traffic and enhance overall performance.",
         "description": "You can use read replicas to offload read traffic and enhance performance.",
         "order": 473,
@@ -5203,7 +5203,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-01",
+        "aid": "CA-RE-01",
         "title": "Schedule updates.",
         "description": "Schedule the days and times that Redis Server updates will be applied to the cache, which doesn't include Azure updates, or updates to the VM operating system.",
         "order": 474,
@@ -5214,7 +5214,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-02",
+        "aid": "CA-RE-02",
         "title": "Monitor the cache and set alerts.",
         "description": "Set alerts for exceptions, high CPU, high memory usage, server load, and evicted keys for insights about when to scale the cache. If the cache needs to be scaled, understanding when to scale is important because it will increase CPU during the scaling event to migrate data.",
         "order": 475,
@@ -5225,7 +5225,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-03",
+        "aid": "CA-RE-03",
         "title": "Deploy the cache within a VNET.",
         "description": "Gives the customer more control over the traffic that can connect to the cache. Make sure that the subnet has sufficient address space available to deploy the cache nodes and shards (cluster).",
         "order": 476,
@@ -5236,7 +5236,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-04",
+        "aid": "CA-RE-04",
         "title": "Use the correct caching type (local, in role, managed, redis) within your solution.",
         "description": "Distributed applications typically implement either or both of the following strategies when caching data: - Using a private cache, where data is held locally on the machine that's running an instance of an application or service. - Using a shared cache, serving as a common source that can be accessed by multiple processes and machines. In both cases, caching can be performed client-side and server-side. Client-side caching is done by the process that provides the user interface for a system, such as a web browser or desktop application. Server-side caching is done by the process that provides the business services that are running remotely.",
         "order": 477,
@@ -5247,7 +5247,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-05",
+        "aid": "CA-RE-05",
         "title": "Configure Data Persistence to save a copy of the cache to Azure Storage or use Geo-Replication, depending on the business requirement.",
         "description": "Data Persistence: If the master and replica reboot, the data will be loaded automatically from the storage account. Geo-Replication: The secondary cache needs to be unlinked from the primary. The secondary will now become the primary and can receive writes.",
         "order": 478,
@@ -5258,7 +5258,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-06",
+        "aid": "CA-RE-06",
         "title": "Review How to administer Azure Cache for Redis.",
         "description": "Understand how data loss can occur with cache reboots and how to test the application for resiliency.",
         "order": 479,
@@ -5269,7 +5269,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-07",
+        "aid": "CA-RE-07",
         "title": "Evaluate a partitioning strategy within Redis cache.",
         "description": "Partitioning a Redis data store involves splitting the data across instances of the Redis server. Each instance makes up a single partition. Azure Redis Cache abstracts the Redis services behind a facade and doesn't expose them directly. The simplest way to implement partitioning is to create multiple Azure Redis Cache instances and spread the data across them. You can associate each data item with an identifier (a partition key) that specifies which cache stores the data item. The client application logic can then use this identifier to route requests to the appropriate partition. This scheme is simple, but if the partitioning scheme changes (for example, if extra Azure Redis Cache instances are created), client applications may need to be reconfigured.",
         "order": 480,
@@ -5280,7 +5280,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-08",
+        "aid": "CA-RE-08",
         "title": "Configure Data Persistence to save a copy of the cache to Azure Storage or use Geo-Replication, depending on the business requirement.",
         "description": "Data Persistence: if the master and replica reboot, the data will be loaded automatically from the storage account. Geo-Replication: The secondary cache needs to be unlinked from the primary. The secondary will now become the primary and can receive writes.",
         "order": 481,
@@ -5291,7 +5291,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-CA-RE-09",
+        "aid": "CA-RE-09",
         "title": "Implement retry policies in the context of your Azure Redis Cache.",
         "description": "Most Azure services and client SDKs include a retry mechanism. These mechanisms differ because each service has different characteristics and requirements. Each retry mechanism is tuned to a specific service.",
         "order": 482,
@@ -5302,7 +5302,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-MA-IN-01",
+        "aid": "SQ-MA-01",
         "title": "Use the Business Critical Tier.",
         "description": "This tier provides higher resiliency to failures and faster failover times because of the underlying HA architecture, among other benefits. For more information, reference SQL Managed Instance High availability.",
         "order": 483,
@@ -5313,7 +5313,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-MA-IN-02",
+        "aid": "SQ-MA-02",
         "title": "Configure a secondary instance and an Autofailover group to enable failover to another region.",
         "description": "If an outage impacts one or more of the databases in the managed instance, you can manually or automatically failover all the databases inside the instance to a secondary region. For more information, read the Autofailover groups documentation for managed instance.",
         "order": 484,
@@ -5324,7 +5324,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-MA-IN-03",
+        "aid": "SQ-MA-03",
         "title": "Implement Retry Logic.",
         "description": "Although Azure SQL MI is resilient to transitive infrastructure failures, these failures might affect your connectivity. When a transient error occurs while working with SQL MI, make sure your code can retry the call. For more information, reference how to implement retry logic.",
         "order": 485,
@@ -5335,7 +5335,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-SQ-MA-IN-04",
+        "aid": "SQ-MA-04",
         "title": "Monitor your SQL MI instance in near-real time to detect reliability incidents.",
         "description": "Use one of the available solutions to monitor your SQL MI to detect potential reliability incidents early and make your databases more reliable. Choose a near real-time monitoring solution to quickly react to incidents. For more information, check out the Azure SQL Managed Instance monitoring options.",
         "order": 486,
@@ -5775,7 +5775,7 @@
         "azureMatchedRuels": ""
     },
     {
-        "aid": "AZ-ST-HU-01",
+        "aid": "ST-HU-01",
         "title": "Treat Azure Stack Hub as a scale unit and deploy multiple instances to remove Azure Stack Hub as a single point of failure for encompassed workloads.",
         "description": "Deploy workloads in either an active-active or active-passive configuration across Azure Stack Hub stamps or Azure.",
         "order": 526,
