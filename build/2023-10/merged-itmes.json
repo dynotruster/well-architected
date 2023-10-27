@@ -222,7 +222,7 @@
     },
     {
         "title": "Consider Oracle Cloud Control for Oracle",
-        "description": "Oracle is a non-native product and Oracle provides an infrastructure monitoring, management and automation tool that can be deployed on a VM with little to no cost to the customer, as it’s most likely already used on-premises. Deploy to the cloud to eliminate egress to an on-premises version and evolve to automate with: - Monitoring templates - Metric Extensions (self-service metrics)  - Corrective Actions  - OS and database patch automation  Oracle Cloud Control will “simulate” a PaaS like solution for IaaS when using it to manage, monitor and automate Oracle.",
+        "description": "Oracle is a non-native product and Oracle provides an infrastructure monitoring, management and automation tool that can be deployed on a VM with little to no cost to the customer, as it’s most likely already used on-premises. Deploy to the cloud to eliminate egress to an on-premises version and evolve to automate with: - Monitoring templates - Metric Extensions (self-service metrics)  - Corrective Actions  - OS and database patch automation",
         "order": 14,
         "categories": [
             "operational-excellence"

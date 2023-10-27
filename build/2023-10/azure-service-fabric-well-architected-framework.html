@@ -8,39 +8,48 @@
 <tbody>
 <tr>
 <td><strong>Cluster architecture:</strong> Exclude the Service Fabric processes from Windows Defender to improve performance.</td>
-<td>By default, Windows Defender antivirus is installed on Windows Server 2016 and 2019. To reduce any performance impact and resource consumption overhead incurred by Windows Defender, and if your security policies allow you to exclude processes and paths for open-source software, you can <a href="/azure/service-fabric/">exclude</a>.</td>
+
+
 </tr>
 <tr>
 <td><strong>Cluster architecture:</strong> Consider using <a href="/azure/service-fabric/how-to-managed-cluster-autoscale">Autoscaling</a> for your cluster.</td>
-<td>Autoscaling gives great elasticity and enables addition or reduction of nodes on demand on a secondary node type. This automated and elastic behavior reduces the management overhead and potential business impact by monitoring and optimizing the amount of nodes servicing your workload.</td>
+
+
 </tr>
 <tr>
 <td><strong>Cluster architecture:</strong> Consider using <a href="/azure/service-fabric/how-to-managed-cluster-networking#enable-accelerated-networking">Accelerated Networking</a>.</td>
-<td>Accelerated networking enables a high-performance path that bypasses the host from the data path, which reduces latency, jitter, and CPU utilization for the most demanding network workloads.</td>
+
+
 </tr>
 <tr>
 <td><strong>Cluster architecture:</strong> Considering using <a href="/azure/service-fabric/how-to-managed-cluster-enable-disk-encryption?tabs=azure-powershell#enable-encryption-at-host">encryption at host</a> instead of Azure Disk Encryption (ADE).</td>
-<td>This encryption method improves on ADE by supporting all OS types and images, including custom images, for your VMs by encrypting data in the Azure Storage service.</td>
+
+
 </tr>
 <tr>
 <td><strong>Workload architecture:</strong> Review the <a href="/azure/service-fabric/service-fabric-choose-framework">Service Fabric programming models</a> to decide what model would best suit your services.</td>
-<td>Service Fabric supports several programming models. Each come with their own advantages and disadvantages. Knowing about the available programming models can help you make the best choices for designing your services.</td>
+
+
 </tr>
 <tr>
 <td><strong>Workload architecture:</strong> Leverage loosely-coupled <a href="/azure/architecture/guide/architecture-styles/microservices">microservices</a> for your workloads where appropriate.</td>
-<td>Using microservices allows you to get the most out of Service Fabric's features.</td>
+
+
 </tr>
 <tr>
 <td><strong>Workload architecture:</strong> Leverage <a href="/azure/architecture/guide/architecture-styles/event-driven">event-driven architecture</a> for your workloads where appropriate.</td>
-<td>Using event-driven architecture allows you to get the most out of Service Fabric's features.</td>
+
+
 </tr>
 <tr>
 <td><strong>Workload architecture:</strong> Leverage <a href="/azure/architecture/guide/architecture-styles/web-queue-worker">background processing</a> for your workloads where appropriate.</td>
-<td>Using background processing allows you to get the most out of Service Fabric's features.</td>
+
+
 </tr>
 <tr>
 <td><strong>Cluster and workload architectures:</strong> Review the <a href="/azure/service-fabric/service-fabric-concepts-scalability">different ways you can scale your solution in Service Fabric</a>.</td>
-<td>You can use scaling to enable maximum resource utilization for your solution.</td>
+
+
 </tr>
 </tbody>
 </table>

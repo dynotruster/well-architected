@@ -8,23 +8,28 @@
 <tbody>
 <tr>
 <td><strong>Cluster and workload architectures:</strong> Develop a detailed capacity plan and continually review and revise.</td>
-<td>After formalizing your capacity plan, it should be frequently updated by continuously observing the resource utilization of the cluster.</td>
+
+
 </tr>
 <tr>
 <td><strong>Cluster architecture:</strong> Enable <a href="/azure/aks/cluster-autoscaler">cluster autoscaler</a> to automatically adjust the number of agent nodes in response to resource constraints.</td>
-<td>The ability to automatically scale up or down the number of nodes in your AKS cluster lets you run an efficient, cost-effective cluster.</td>
+
+
 </tr>
 <tr>
 <td><strong>Cluster and workload architectures:</strong> Separate workloads into different node pools and consider <a href="/azure/aks/scale-cluster">scaling</a> user node pools.</td>
-<td>Unlike System node pools that always require running nodes, user node pools allow you to scale up or down.</td>
+
+
 </tr>
 <tr>
 <td><strong>Workload architecture:</strong> Use AKS <a href="/azure/aks/operator-best-practices-advanced-scheduler">advanced scheduler features</a>.</td>
-<td>Helps control balancing of resources for workloads that require them.</td>
+
+
 </tr>
 <tr>
 <td><strong>Workload architecture:</strong> Use meaningful workload scaling metrics.</td>
-<td>Not all scale decisions can be derived from CPU or memory metrics. Often scale considerations will come from more complex or even external data points. Use <a href="/training/modules/aks-app-scale-keda/">KEDA</a> to build a meaningful auto scale ruleset based on signals that are specific to your workload.</td>
+
+
 </tr>
 </tbody>
 </table>

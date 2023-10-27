@@ -299,10 +299,10 @@ def produce_final_items(items):
             "order": current_item["order"],
             "applies_to": ", ".join(current_item["applies_to"]),
             "pillars": ", ".join(current_item["pillars"]),
-            "type" : "Azure-Well-Arch-Oct-2023",
+            "type" : "AZURE-WELL-ARCH-OCT-2023",
             "links" : links,
             "comments": "",
-            "azureMatchedRuels":"",
+            "azureMatchedRules":"",
         }
         processed_items.append(final_item)
     return processed_items
