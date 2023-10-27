@@ -17,7 +17,6 @@ today = datetime.date.today().strftime('%Y-%m')
 build_dir = os.path.join(root_folder, f'build/{today}')
 # Load pre-trained word embeddings model
 
-
 def get_most_similar(text, valid_pillars):
     text = text.lower()
     max_count = 0
