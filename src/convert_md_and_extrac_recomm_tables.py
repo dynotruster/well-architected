@@ -125,7 +125,8 @@ def extract_table_data(table , file_path , pillar):
             order_counter += 1
             category = get_category(file_path)
             applies_to = get_applies_to(file_path)
-
+            for br in columns[1].find_all("br"):
+                br.replace_with("\n")
             table_data.append({
                 'title': columns[0].text.strip(),
                 'description': columns[1].text.strip(),

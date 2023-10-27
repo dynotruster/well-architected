@@ -118,7 +118,7 @@
     },
     {
         "title": "Consider Oracle Cloud Control for Oracle",
-        "description": "Oracle is a non-native product and Oracle provides an infrastructure monitoring, management and automation tool that can be deployed on a VM with little to no cost to the customer, as it’s most likely already used on-premises. Deploy to the cloud to eliminate egress to an on-premises version and evolve to automate with: - Monitoring templates - Metric Extensions (self-service metrics)  - Corrective Actions  - OS and database patch automation  Oracle Cloud Control will “simulate” a PaaS like solution for IaaS when using it to manage, monitor and automate Oracle.",
+        "description": "Oracle is a non-native product and Oracle provides an infrastructure monitoring, management and automation tool that can be deployed on a VM with little to no cost to the customer, as it’s most likely already used on-premises. Deploy to the cloud to eliminate egress to an on-premises version and evolve to automate with: \n- Monitoring templates \n- Metric Extensions (self-service metrics) \n - Corrective Actions \n - OS and database patch automation",
         "order": 14,
         "category": "operational-excellence",
         "applies_to": "oracle-iaas",
@@ -253,7 +253,7 @@
     },
     {
         "title": "Use Azure Firewall Manager with traditional Hub & Spokes or Azure Virtual WAN network topologies to deploy and manage instances of Azure Firewall.",
-        "description": "Easily create hub-and-spoke and transitive architectures with native security services for traffic governance and protection.  For more information on network topologies, see the Azure Cloud Adoption Framework documentation.",
+        "description": "Easily create hub-and-spoke and transitive architectures with native security services for traffic governance and protection. \n\n For more information on network topologies, see the Azure Cloud Adoption Framework documentation.",
         "order": 29,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -271,7 +271,7 @@
     },
     {
         "title": "Migrate Azure Firewall Classic Rules to Azure Firewall Manager Policies for existing deployments.",
-        "description": "For existing deployments, migrate Azure Firewall rules to Azure Firewall Manager policies. Use Azure Firewall Manager to centrally manage your firewalls and policies.  For more information, see Migrate to Azure Firewall Premium.",
+        "description": "For existing deployments, migrate Azure Firewall rules to Azure Firewall Manager policies. Use Azure Firewall Manager to centrally manage your firewalls and policies. \n\n For more information, see Migrate to Azure Firewall Premium.",
         "order": 31,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -325,7 +325,7 @@
     },
     {
         "title": "If required to route all internet-bound traffic to a designated next hop instead of going directly to the internet, configure Azure Firewall in forced tunneling mode (does not apply to Azure Virtual WAN).",
-        "description": "Azure Firewall must have direct internet connectivity. If your AzureFirewallSubnet learns a default route to your on-premises network via the Border Gateway Protocol, you must configure Azure Firewall in the forced tunneling mode. Using the forced tunneling feature, you'll need another /26 address space for the Azure Firewall Management subnet. You're required to name it AzureFirewallManagementSubnet.If this is an existing Azure Firewall instance that can't be reconfigured in the forced tunneling mode, create a UDR with a 0.0.0.0/0 route. Set the NextHopType value as Internet. Associate it with AzureFirewallSubnet to maintain internet connectivity.",
+        "description": "Azure Firewall must have direct internet connectivity. If your AzureFirewallSubnet learns a default route to your on-premises network via the Border Gateway Protocol, you must configure Azure Firewall in the forced tunneling mode. Using the forced tunneling feature, you'll need another /26 address space for the Azure Firewall Management subnet. You're required to name it AzureFirewallManagementSubnet.\n\nIf this is an existing Azure Firewall instance that can't be reconfigured in the forced tunneling mode, create a UDR with a 0.0.0.0/0 route. Set the NextHopType value as Internet. Associate it with AzureFirewallSubnet to maintain internet connectivity.",
         "order": 37,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -469,7 +469,7 @@
     },
     {
         "title": "Deploy the proper Azure Firewall SKU.",
-        "description": "Azure Firewall can be deployed in three different SKUs: Basic, Standard and Premium. Azure Firewall Premium is recommended to secure highly sensitive applications (such as payment processing). Azure Firewall Standard is recommended for customers looking for Layer 3–Layer 7 firewall and needs autoscaling to handle peak traffic periods of up to 30 Gbps. Azure Firewall Basic is recommended for SMB customers with throughput needs of 250 Mbps. If required, downgrade or upgrade is possible between Standard and Premium as documented here.   For more information, see Choose the right Azure Firewall SKU to meet your needs.",
+        "description": "Azure Firewall can be deployed in three different SKUs: Basic, Standard and Premium. Azure Firewall Premium is recommended to secure highly sensitive applications (such as payment processing). Azure Firewall Standard is recommended for customers looking for Layer 3–Layer 7 firewall and needs autoscaling to handle peak traffic periods of up to 30 Gbps. Azure Firewall Basic is recommended for SMB customers with throughput needs of 250 Mbps. If required, downgrade or upgrade is possible between Standard and Premium as documented here.  \n\n For more information, see Choose the right Azure Firewall SKU to meet your needs.",
         "order": 53,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -505,7 +505,7 @@
     },
     {
         "title": "Review under-utilized Azure Firewall instances. Identify and delete unused Azure Firewall deployments.",
-        "description": "To identify unused Azure Firewall deployments, start by analyzing the monitoring metrics and UDRs associated with subnets pointing to the firewall's private IP. Combine that information with other validations, such as if your instance of Azure Firewall has any rules (classic) for NAT, Network and Application, or even if the DNS Proxy setting is configured to Disabled, and with internal documentation about your environment and deployments. You can detect deployments that are cost-effective over time.  For more information about monitoring logs and metrics, see Monitor Azure Firewall logs and metrics and SNAT port utilization.",
+        "description": "To identify unused Azure Firewall deployments, start by analyzing the monitoring metrics and UDRs associated with subnets pointing to the firewall's private IP. Combine that information with other validations, such as if your instance of Azure Firewall has any rules (classic) for NAT, Network and Application, or even if the DNS Proxy setting is configured to Disabled, and with internal documentation about your environment and deployments. You can detect deployments that are cost-effective over time. \n\n For more information about monitoring logs and metrics, see Monitor Azure Firewall logs and metrics and SNAT port utilization.",
         "order": 57,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -514,7 +514,7 @@
     },
     {
         "title": "Use Azure Firewall Manager and its Policies to reduce operational costs, increase efficiency, and reduce management overhead.",
-        "description": "Review your Firewall Manager policies, associations, and inheritance carefully. Policies are billed based on firewall associations. A policy with zero or one firewall association is free of charge. A policy with multiple firewall associations is billed at a fixed rate.For more information, see Pricing - Azure Firewall Manager.",
+        "description": "Review your Firewall Manager policies, associations, and inheritance carefully. Policies are billed based on firewall associations. A policy with zero or one firewall association is free of charge. A policy with multiple firewall associations is billed at a fixed rate.\n\nFor more information, see Pricing - Azure Firewall Manager.",
         "order": 58,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -523,7 +523,7 @@
     },
     {
         "title": "Delete unused public IP addresses.",
-        "description": "Validate whether all the associated public IP addresses are in use. If they aren't in use, disassociate and delete them. Evaluate SNAT port utilization before removing any IP addresses.You'll only use the number of public IPs your firewall needs. For more information, see Monitor Azure Firewall logs and metrics and SNAT port utilization.",
+        "description": "Validate whether all the associated public IP addresses are in use. If they aren't in use, disassociate and delete them. Evaluate SNAT port utilization before removing any IP addresses.\n\nYou'll only use the number of public IPs your firewall needs. For more information, see Monitor Azure Firewall logs and metrics and SNAT port utilization.",
         "order": 59,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -586,7 +586,7 @@
     },
     {
         "title": "Monitor key metrics and create alerts for indicators of the utilization of Azure Firewall capacity.",
-        "description": "Alerts should be created to monitor at least Throughput, Firewall health state, SNAT port utilization and AZFW Latency Probe metrics.For information about monitoring logs and metrics, see Monitor Azure Firewall logs and metrics.",
+        "description": "Alerts should be created to monitor at least Throughput, Firewall health state, SNAT port utilization and AZFW Latency Probe metrics.\nFor information about monitoring logs and metrics, see Monitor Azure Firewall logs and metrics.",
         "order": 66,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -694,7 +694,7 @@
     },
     {
         "title": "Configure an Azure Firewall subnet (AzureFirewallSubnet) with a /26 address space.",
-        "description": "Azure Firewall is a dedicated deployment in your virtual network. Within your virtual network, a dedicated subnet is required for the instance of Azure Firewall. Azure Firewall provisions more capacity as it scales.A /26 address space for its subnets ensures that the firewall has enough IP addresses available to accommodate the scaling. Azure Firewall doesn't need a subnet bigger than /26. The Azure Firewall subnet name must be AzureFirewallSubnet.",
+        "description": "Azure Firewall is a dedicated deployment in your virtual network. Within your virtual network, a dedicated subnet is required for the instance of Azure Firewall. Azure Firewall provisions more capacity as it scales.\nA /26 address space for its subnets ensures that the firewall has enough IP addresses available to accommodate the scaling. Azure Firewall doesn't need a subnet bigger than /26. The Azure Firewall subnet name must be AzureFirewallSubnet.",
         "order": 78,
         "category": "azure-firewall",
         "applies_to": "services/networking/azure-firewall",
@@ -820,7 +820,7 @@
     },
     {
         "title": "Familiarize yourself with ExpressRoute pricing",
-        "description": "For information about ExpressRoute pricing, see Understand pricing for Azure ExpressRoute. You can also use the Pricing calculator.Ensure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
+        "description": "For information about ExpressRoute pricing, see Understand pricing for Azure ExpressRoute. You can also use the Pricing calculator.\n\nEnsure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
         "order": 92,
         "category": "azure-expressroute",
         "applies_to": "services/networking/azure-expressroute",
@@ -883,7 +883,7 @@
     },
     {
         "title": "Review metrics with Network Insights",
-        "description": "ExpressRoute Insights with Network Insights allow you to review and analyze ExpressRoute circuits, gateways, connections metrics and health dashboards. ExpressRoute Insights also provide a topology view of your ExpressRoute connections where you can view details of your peering components all in a single place.Metrics available:- Availability- Throughput- Gateway metrics",
+        "description": "ExpressRoute Insights with Network Insights allow you to review and analyze ExpressRoute circuits, gateways, connections metrics and health dashboards. ExpressRoute Insights also provide a topology view of your ExpressRoute connections where you can view details of your peering components all in a single place.\n\nMetrics available:\n- Availability\n- Throughput\n- Gateway metrics",
         "order": 99,
         "category": "azure-expressroute",
         "applies_to": "services/networking/azure-expressroute",
@@ -964,7 +964,7 @@
     },
     {
         "title": "Review the impact of the interval and threshold settings on health probes",
-        "description": "The health probe sends requests to the configured endpoint at a set interval. Also, there's a threshold of failed requests that will be tolerated before the backend is marked unhealthy. These numbers present a trade-off.- Setting a higher interval puts a higher load on your service. Each Application Gateway instance sends its own health probes, so 100 instances every 30 seconds means 100 requests per 30 seconds.- Setting a lower interval leaves more time before an outage is detected.- Setting a low unhealthy threshold may mean that short, transient failures may take down a backend. - Setting a high threshold it can take longer to take a backend out of rotation.",
+        "description": "The health probe sends requests to the configured endpoint at a set interval. Also, there's a threshold of failed requests that will be tolerated before the backend is marked unhealthy. These numbers present a trade-off.\n\n- Setting a higher interval puts a higher load on your service. Each Application Gateway instance sends its own health probes, so 100 instances every 30 seconds means 100 requests per 30 seconds.\n- Setting a lower interval leaves more time before an outage is detected.\n- Setting a low unhealthy threshold may mean that short, transient failures may take down a backend.\n - Setting a high threshold it can take longer to take a backend out of rotation.",
         "order": 108,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1000,7 +1000,7 @@
     },
     {
         "title": "Use AppGateway for TLS termination",
-        "description": "There are advantages of using Application Gateway for TLS termination:- Performance improves because requests going to different backends to have to re-authenticate to each backend.- Better utilization of backend servers because they don't have to perform TLS processing- Intelligent routing by accessing the request content.- Easier certificate management because the certificate only needs to be installed on Application Gateway.",
+        "description": "There are advantages of using Application Gateway for TLS termination:\n\n- Performance improves because requests going to different backends to have to re-authenticate to each backend.\n- Better utilization of backend servers because they don't have to perform TLS processing\n- Intelligent routing by accessing the request content.\n- Easier certificate management because the certificate only needs to be installed on Application Gateway.",
         "order": 112,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1063,7 +1063,7 @@
     },
     {
         "title": "Familiarize yourself with Application Gateway pricing",
-        "description": "For information about Application Gateway pricing, see Understanding Pricing for Azure Application Gateway and Web Application Firewall. You can also leverage the Pricing calculator.Ensure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
+        "description": "For information about Application Gateway pricing, see Understanding Pricing for Azure Application Gateway and Web Application Firewall. You can also leverage the Pricing calculator.\n\nEnsure that the options are adequately sized to meet the capacity demand and deliver expected performance without wasting resources.",
         "order": 119,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1081,7 +1081,7 @@
     },
     {
         "title": "Stop Application Gateway instances when not in use",
-        "description": "You aren't billed when Application Gateway is in the stopped state. Continuously running Application Gateway instances can incur extraneous costs. Evaluate usage patterns and stop instances when you don't need them. For example, usage after business hours in Dev/Test environments is expected to be low.See these articles for information about how to stop and start instances.- Stop-AzApplicationGateway- Start-AzApplicationGateway",
+        "description": "You aren't billed when Application Gateway is in the stopped state. Continuously running Application Gateway instances can incur extraneous costs. Evaluate usage patterns and stop instances when you don't need them. For example, usage after business hours in Dev/Test environments is expected to be low.\n\nSee these articles for information about how to stop and start instances.\n- Stop-AzApplicationGateway\n- Start-AzApplicationGateway",
         "order": 121,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1090,7 +1090,7 @@
     },
     {
         "title": "Have a scale-in and scale-out policy",
-        "description": "A scale-out policy ensures that there will be enough instances to handle incoming traffic and spikes. Also, have a scale-in policy that makes sure the number of instances are reduced when demand drops. Consider the choice of instance size. The size can significantly impact the cost. Some considerations are described in the Estimate the Application Gateway instance count.For more information, see What is Azure Application Gateway v2?",
+        "description": "A scale-out policy ensures that there will be enough instances to handle incoming traffic and spikes. Also, have a scale-in policy that makes sure the number of instances are reduced when demand drops. Consider the choice of instance size. The size can significantly impact the cost. Some considerations are described in the Estimate the Application Gateway instance count.\n\nFor more information, see What is Azure Application Gateway v2?",
         "order": 122,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1099,7 +1099,7 @@
     },
     {
         "title": "Review consumption metrics across different parameters",
-        "description": "You're billed based on metered instances of Application Gateway based on the metrics tracked by Azure. Evaluate the various metrics and capacity units and determine the cost drivers. For more information, see Azure Cost Management and Billing. The following metrics are key for Application Gateway. This information can be used to validate that the provisioned instance count matches the amount of incoming traffic.- Estimated Billed Capacity Units- Fixed Billable Capacity Units- Current Capacity UnitsFor more information, see Application Gateway metrics.Make sure you account for bandwidth costs. For details, see Traffic across billing zones and regions.",
+        "description": "You're billed based on metered instances of Application Gateway based on the metrics tracked by Azure. Evaluate the various metrics and capacity units and determine the cost drivers. For more information, see Azure Cost Management and Billing.\n\n The following metrics are key for Application Gateway. This information can be used to validate that the provisioned instance count matches the amount of incoming traffic.\n\n- Estimated Billed Capacity Units\n- Fixed Billable Capacity Units\n- Current Capacity Units\n\nFor more information, see Application Gateway metrics.\n\nMake sure you account for bandwidth costs. For details, see Traffic across billing zones and regions.",
         "order": 123,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1117,7 +1117,7 @@
     },
     {
         "title": "Troubleshoot using metrics",
-        "description": "There are other metrics that can indicate issues either at Application Gateway or the backend. We recommend evaluating the following alerts:- Unhealthy Host Count- Response Status (dimension 4xx and 5xx)- Backend Response Status (dimension 4xx and 5xx)- Backend Last Byte Response Time- Application Gateway Total TimeFor more information, see Metrics for Application Gateway.",
+        "description": "There are other metrics that can indicate issues either at Application Gateway or the backend. We recommend evaluating the following alerts:\n\n- Unhealthy Host Count\n- Response Status (dimension 4xx and 5xx)\n- Backend Response Status (dimension 4xx and 5xx)\n- Backend Last Byte Response Time\n- Application Gateway Total Time\n\nFor more information, see Metrics for Application Gateway.",
         "order": 125,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1144,7 +1144,7 @@
     },
     {
         "title": "Match timeout settings with the backend application",
-        "description": "Ensure you have configured the IdleTimeout settings to match the listener and traffic characteristics of the backend application. The default value is set to four minutes and can be configured to a maximum of 30. For more information, see Load Balancer TCP Reset and Idle Timeout.For workload considerations, see Monitoring application health for reliability.",
+        "description": "Ensure you have configured the IdleTimeout settings to match the listener and traffic characteristics of the backend application. The default value is set to four minutes and can be configured to a maximum of 30. For more information, see Load Balancer TCP Reset and Idle Timeout.\n\nFor workload considerations, see Monitoring application health for reliability.",
         "order": 128,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1162,7 +1162,7 @@
     },
     {
         "title": "Consider SNAT port limitations in your design",
-        "description": "SNAT port limitations are important for backend connections on the Application Gateway. There are separate factors that affect how Application Gateway reaches the SNAT port limit. For example, if the backend is a public IP address, it will require its own SNAT port. In order to avoid SNAT port limitations, you can increase the number of instances per Application Gateway, scale out the backends to have more IP addresses, or move your backends into the same virtual network and use private IP addresses for the backends.Requests per second (RPS) on the Application Gateway will be affected if the SNAT port limit is reached. For example, if an Application Gateway reaches the SNAT port limit, then it won't be able to open a new connection to the backend, and the request will fail.",
+        "description": "SNAT port limitations are important for backend connections on the Application Gateway. There are separate factors that affect how Application Gateway reaches the SNAT port limit. For example, if the backend is a public IP address, it will require its own SNAT port. In order to avoid SNAT port limitations, you can increase the number of instances per Application Gateway, scale out the backends to have more IP addresses, or move your backends into the same virtual network and use private IP addresses for the backends.\n\nRequests per second (RPS) on the Application Gateway will be affected if the SNAT port limit is reached. For example, if an Application Gateway reaches the SNAT port limit, then it won't be able to open a new connection to the backend, and the request will fail.",
         "order": 130,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1171,7 +1171,7 @@
     },
     {
         "title": "Estimate the Application Gateway instance count",
-        "description": "Application Gateway v2 scales out based on many aspects, such as CPU, network throughput, current connections, and more. To determine the approximate instance count, factor in these metrics:Current compute units — Indicates CPU utilization. 1 Application Gateway instance is approximately 10 compute units.Throughput — Application Gateway instance can serve ~500 Mbps of throughput. This data depends on the type of payload.Consider this equation when calculating instance counts.After you've estimated the instance count, compare that value to the maximum instance count. This will indicate how close you are to the maximum available capacity.",
+        "description": "Application Gateway v2 scales out based on many aspects, such as CPU, network throughput, current connections, and more. To determine the approximate instance count, factor in these metrics:\n\nCurrent compute units — Indicates CPU utilization. 1 Application Gateway instance is approximately 10 compute units.\nThroughput — Application Gateway instance can serve ~500 Mbps of throughput. This data depends on the type of payload.\n\nConsider this equation when calculating instance counts.\n\n\nAfter you've estimated the instance count, compare that value to the maximum instance count. This will indicate how close you are to the maximum available capacity.",
         "order": 131,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1180,7 +1180,7 @@
     },
     {
         "title": "Define the minimum instance count",
-        "description": "For Application Gateway v2 SKU, autoscaling takes some time (approximately six to seven minutes) before the additional set of instances is ready to serve traffic. During that time, if there are short spikes in traffic, expect transient latency or loss of traffic.We recommend that you set your minimum instance count to an optimal level. After you estimate the average instance count and determine your Application Gateway autoscaling trends, define the minimum instance count based on your application patterns. For information, see Application Gateway high traffic support.Check the Current Compute Units for the past one month. This metric represents the gateway's CPU utilization. To define the minimum instance count, divide the peak usage by 10. For example, if your average Current Compute Units in the past month is 50, set the minimum instance count to five.",
+        "description": "For Application Gateway v2 SKU, autoscaling takes some time (approximately six to seven minutes) before the additional set of instances is ready to serve traffic. During that time, if there are short spikes in traffic, expect transient latency or loss of traffic.\n\nWe recommend that you set your minimum instance count to an optimal level. After you estimate the average instance count and determine your Application Gateway autoscaling trends, define the minimum instance count based on your application patterns. For information, see Application Gateway high traffic support.\n\nCheck the Current Compute Units for the past one month. This metric represents the gateway's CPU utilization. To define the minimum instance count, divide the peak usage by 10. For example, if your average Current Compute Units in the past month is 50, set the minimum instance count to five.",
         "order": 132,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1189,7 +1189,7 @@
     },
     {
         "title": "Define the maximum instance count",
-        "description": "We recommend 125 as the maximum autoscale instance count. Make sure the subnet that has the Application Gateway has sufficient available IP addresses to support the scale-up set of instances.Setting the maximum instance count to 125 has no cost implications because you're billed only for the consumed capacity.",
+        "description": "We recommend 125 as the maximum autoscale instance count. Make sure the subnet that has the Application Gateway has sufficient available IP addresses to support the scale-up set of instances.\n\nSetting the maximum instance count to 125 has no cost implications because you're billed only for the consumed capacity.",
         "order": 133,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1198,7 +1198,7 @@
     },
     {
         "title": "Define Application Gateway subnet size",
-        "description": "Application Gateway needs a dedicated subnet within a virtual network. The subnet can have multiple instances of the deployed Application Gateway resource. You can also deploy other Application Gateway resources in that subnet, v1 or v2 SKU.Here are some considerations for defining the subnet size:- Application Gateway uses one private IP address per instance and another private IP address if a private front-end IP is configured.- Azure reserves five IP addresses in each subnet for internal use.- Application Gateway (Standard or WAF SKU) can support up to 32 instances. Taking 32 instance IP addresses + 1 private front-end IP + 5 Azure reserved, a minimum subnet size of /26 is recommended. Because the Standard_v2 or WAF_v2 SKU can support up to 125 instances, using the same calculation, a subnet size of /24 is recommended.- If you want to deploy additional Application Gateway resources in the same subnet, consider the additional IP addresses that will be required for their maximum instance count for both, Standard and Standard v2.",
+        "description": "Application Gateway needs a dedicated subnet within a virtual network. The subnet can have multiple instances of the deployed Application Gateway resource. You can also deploy other Application Gateway resources in that subnet, v1 or v2 SKU.\n\nHere are some considerations for defining the subnet size:\n\n- Application Gateway uses one private IP address per instance and another private IP address if a private front-end IP is configured.\n- Azure reserves five IP addresses in each subnet for internal use.\n- Application Gateway (Standard or WAF SKU) can support up to 32 instances. Taking 32 instance IP addresses + 1 private front-end IP + 5 Azure reserved, a minimum subnet size of /26 is recommended. Because the Standard_v2 or WAF_v2 SKU can support up to 125 instances, using the same calculation, a subnet size of /24 is recommended.\n- If you want to deploy additional Application Gateway resources in the same subnet, consider the additional IP addresses that will be required for their maximum instance count for both, Standard and Standard v2.",
         "order": 134,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1207,7 +1207,7 @@
     },
     {
         "title": "Take advantage of features for autoscaling and performance benefits",
-        "description": "The v2 SKU offers autoscaling to ensure that your Application Gateway can scale up as traffic increases. When compared to v1 SKU, v2 has capabilities that enhance the performance of the workload. For example, better TLS offload performance, quicker deployment and update times, zone redundancy, and more. For more information about autoscaling features, see Scaling Application Gateway v2 and WAF v2.If you are running v1 SKU Application gateway, consider migrating to the Application gateway v2 SKU. For more information, see Migrate Azure Application Gateway and Web Application Firewall from v1 to v2.",
+        "description": "The v2 SKU offers autoscaling to ensure that your Application Gateway can scale up as traffic increases. When compared to v1 SKU, v2 has capabilities that enhance the performance of the workload. For example, better TLS offload performance, quicker deployment and update times, zone redundancy, and more. For more information about autoscaling features, see Scaling Application Gateway v2 and WAF v2.\n\nIf you are running v1 SKU Application gateway, consider migrating to the Application gateway v2 SKU. For more information, see Migrate Azure Application Gateway and Web Application Firewall from v1 to v2.",
         "order": 135,
         "category": "azure-application-gateway",
         "applies_to": "services/networking/azure-application-gateway",
@@ -1585,7 +1585,7 @@
     },
     {
         "title": "When doing global load balancing for HTTP/S applications, use Front Door over Traffic Manager.",
-        "description": "- Azure Front Door optimizes the number of TCP connections to the backend when forwarding traffic.- Changes to the routing configuration, based on backend health, are instantaneous. With Traffic Manager, traffic will point to the original backend until a new DNS lookup occurs, plus potential time for DNS propagation.- Front Door supports caching on global edge nodes, negating the need for a separate CDN service.- Front Door supports Web Application Firewall rules, negating the need for a separate WAF service.",
+        "description": "- Azure Front Door optimizes the number of TCP connections to the backend when forwarding traffic.\n- Changes to the routing configuration, based on backend health, are instantaneous. With Traffic Manager, traffic will point to the original backend until a new DNS lookup occurs, plus potential time for DNS propagation.\n- Front Door supports caching on global edge nodes, negating the need for a separate CDN service.\n- Front Door supports Web Application Firewall rules, negating the need for a separate WAF service.",
         "order": 177,
         "category": "operational-excellence",
         "applies_to": "services/networking/application-delivery",
@@ -1657,7 +1657,7 @@
     },
     {
         "title": "When doing global load balancing for HTTP/S applications, use Front Door over Traffic Manager.",
-        "description": "- Azure Front Door optimizes the number of TCP connections to the backend when forwarding traffic.- Changes to the routing configuration, based on backend health, are instantaneous. With Traffic Manager, traffic will point to the original backend until a new DNS lookup occurs, plus potential time for DNS propagation.- Front Door supports caching on global edge nodes, negating the need for a separate CDN service.- Front Door supports Web Application Firewall rules, negating the need for a separate WAF service.",
+        "description": "- Azure Front Door optimizes the number of TCP connections to the backend when forwarding traffic.\n- Changes to the routing configuration, based on backend health, are instantaneous. With Traffic Manager, traffic will point to the original backend until a new DNS lookup occurs, plus potential time for DNS propagation.\n- Front Door supports caching on global edge nodes, negating the need for a separate CDN service.\n- Front Door supports Web Application Firewall rules, negating the need for a separate WAF service.",
         "order": 185,
         "category": "reliability",
         "applies_to": "services/networking/application-delivery",
@@ -1783,7 +1783,7 @@
     },
     {
         "title": "For the Load balancer, select two SKUs: Basic (free) and Standard (paid).",
-        "description": "Microsoft recommends Standard because it has richer capabilities, such as: - Outbound rules - Granular network security configuration - Monitoring  Standard provides a Service Level Agreement (SLA) and can be deployed in Availability Zones. Capabilities in Basic are limited.",
+        "description": "Microsoft recommends Standard because it has richer capabilities, such as: \n- Outbound rules \n- Granular network security configuration \n- Monitoring \n Standard provides a Service Level Agreement (SLA) and can be deployed in Availability Zones. Capabilities in Basic are limited.",
         "order": 199,
         "category": "cost-optimization",
         "applies_to": "services/networking/network-connectivity",
@@ -2251,7 +2251,7 @@
     },
     {
         "title": "Configure data and log files on different disks for database workloads.",
-        "description": "You can optimize IaaS DB workload performance by configuring system, data, and log files to be on different disk SKUs (leveraging Premium Disks for data and Ultra Disks for logs satisfies most production scenarios). Ultra Disk cost and performance can be optimized by taking advantage of configuring capacity, IOPS, and throughput independently. Also, you can dynamically configure these attributes. Example workloads include: - SQL on IaaS  - Cassandra DB  - Maria DB  - MySql and  - Mongo DB on IaaS",
+        "description": "You can optimize IaaS DB workload performance by configuring system, data, and log files to be on different disk SKUs (leveraging Premium Disks for data and Ultra Disks for logs satisfies most production scenarios). Ultra Disk cost and performance can be optimized by taking advantage of configuring capacity, IOPS, and throughput independently. Also, you can dynamically configure these attributes. Example workloads include:\n - SQL on IaaS \n - Cassandra DB \n - Maria DB \n - MySql and \n - Mongo DB on IaaS",
         "order": 251,
         "category": "cost-optimization",
         "applies_to": "services/storage/disks",
@@ -2260,7 +2260,7 @@
     },
     {
         "title": "Use bursting for P20 and lower disks for workloads, such as batch jobs, workloads, which handle traffic spikes, and to improve OS boot time.",
-        "description": "Azure Disks offer various SKUs and sizes to satisfy different workload requirements. Some of the more recent features could help further optimize cost performance of existing disk use cases. You can use disk bursting for Premium (disks P20 and lower). Example scenarios that could benefit from this feature include:  - Improving OS boot time  - Handling batch jobs  - Handling traffic spikes",
+        "description": "Azure Disks offer various SKUs and sizes to satisfy different workload requirements. Some of the more recent features could help further optimize cost performance of existing disk use cases. You can use disk bursting for Premium (disks P20 and lower). Example scenarios that could benefit from this feature include: \n - Improving OS boot time \n - Handling batch jobs \n - Handling traffic spikes",
         "order": 252,
         "category": "cost-optimization",
         "applies_to": "services/storage/disks",
@@ -2665,7 +2665,7 @@
     },
     {
         "title": "Run From Package to avoid deployment conflicts",
-        "description": "Run from Package provides several advantages:- Eliminates file lock conflicts between deployment and runtime. - Ensures only fully deployed apps are running at any time.  - May reduce cold-start times, particularly for JavaScript functions with large npm package trees.",
+        "description": "Run from Package provides several advantages:\n- Eliminates file lock conflicts between deployment and runtime.\n - Ensures only fully deployed apps are running at any time. \n - May reduce cold-start times, particularly for JavaScript functions with large npm package trees.",
         "order": 297,
         "category": "operational-excellence",
         "applies_to": "services/compute/azure-app-service",
@@ -2863,7 +2863,7 @@
     },
     {
         "title": "Run From Package to avoid deployment conflicts",
-        "description": "Run from Package provides several advantages:- Eliminates file lock conflicts between deployment and runtime. - Ensures only fully deployed apps are running at any time.  - May reduce cold-start times, particularly for JavaScript functions with large npm package trees.",
+        "description": "Run from Package provides several advantages:\n- Eliminates file lock conflicts between deployment and runtime.\n - Ensures only fully deployed apps are running at any time. \n - May reduce cold-start times, particularly for JavaScript functions with large npm package trees.",
         "order": 319,
         "category": "reliability",
         "applies_to": "services/compute/azure-app-service",
@@ -3052,7 +3052,7 @@
     },
     {
         "title": "Cluster and workload architectures: Use the AKS Uptime SLA for production grade clusters.",
-        "description": "The AKS Uptime SLA guarantees: - 99.95% availability of the Kubernetes API server endpoint for AKS Clusters that use Azure Availability Zones, or  - 99.9% availability for AKS Clusters that don't use Azure Availability Zones.",
+        "description": "The AKS Uptime SLA guarantees:\n - 99.95% availability of the Kubernetes API server endpoint for AKS Clusters that use Azure Availability Zones, or \n - 99.9% availability for AKS Clusters that don't use Azure Availability Zones.",
         "order": 340,
         "category": "azure-kubernetes-service",
         "applies_to": "services/compute/azure-kubernetes-service",
@@ -4663,7 +4663,7 @@
     },
     {
         "title": "Use the VNet injection functionality to enable more secure scenarios.",
-        "description": "Such as: - Connecting to other Azure services using service endpoints. - Connecting to on-premises data sources, taking advantage of user-defined routes. - Connecting to a network virtual appliance to inspect all outbound traffic and take actions according to allow and deny rules. - Using custom DNS. -  Deploying Azure Databricks clusters in existing virtual networks.",
+        "description": "Such as: \n- Connecting to other Azure services using service endpoints. \n- Connecting to on-premises data sources, taking advantage of user-defined routes. \n- Connecting to a network virtual appliance to inspect all outbound traffic and take actions according to allow and deny rules. \n- Using custom DNS. \n-  Deploying Azure Databricks clusters in existing virtual networks.",
         "order": 519,
         "category": "security",
         "applies_to": "services/data/azure-databricks",
@@ -4951,7 +4951,7 @@
     },
     {
         "title": "Use the correct caching type (local, in role, managed, redis) within your solution.",
-        "description": "Distributed applications typically implement either or both of the following strategies when caching data: - Using a private cache, where data is held locally on the machine that's running an instance of an application or service. - Using a shared cache, serving as a common source that can be accessed by multiple processes and machines. In both cases, caching can be performed client-side and server-side. Client-side caching is done by the process that provides the user interface for a system, such as a web browser or desktop application. Server-side caching is done by the process that provides the business services that are running remotely.",
+        "description": "Distributed applications typically implement either or both of the following strategies when caching data: \n- Using a private cache, where data is held locally on the machine that's running an instance of an application or service. \n- Using a shared cache, serving as a common source that can be accessed by multiple processes and machines. \nIn both cases, caching can be performed client-side and server-side. Client-side caching is done by the process that provides the user interface for a system, such as a web browser or desktop application. Server-side caching is done by the process that provides the business services that are running remotely.",
         "order": 551,
         "category": "operational-excellence",
         "applies_to": "services/data/azure-cache-redis",
@@ -5455,7 +5455,7 @@
     },
     {
         "title": "Configure Geo-Disaster.",
-        "description": "- Active/Active - Active/Passive - Paired Namespace (Active/Passive) - Note: The secondary region should preferably be an Azure paired region.",
+        "description": "- Active/Active \n- Active/Passive \n- Paired Namespace (Active/Passive) \n- Note: The secondary region should preferably be an Azure paired region.",
         "order": 607,
         "category": "reliability",
         "applies_to": "services/messaging/service-bus",
