@@ -1,4 +1,3 @@
-import datetime
 import os
 from lark import logger
 import markdown
@@ -8,13 +7,11 @@ import logging
 import colorlog
 from collections import OrderedDict
 from collections import defaultdict
+import constants
 
 order_counter = 0  # Global order counter
 local_counter = defaultdict(int)
-base_url = "https://learn.microsoft.com/en-us/azure"
-root_folder = './well-architected' 
-today = datetime.date.today().strftime('%Y-%m')
-build_dir = os.path.join(root_folder, f'build/{today}')
+
 # Load pre-trained word embeddings model
 
 def get_most_similar(text, valid_pillars):
@@ -294,7 +291,7 @@ def produce_final_items(items):
     processed_items = []
     while items:
         current_item = items.pop(0)
-        links = ", ".join([f'{base_url}{path[1:-3]}' for path in  current_item["file_paths"]])
+        links = ", ".join([f'{constants.BASE_URL}{path[1:-3].replace(".", "")}' for path in  current_item["file_paths"]])
         final_item = {
             "aid": gen_aid(current_item["applies_to"][0]),
             "title": current_item["title"],
@@ -311,10 +308,10 @@ def produce_final_items(items):
     return processed_items
     
 if __name__ == "__main__":
-    root_folder = '.'      # Replace with the path to your folder
+    root_folder = constants.ROOT_FOLDER
 
-    today = datetime.date.today().strftime('%Y-%m')
-    build_dir = os.path.join(root_folder, f'build/{today}')
+    today = constants.TODAY
+    build_dir = constants.BUILD_DIR
     table_data = convert_md_to_html(root_folder)
 
     # Output the table data to a JSON file
@@ -323,8 +320,6 @@ if __name__ == "__main__":
         json.dump(table_data, json_file, indent=4, ensure_ascii=False)
 
     logger.info(f'Saved table data to {json_output_path}')
-
-
 
     merged_itmes = merge_similar_items(table_data)
 

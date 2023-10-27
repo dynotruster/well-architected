@@ -1,10 +1,10 @@
 import os
 import markdown
 from bs4 import BeautifulSoup
-
-def convert_md_to_html(root_folder):
+import datetime
+import constants
+def convert_md_to_html(root_folder , build_dir):
     # Ensure the build directory exists
-    build_dir = os.path.join(root_folder, 'build')
     os.makedirs(build_dir, exist_ok=True)
 
     # List to hold the links to all converted files
@@ -51,12 +51,13 @@ def convert_md_to_html(root_folder):
 </body>
 </html>
 """
-    index_file_path = os.path.join(root_folder, 'index.html')
+    index_file_path = os.path.join(build_dir, 'index.html')
     with open(index_file_path, 'w', encoding='utf-8') as index_file:
         index_file.write(index_content)
 
     print(f'Created index.html at {index_file_path}')
 
 if __name__ == "__main__":
-    root_folder = './'  # Replace with the path to your folder
-    convert_md_to_html(root_folder)
+    
+
+    convert_md_to_html(constants.ROOT_FOLDER , constants.BUILD_DIR)
