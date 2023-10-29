@@ -119,6 +119,7 @@ def extract_table_data(table , file_path , pillar):
     global order_counter  # Declare the global variable
     rows = table.find_all('tr')[1:]  # Skip header row
     table_data = []
+    description_ =""
     for row in rows:
         columns = row.find_all('td')
         if len(columns) >= 2:
@@ -127,16 +128,22 @@ def extract_table_data(table , file_path , pillar):
             applies_to = get_applies_to(file_path)
             for br in columns[1].find_all("br"):
                 br.replace_with("\n")
-            table_data.append({
-                'title': columns[0].text.strip(),
-                'description': columns[1].text.strip(),
-                'order': order_counter,
-                'category': category,
-                'applies_to': applies_to,
-                'file_path': file_path,
-                'pillar': pillar
-                
-            })
+
+            title_ = columns[0].text.strip()
+            description_ = columns[1].text.strip()
+            if description_ == '':
+                description_ = title_
+            if (title_ != ''):
+                table_data.append({
+                    'title': title_,
+                    'description': description_,
+                    'order': order_counter,
+                    'category': category,
+                    'applies_to': applies_to,
+                    'file_path': file_path,
+                    'pillar': pillar
+                    
+                })
     return table_data
 
 def convert_md_to_html(root_folder):
@@ -233,6 +240,7 @@ def merge_similar_items(items):
                 merged_item["file_paths"].update(OrderedDict.fromkeys([item["file_path"]]))
                 merged_item["pillars"].update(OrderedDict.fromkeys([item["pillar"]]))
                 items.pop(i)
+
             else:
                 i += 1
         # Convert OrderedDict keys back to lists
