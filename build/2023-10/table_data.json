@@ -621,15 +621,6 @@
         "pillar": "Operational Excellence"
     },
     {
-        "title": "",
-        "description": "",
-        "order": 70,
-        "category": "azure-firewall",
-        "applies_to": "services/networking/azure-firewall",
-        "file_path": "../well-architected/services/networking/azure-firewall.md",
-        "pillar": "Operational Excellence"
-    },
-    {
         "title": "Use Policy Analytics dashboard to identify potential optimizations for Firewall Policies.",
         "description": "Policy Analytics is a new feature that provides insights into the impact of your Azure Firewall policies. It helps you identify potential issues (hitting policy limits, low utilization rules, redundant rules, rules too generic, IP Groups usage recommendation) in your policies and provides recommendations to improve your security posture and rule processing performance.",
         "order": 71,
@@ -5518,7 +5509,7 @@
     },
     {
         "title": "Implement auto-scaling of messaging units, to ensure that you have enough resources available for your workloads.",
-        "description": "",
+        "description": "Implement auto-scaling of messaging units, to ensure that you have enough resources available for your workloads.",
         "order": 614,
         "category": "reliability",
         "applies_to": "services/messaging/service-bus",
